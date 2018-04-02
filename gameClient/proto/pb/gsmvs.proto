@@ -1,0 +1,146 @@
+syntax = "proto3";
+import "errorcode.proto";
+
+enum MvsGsCmdID
+{
+	MvsCmdNone = 0;
+	MvsJoinRoomReq = 1201;
+	MvsJoinRoomRsp = 1202;
+	MvsCreateRoomReq = 1203;
+	MvsCreateRoomRsp = 1204;
+	MvsLeaveRoomReq = 1205;
+	MvsLeaveRoomRsp = 1206;
+	MvsGetRoomDetailReq = 1209;	//gs 1209 push -> mvs  
+	MvsGetRoomDetailRsp = 1210;	//sdk 1209 -> mvs   mvs 1210 -> sdk
+	MvsGetRoomDetailPush = 1211;  //mvs 1211 push -> gs
+	MvsJoinOverReq = 1213;
+	MvsJoinOverRsp = 1214;
+	MvsKickPlayerReq = 1303;
+	MvsKickPlayerRsp = 1304;
+	MvsNetworkStateReq = 1120;
+	MvsNetworkStateRsp = 1121;
+}
+//房间状态
+enum RoomState
+{
+  RoomStateNil = 0;
+  RoomStateOpen = 1;
+  RoomStateClosed = 2;
+}
+//gs->mvs
+message JoinOverReq
+{
+	uint64 roomID = 1;
+	uint32 gameID = 2;
+	bytes cpProto = 3;
+	uint32 userID = 4;
+}
+
+message JoinOverRsp
+{
+	ErrorCode status = 1;			//200.成功  403.房间关闭  404.房间不存在  500.服务器错误
+	bytes cpProto = 2;
+}
+
+//gs->mvs
+message KickPlayer 
+{
+	uint64 roomID = 1;			// 房间ID
+	uint32 srcUserID = 2;		// 踢人者
+	uint32 userID = 3;			// 被踢者
+	bytes cpProto = 4;			// 客户端自定义内容
+}
+
+message KickPlayerRsp 
+{
+	ErrorCode status = 1;
+	uint32 userID = 2;			// 被踢者
+	uint64 roomID = 3;			// 房间ID
+}
+
+//mvs->gs
+message Request
+{
+	uint32 userID = 1;
+	uint32 gameID = 2;
+	uint64 roomID = 3;
+	bytes cpProto = 4;
+}
+
+message Reply
+{
+	uint32 userID = 1;
+	uint32 gameID = 2;
+	uint64 roomID = 3;
+	bytes cpProto = 4;
+	ErrorCode errno = 5;
+    string errMsg = 6;
+}
+
+//gs->mvs
+message PushMsg
+{
+	uint32 userID = 1;
+	uint32 gameID = 2;
+	uint64 roomID = 3;
+	repeated uint32 users = 4;
+	bytes cpProto = 5;
+}
+
+/*房间详情*/
+message GetRoomDetailReq
+{
+  uint32 gameID = 1;      // 游戏ID
+  uint64 roomID = 2;      // 房间ID
+}
+
+message GetRoomDetailRsp
+{
+  ErrorCode status = 1;
+  RoomDetail roomDetail = 2;
+}
+
+message RoomDetail
+{
+  uint32 state = 1;			// 开放/关闭
+  uint32 maxPlayer = 2;     // 最大人数
+  int32 mode = 3;
+  int32 canWatch = 4;
+  bytes roomProperty = 5;
+  uint32 owner = 6;
+  uint32 createFlag = 7;
+  repeated PlayerInfo playerInfos = 8;
+  uint64 roomID = 9;
+}
+
+message PlayerInfo
+{
+    uint32 userID = 1;
+    bytes userProfile = 2;
+}
+
+/*
+房间创建时传给GS的附加信息
+*/
+message CreateExtInfo {
+    uint32 userID = 1;      // 创建者ID
+    bytes userProfile = 2;  // 创建者Profile
+    uint64 roomID = 3;      // 房间ID
+    uint32 state = 4;       // 开放/关闭
+    uint32 maxPlayer = 5;   // 最大人数
+    int32 mode = 6;
+    int32 canWatch = 7;     // 是否可观战
+    bytes roomProperty = 8; // 房间属性
+    uint32 createFlag = 9;  // 创建途径
+    uint64 CreateTime = 10; // 房间创建时间
+}
+
+/*
+加入房间时传给GS的附加信息
+*/
+message JoinExtInfo {
+    uint32 userID = 1;      // 加入房间的玩家ID
+    bytes userProfile = 2;  // 加入房间的玩家属性
+    uint64 roomID = 3;      // 要加入的房间ID
+    uint32 JoinType = 4;    // 随机加入、自定义属性加入、指定加入等
+}

@@ -1,0 +1,72 @@
+syntax = "proto3";
+
+enum HotelGsCmdID{
+	HotelNone = 0;
+	//建立连接时
+	HotelCreateConnect = 1501;
+	HotelCreateConnectAck = 1502;
+	// 二进制broadcast协议
+    HotelBroadcastCMDID    = 1503;
+    HotelBroadcastAckCMDID = 1504;
+	// 二进制push协议
+    HotelPushCMDID = 1505;
+	//删除房间
+	HotelCloseConnet = 1506;
+	HotelCloseConnetAck = 1507;
+}
+
+//推送hotel消息类型
+enum PushMsgType{
+    NoneType = 0;
+    //推送给列表中的指定用户
+    UserTypeSpecific = 1;
+    //推送给除列表中指定用户外的其他用户
+    UserTypeExclude = 2;
+    //推送给房间内的所有用户，包括自己，users列表参数无效
+    UserTypeAll = 3;
+}
+
+//建立连接时//需要把roomID和Stream映射起来
+message Connect {
+	uint32 gameID = 1;
+    uint64 roomID = 2;  
+}
+
+//建立连接后返回
+message ConnectAck{
+	uint32 status = 1;
+}
+
+//关闭连接，删除房间信息
+message CloseConnect {
+	uint32 gameID = 1;
+    uint64 roomID = 2;  
+}
+
+//关闭连接返回
+message  CloseConnectAck{
+	uint32 status = 1;
+}
+//广播消息
+message HotelBroadcast{
+	uint32 userID = 1;
+	uint32 gameID = 2;
+    uint64 roomID = 3;
+    uint32 flag = 4;   // 0000 00 00 priority, dstType 和 msgType 合并
+    repeated uint32 dstUids = 5;
+    bytes cpProto = 6;
+}
+//消息同步返回
+message HotelBroadcastAck {
+    uint32 userID = 1;
+    uint32 status = 2;
+}	
+
+//推送给hotel消息
+message PushToHotelMsg {
+    PushMsgType pushType = 1;//根据push类型广播给其他人
+    uint32 gameID = 2;
+    uint64 roomID = 3;
+    repeated uint32 dstUids = 4;
+    bytes cpProto = 5;
+}

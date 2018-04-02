@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package stream;
+
+message Package {
+	enum FrameType {
+		LeagueMessage = 0;
+        PushMessage = 1;
+        UnionOpsMessage = 2; // 联运
+        SocialMessage = 4; // 社交
+        PointsMessage = 8; // 积分
+        MatchVS = 16; // matchvs
+        Gosnowflake = 32; // 全局ID生成器
+        TimeoutService = 64; // 超时服务
+        RobotService = 128; // 机器人服务
+        CpsService = 256; //cpserver
+        AgentService = 512; //agent
+		FastMessage = 1024; //快速请求，不接收应答消息
+		HotelServer = 2048;//hotel服
+    }
+	message Frame {
+		FrameType Type=1;
+        uint32 version = 2;
+        // TODO cmdID
+        uint32 cmd_id  = 3;
+        // TODO userID
+        uint64 user_id = 4;
+        uint32 reserved = 5;
+		bytes Message=6;
+	}
+}
+
+

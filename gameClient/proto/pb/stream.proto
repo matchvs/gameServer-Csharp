@@ -1,0 +1,140 @@
+syntax = "proto3";
+
+package stream;
+import "simple.proto";
+
+// CSStream definition
+service CSStream {
+    rpc Stream(stream Package.Frame) returns (stream Package.Frame);
+}
+
+message HeartBeat {
+    uint32 seq = 1;
+    uint32 cmd = 2;
+    uint32 version = 3;
+    uint32 versionp = 4;
+    uint32 busi = 5;
+}
+
+message ProtoHeader{
+    uint32 size= 1;
+    uint32 seq = 2;
+    uint32 cmd = 3;
+    uint32 version = 4;
+    uint32 versionp = 5;
+    uint32 busi = 6;
+}
+
+message Score {
+    uint32 a = 1;
+    uint32 b = 2;
+    uint32 c = 3;
+    uint32 ext_num = 4;
+    int32 ext_int_0 = 5;
+    int32 ext_int_1 = 6;
+    int32 ext_int_2 = 7;
+    int32 ext_int_3 = 8;
+    int32 ext_int_4 = 9;
+    int32 ext_int_5 = 10;
+    int32 ext_int_6 = 11;
+    int32 ext_int_7 = 12;
+    int32 ext_int_8 = 13;
+    int32 ext_int_9 = 14;
+    string arbitrate = 15;
+    uint32 userID = 16;
+}
+
+message Player {
+    uint32 userID = 1;
+    uint32 status = 2;
+    Score score = 3;
+    uint32 originScore = 4;
+    uint32 Range = 5;
+    bool isRobot = 6;
+}
+
+message Room {
+    uint32 roomID = 1;   //房间ID
+    uint32 fieldID = 2;  //场次ID
+    uint32 gameID = 3;   //游戏ID
+    uint32 owner = 4;    //房主ID
+    uint32 status = 5;   //房间状态
+    uint32 count = 6;    //开赛人数
+    uint32 roundID = 7;  //当前roundID
+    uint32 timerID = 8; //时间id
+    uint32 matchTimes = 9; //匹配次数
+    repeated Player players = 10; //用户信息
+}
+
+message User {
+    // TODO _id 命名规则统一改为ID
+    uint32 user_id = 1;
+    uint32 game_id = 2;
+    uint32 version_sdk = 3;
+    uint32 version_game = 4;
+    uint64 connection_id = 5;
+    uint32 service_id = 6;
+    uint32 room_id = 7;
+}
+
+message UserInfo {
+    uint32 userID = 1;
+    string token = 2;
+    string nickName = 3;
+    string avatar = 4;
+    uint32 owneID = 5;  //房主ID
+    uint32 isRobot = 6; //是否是机器人
+    uint32 status = 7;  //状态值,0,1,2 默认/准备/开始
+    uint32 grade = 8;   //机器人等级
+}
+
+
+message MatchInfo {
+    uint32 userID = 1;
+    uint32 fieldID = 2;
+    uint32 flag = 3;
+    uint32 matchType = 4;
+    uint32 roomID = 5;
+    uint64 innerID = 6;
+    uint32 errno = 7;
+}
+
+message Match {
+    uint32 fieldID = 1;
+    uint32 flag = 2;
+    uint32 userID = 3;
+}
+
+message MatchAck {
+    uint32 status = 1;
+    uint32 roomID = 2;
+    repeated UserInfo userList = 3;
+}
+
+message ExitRoom {
+    uint32 userID = 1;
+}
+
+message ExitRoomAck {
+    uint32 status = 1;
+    uint32 roomID = 2;
+}
+
+message NoticeUserJoin {
+    ProtoHeader header = 1;
+    uint32 roomID = 2;
+    UserInfo userInfo = 3;
+}
+
+message NoticeUserLeave {
+    ProtoHeader header = 1;
+    uint32 roomID = 2;
+    uint32 userID = 3;
+}
+
+message NoticeUserStatus {
+    ProtoHeader header = 1;
+    uint32 roomID = 2;
+    repeated UserInfo userList = 3;
+}
+

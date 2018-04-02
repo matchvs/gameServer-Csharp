@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log4net>
+  <root>
+    <level value="ALL" />
+    <appender-ref ref="LogFileFilterAppender" />
+    <appender-ref ref="ConsoleAppender" />
+  </root>
+
+  <logger name="Access" additivity="false" >
+    <level value="INFO" />
+    <appender-ref ref="AccessAppender" />
+  </logger>
+
+  <logger name="Flow" additivity="false" >
+    <level value="INFO" />
+    <appender-ref ref="FlowAppender" />
+
+  </logger>
+
+  <appender name="AccessAppender" type="log4net.Appender.FileAppender">
+    <file value="../log/cpsAccess.txt" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+InterProcessLock" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%level] %thread %message%newline" />
+    </layout>
+    <filter type="log4net.Filter.LevelRangeFilter">
+      <levelMin value="INFO" />
+      <levelMax value="INFO" />
+    </filter>
+  </appender>
+
+  <appender name="FlowAppender" type="log4net.Appender.FileAppender">
+    <file value="../log/cpsFlow.txt" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+InterProcessLock" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%level] %thread %message%newline" />
+    </layout>
+    <filter type="log4net.Filter.LevelRangeFilter">
+      <levelMin value="INFO" />
+      <levelMax value="INFO" />
+    </filter>
+  </appender>
+
+  <appender name="ConsoleAppender" type="log4net.Appender.ConsoleAppender">
+    <target value="Console.Error" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%level] %thread %message%newline" />
+    </layout>
+  </appender>
+
+  <appender name="LogFileFilterAppender" type="log4net.Appender.FileAppender">
+    <file value="../log/cpsInfo.txt" />
+    <appendToFile value="true" />
+    <lockingModel type="log4net.Appender.FileAppender+InterProcessLock" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%level] %thread %message%newline" />
+    </layout>
+  </appender>
+
+</log4net>
