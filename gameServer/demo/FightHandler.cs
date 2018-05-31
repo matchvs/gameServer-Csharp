@@ -370,7 +370,6 @@ public class FightHandler : BaseHandler
     /// 主动推送给MVS，踢掉某人
     /// </summary>
     /// <param name="roomId"></param>
-    /// <param name="srcId"></param>
     /// <param name="destId"></param>
     public void PushKickPlayer(UInt64 roomId, UInt32 destId, UInt32 userId = 0, UInt32 version = 2)
     {
