@@ -118,6 +118,16 @@ public class StreamServer : CSStream.CSStreamBase
                                 Connect connectInfo = Connect.Parser.ParseFrom(p.Message);
                                 hotelMap.Add(connectInfo.RoomID, responseStream);
                             }
+                            else if (p.CmdId == (UInt32)HotelGsCmdID.HotelBroadcastCmdid)
+                            {
+                                HotelBroadcast broadcast = HotelBroadcast.Parser.ParseFrom(p.Message);
+                                hotelMap.Add(broadcast.RoomID, responseStream);
+                            }
+                            else if (p.CmdId == (UInt32)HotelGsCmdID.HotelPlayerCheckin)
+                            {
+                                PlayerCheckin checkin = PlayerCheckin.Parser.ParseFrom(p.Message);
+                                hotelMap.Add(checkin.RoomID, responseStream);
+                            }
                         }
                         else
                         {

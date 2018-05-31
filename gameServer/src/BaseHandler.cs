@@ -21,12 +21,15 @@ public abstract class BaseHandler
     public abstract IMessage OnCreateRoom(ByteString request);
     public abstract IMessage OnJoinRoom(ByteString request);
     public abstract IMessage OnJoinOver(ByteString request);
+    public abstract IMessage OnJoinOpen(ByteString request);
     public abstract IMessage OnLeaveRoom(ByteString request);
     public abstract IMessage OnKickPlayer(ByteString request);
     public abstract IMessage OnConnectStatus(ByteString request);
     public abstract void OnRoomDetail(ByteString request);
+    public abstract IMessage OnSetRoomProperty(ByteString request);
     //HOTEL
     public abstract IMessage OnHotelConnect(ByteString request);
     public abstract IMessage OnHotelBroadCast(ByteString request);
     public abstract IMessage OnHotelCloseConnect(ByteString request);
+    public abstract IMessage OnHotelCheckin(ByteString request);
 }

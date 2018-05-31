@@ -82,6 +82,10 @@ public class GameServer : BaseServer
         {
             reply = msgHandler.OnHotelCloseConnect(req.Message);
         }
+        else if (req.CmdId == (UInt32)HotelGsCmdID.HotelPlayerCheckin)
+        {
+            reply = msgHandler.OnHotelCheckin(req.Message);
+        }
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsJoinRoomReq)
         {
             reply = msgHandler.OnJoinRoom(req.Message);
@@ -98,6 +102,10 @@ public class GameServer : BaseServer
         {
             reply = msgHandler.OnJoinOver(req.Message);
         }
+        else if (req.CmdId == (UInt32)MvsGsCmdID.MvsJoinOpenReq)
+        {
+            reply = msgHandler.OnJoinOpen(req.Message);
+        }
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsKickPlayerReq)
         {
             reply = msgHandler.OnKickPlayer(req.Message);
@@ -109,6 +117,10 @@ public class GameServer : BaseServer
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsGetRoomDetailPush)
         {
             msgHandler.OnRoomDetail(req.Message);
+        }
+        else if (req.CmdId == (UInt32)MvsGsCmdID.MvsSetRoomPropertyReq)
+        {
+            reply = msgHandler.OnSetRoomProperty(req.Message);
         }
         else
         {

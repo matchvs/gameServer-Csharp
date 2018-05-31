@@ -13,6 +13,9 @@ enum HotelGsCmdID{
 	//删除房间
 	HotelCloseConnet = 1506;
 	HotelCloseConnetAck = 1507;
+    // 玩家checkin
+    HotelPlayerCheckin = 1601;
+    HotelPlayerCheckinAck = 1602;
 }
 
 //推送hotel消息类型
@@ -69,4 +72,19 @@ message PushToHotelMsg {
     uint64 roomID = 3;
     repeated uint32 dstUids = 4;
     bytes cpProto = 5;
+}
+
+//玩家checkin消息
+message PlayerCheckin {
+    uint32 userID = 1;
+    uint32 gameID = 2;
+    uint64 roomID = 3;
+    uint32 maxPlayers = 4;         // 房间可容纳最大玩家数
+    repeated uint32 checkins = 5;  // 已经checkIn的玩家ID
+    repeated uint32 players = 6;   // 房间中所有book的玩家ID
+}
+
+//玩家checkin消息返回
+message PlayerCheckinAck {
+    uint32 status = 1;
 }

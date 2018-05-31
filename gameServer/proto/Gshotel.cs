@@ -30,13 +30,18 @@ public static partial class GshotelReflection {
           "RBgBIAEoDRIOCgZzdGF0dXMYAiABKA0icgoOUHVzaFRvSG90ZWxNc2cSHgoI",
           "cHVzaFR5cGUYASABKA4yDC5QdXNoTXNnVHlwZRIOCgZnYW1lSUQYAiABKA0S",
           "DgoGcm9vbUlEGAMgASgEEg8KB2RzdFVpZHMYBCADKA0SDwoHY3BQcm90bxgF",
-          "IAEoDCrPAQoMSG90ZWxHc0NtZElEEg0KCUhvdGVsTm9uZRAAEhcKEkhvdGVs",
-          "Q3JlYXRlQ29ubmVjdBDdCxIaChVIb3RlbENyZWF0ZUNvbm5lY3RBY2sQ3gsS",
-          "GAoTSG90ZWxCcm9hZGNhc3RDTURJRBDfCxIbChZIb3RlbEJyb2FkY2FzdEFj",
-          "a0NNRElEEOALEhMKDkhvdGVsUHVzaENNRElEEOELEhUKEEhvdGVsQ2xvc2VD",
-          "b25uZXQQ4gsSGAoTSG90ZWxDbG9zZUNvbm5ldEFjaxDjCypXCgtQdXNoTXNn",
-          "VHlwZRIMCghOb25lVHlwZRAAEhQKEFVzZXJUeXBlU3BlY2lmaWMQARITCg9V",
-          "c2VyVHlwZUV4Y2x1ZGUQAhIPCgtVc2VyVHlwZUFsbBADYgZwcm90bzM="));
+          "IAEoDCJ2Cg1QbGF5ZXJDaGVja2luEg4KBnVzZXJJRBgBIAEoDRIOCgZnYW1l",
+          "SUQYAiABKA0SDgoGcm9vbUlEGAMgASgEEhIKCm1heFBsYXllcnMYBCABKA0S",
+          "EAoIY2hlY2tpbnMYBSADKA0SDwoHcGxheWVycxgGIAMoDSIiChBQbGF5ZXJD",
+          "aGVja2luQWNrEg4KBnN0YXR1cxgBIAEoDSqEAgoMSG90ZWxHc0NtZElEEg0K",
+          "CUhvdGVsTm9uZRAAEhcKEkhvdGVsQ3JlYXRlQ29ubmVjdBDdCxIaChVIb3Rl",
+          "bENyZWF0ZUNvbm5lY3RBY2sQ3gsSGAoTSG90ZWxCcm9hZGNhc3RDTURJRBDf",
+          "CxIbChZIb3RlbEJyb2FkY2FzdEFja0NNRElEEOALEhMKDkhvdGVsUHVzaENN",
+          "RElEEOELEhUKEEhvdGVsQ2xvc2VDb25uZXQQ4gsSGAoTSG90ZWxDbG9zZUNv",
+          "bm5ldEFjaxDjCxIXChJIb3RlbFBsYXllckNoZWNraW4QwQwSGgoVSG90ZWxQ",
+          "bGF5ZXJDaGVja2luQWNrEMIMKlcKC1B1c2hNc2dUeXBlEgwKCE5vbmVUeXBl",
+          "EAASFAoQVXNlclR5cGVTcGVjaWZpYxABEhMKD1VzZXJUeXBlRXhjbHVkZRAC",
+          "Eg8KC1VzZXJUeXBlQWxsEANiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HotelGsCmdID), typeof(global::PushMsgType), }, new pbr::GeneratedClrTypeInfo[] {
@@ -46,7 +51,9 @@ public static partial class GshotelReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::CloseConnectAck), global::CloseConnectAck.Parser, new[]{ "Status" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::HotelBroadcast), global::HotelBroadcast.Parser, new[]{ "UserID", "GameID", "RoomID", "Flag", "DstUids", "CpProto" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::HotelBroadcastAck), global::HotelBroadcastAck.Parser, new[]{ "UserID", "Status" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::PushToHotelMsg), global::PushToHotelMsg.Parser, new[]{ "PushType", "GameID", "RoomID", "DstUids", "CpProto" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::PushToHotelMsg), global::PushToHotelMsg.Parser, new[]{ "PushType", "GameID", "RoomID", "DstUids", "CpProto" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::PlayerCheckin), global::PlayerCheckin.Parser, new[]{ "UserID", "GameID", "RoomID", "MaxPlayers", "Checkins", "Players" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::PlayerCheckinAck), global::PlayerCheckinAck.Parser, new[]{ "Status" }, null, null, null)
         }));
   }
   #endregion
@@ -74,6 +81,11 @@ public enum HotelGsCmdID {
   /// </summary>
   [pbr::OriginalName("HotelCloseConnet")] HotelCloseConnet = 1506,
   [pbr::OriginalName("HotelCloseConnetAck")] HotelCloseConnetAck = 1507,
+  /// <summary>
+  /// 玩家checkin
+  /// </summary>
+  [pbr::OriginalName("HotelPlayerCheckin")] HotelPlayerCheckin = 1601,
+  [pbr::OriginalName("HotelPlayerCheckinAck")] HotelPlayerCheckinAck = 1602,
 }
 
 /// <summary>
@@ -1258,6 +1270,381 @@ public sealed partial class PushToHotelMsg : pb::IMessage<PushToHotelMsg> {
         }
         case 42: {
           CpProto = input.ReadBytes();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+/// <summary>
+///玩家checkin消息
+/// </summary>
+public sealed partial class PlayerCheckin : pb::IMessage<PlayerCheckin> {
+  private static readonly pb::MessageParser<PlayerCheckin> _parser = new pb::MessageParser<PlayerCheckin>(() => new PlayerCheckin());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<PlayerCheckin> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[7]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public PlayerCheckin() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public PlayerCheckin(PlayerCheckin other) : this() {
+    userID_ = other.userID_;
+    gameID_ = other.gameID_;
+    roomID_ = other.roomID_;
+    maxPlayers_ = other.maxPlayers_;
+    checkins_ = other.checkins_.Clone();
+    players_ = other.players_.Clone();
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public PlayerCheckin Clone() {
+    return new PlayerCheckin(this);
+  }
+
+  /// <summary>Field number for the "userID" field.</summary>
+  public const int UserIDFieldNumber = 1;
+  private uint userID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint UserID {
+    get { return userID_; }
+    set {
+      userID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "gameID" field.</summary>
+  public const int GameIDFieldNumber = 2;
+  private uint gameID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint GameID {
+    get { return gameID_; }
+    set {
+      gameID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "roomID" field.</summary>
+  public const int RoomIDFieldNumber = 3;
+  private ulong roomID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong RoomID {
+    get { return roomID_; }
+    set {
+      roomID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "maxPlayers" field.</summary>
+  public const int MaxPlayersFieldNumber = 4;
+  private uint maxPlayers_;
+  /// <summary>
+  /// 房间可容纳最大玩家数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint MaxPlayers {
+    get { return maxPlayers_; }
+    set {
+      maxPlayers_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "checkins" field.</summary>
+  public const int CheckinsFieldNumber = 5;
+  private static readonly pb::FieldCodec<uint> _repeated_checkins_codec
+      = pb::FieldCodec.ForUInt32(42);
+  private readonly pbc::RepeatedField<uint> checkins_ = new pbc::RepeatedField<uint>();
+  /// <summary>
+  /// 已经checkIn的玩家ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<uint> Checkins {
+    get { return checkins_; }
+  }
+
+  /// <summary>Field number for the "players" field.</summary>
+  public const int PlayersFieldNumber = 6;
+  private static readonly pb::FieldCodec<uint> _repeated_players_codec
+      = pb::FieldCodec.ForUInt32(50);
+  private readonly pbc::RepeatedField<uint> players_ = new pbc::RepeatedField<uint>();
+  /// <summary>
+  /// 房间中所有book的玩家ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<uint> Players {
+    get { return players_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as PlayerCheckin);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(PlayerCheckin other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (UserID != other.UserID) return false;
+    if (GameID != other.GameID) return false;
+    if (RoomID != other.RoomID) return false;
+    if (MaxPlayers != other.MaxPlayers) return false;
+    if(!checkins_.Equals(other.checkins_)) return false;
+    if(!players_.Equals(other.players_)) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (UserID != 0) hash ^= UserID.GetHashCode();
+    if (GameID != 0) hash ^= GameID.GetHashCode();
+    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+    if (MaxPlayers != 0) hash ^= MaxPlayers.GetHashCode();
+    hash ^= checkins_.GetHashCode();
+    hash ^= players_.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (UserID != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(UserID);
+    }
+    if (GameID != 0) {
+      output.WriteRawTag(16);
+      output.WriteUInt32(GameID);
+    }
+    if (RoomID != 0UL) {
+      output.WriteRawTag(24);
+      output.WriteUInt64(RoomID);
+    }
+    if (MaxPlayers != 0) {
+      output.WriteRawTag(32);
+      output.WriteUInt32(MaxPlayers);
+    }
+    checkins_.WriteTo(output, _repeated_checkins_codec);
+    players_.WriteTo(output, _repeated_players_codec);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (UserID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(UserID);
+    }
+    if (GameID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+    }
+    if (RoomID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+    }
+    if (MaxPlayers != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxPlayers);
+    }
+    size += checkins_.CalculateSize(_repeated_checkins_codec);
+    size += players_.CalculateSize(_repeated_players_codec);
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(PlayerCheckin other) {
+    if (other == null) {
+      return;
+    }
+    if (other.UserID != 0) {
+      UserID = other.UserID;
+    }
+    if (other.GameID != 0) {
+      GameID = other.GameID;
+    }
+    if (other.RoomID != 0UL) {
+      RoomID = other.RoomID;
+    }
+    if (other.MaxPlayers != 0) {
+      MaxPlayers = other.MaxPlayers;
+    }
+    checkins_.Add(other.checkins_);
+    players_.Add(other.players_);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          UserID = input.ReadUInt32();
+          break;
+        }
+        case 16: {
+          GameID = input.ReadUInt32();
+          break;
+        }
+        case 24: {
+          RoomID = input.ReadUInt64();
+          break;
+        }
+        case 32: {
+          MaxPlayers = input.ReadUInt32();
+          break;
+        }
+        case 42:
+        case 40: {
+          checkins_.AddEntriesFrom(input, _repeated_checkins_codec);
+          break;
+        }
+        case 50:
+        case 48: {
+          players_.AddEntriesFrom(input, _repeated_players_codec);
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+/// <summary>
+///玩家checkin消息返回
+/// </summary>
+public sealed partial class PlayerCheckinAck : pb::IMessage<PlayerCheckinAck> {
+  private static readonly pb::MessageParser<PlayerCheckinAck> _parser = new pb::MessageParser<PlayerCheckinAck>(() => new PlayerCheckinAck());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<PlayerCheckinAck> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[8]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public PlayerCheckinAck() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public PlayerCheckinAck(PlayerCheckinAck other) : this() {
+    status_ = other.status_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public PlayerCheckinAck Clone() {
+    return new PlayerCheckinAck(this);
+  }
+
+  /// <summary>Field number for the "status" field.</summary>
+  public const int StatusFieldNumber = 1;
+  private uint status_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Status {
+    get { return status_; }
+    set {
+      status_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as PlayerCheckinAck);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(PlayerCheckinAck other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Status != other.Status) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Status != 0) hash ^= Status.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (Status != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(Status);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Status != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Status);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(PlayerCheckinAck other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Status != 0) {
+      Status = other.Status;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          Status = input.ReadUInt32();
           break;
         }
       }

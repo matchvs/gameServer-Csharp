@@ -100,6 +100,28 @@ public class FightHandler : BaseHandler
         return reply;
     }
     /// <summary>
+    /// 允许加入房间
+    /// </summary>
+    /// <param name="msg"></param>
+    public override IMessage OnJoinOpen(ByteString msg)
+    {
+        Request request = new Request();
+        ByteUtils.ByteStringToObject(request, msg);
+
+        Reply reply = new Reply()
+        {
+            UserID = request.UserID,
+            GameID = request.GameID,
+            RoomID = request.RoomID,
+            Errno = ErrorCode.Ok,
+            ErrMsg = "OnJoinOpen success"
+        };
+
+        Logger.Info("OnJoinOpen start, userId={0}, gameId={1}, roomId={2}", request.UserID, request.GameID, request.RoomID);
+
+        return reply;
+    }
+    /// <summary>
     /// 离开房间
     /// </summary>
     /// <param name="msg"></param>
@@ -197,6 +219,30 @@ public class FightHandler : BaseHandler
         }
     }
 
+    /// <summary>
+    /// 设置房间自定义属性
+    /// </summary>
+    /// <param name="msg"></param>
+    public override IMessage OnSetRoomProperty(ByteString msg)
+    {
+        Request request = new Request();
+        ByteUtils.ByteStringToObject(request, msg);
+
+        Reply reply = new Reply()
+        {
+            UserID = request.UserID,
+            GameID = request.GameID,
+            RoomID = request.RoomID,
+            Errno = ErrorCode.Ok,
+            ErrMsg = "OnSetRoomProperty success"
+        };
+        string roomProperty = request.CpProto.ToStringUtf8();
+
+        Logger.Info("OnSetRoomProperty start, userId={0}, gameId={1}, roomId={2}, roomProperty={3}", request.UserID, request.GameID, request.RoomID, roomProperty);
+
+        return reply;
+    }
+
     public override IMessage OnHotelConnect(ByteString msg)
     {
         Connect connect = new Connect();
@@ -238,9 +284,12 @@ public class FightHandler : BaseHandler
                 {
                     UInt64 roomID = UInt64.Parse(param[0]);
                     UInt32 gameID = UInt32.Parse(param[1]);
-                    UInt32 userID = UInt32.Parse(param[2]);
-                    PushJoinOver(roomID, gameID, userID);
+                    PushJoinOver(roomID, gameID);
                 }
+            }
+            else if (result[0] == "joinopen")
+            {
+                PushJoinOpen(broadcast.RoomID, broadcast.GameID);
             }
             else if (result[0] == "kickplayer")
             {
@@ -248,10 +297,8 @@ public class FightHandler : BaseHandler
                 if (param.Length > 2)
                 {
                     UInt64 roomID = UInt64.Parse(param[0]);
-                    UInt32 srcID = UInt32.Parse(param[1]);
-                    UInt32 destID = UInt32.Parse(param[2]);
-
-                    PushKickPlayer(roomID, srcID, destID);
+                    UInt32 destID = UInt32.Parse(param[1]);
+                    PushKickPlayer(roomID, destID);
                 }
             }
             else if (result[0] == "getRoomDetail")
@@ -263,6 +310,11 @@ public class FightHandler : BaseHandler
                     UInt64 roomID = UInt64.Parse(param[1]);
                     PushGetRoomDetail(roomID, gameID);
                 }
+            }
+            else if (result[0] == "setRoomProperty")
+            {
+                ByteString roomProperty = Google.Protobuf.ByteString.CopyFromUtf8(result[1]);
+                PushSetRoomProperty(broadcast.RoomID, broadcast.GameID, roomProperty);
             }
         }
 
@@ -280,6 +332,13 @@ public class FightHandler : BaseHandler
 
         return new CloseConnectAck() { Status = (UInt32)ErrorCode.Ok };
     }
+    public override IMessage OnHotelCheckin(ByteString msg)
+    {
+        PlayerCheckin checkin = new PlayerCheckin();
+        ByteUtils.ByteStringToObject(checkin, msg);
+        Logger.Info("PlayerCheckin, gameID:{0} roomID:{1} userID:{2}", checkin.GameID, checkin.RoomID, checkin.UserID);
+        return new PlayerCheckinAck() { Status = (UInt32)ErrorCode.Ok };   
+    }
     /// <summary>
     /// 主动推送给MVS，房间不可以再加人
     /// </summary>
@@ -290,10 +349,22 @@ public class FightHandler : BaseHandler
         JoinOverReq joinReq = new JoinOverReq()
         {
             RoomID = roomId,
-            GameID = gameId,
-            UserID = userId
+            GameID = gameId
         };
         baseServer.PushToMvs(userId, version, (UInt32)MvsGsCmdID.MvsJoinOverReq, joinReq);
+    }
+    /// <summary>
+    /// 主动推送给MVS，房间可以再加人
+    /// </summary>
+    public void PushJoinOpen(UInt64 roomId, UInt32 gameId, UInt32 userId = 0, UInt32 version = 2)
+    {
+        Logger.Info("PushJoinOpen, roomID:{0}, gameID:{1}", roomId, gameId);
+        JoinOpenReq joinReq = new JoinOpenReq()
+        {
+            RoomID = roomId,
+            GameID = gameId
+        };
+        baseServer.PushToMvs(userId, version, (UInt32)MvsGsCmdID.MvsJoinOpenReq, joinReq);
     }
     /// <summary>
     /// 主动推送给MVS，踢掉某人
@@ -301,14 +372,13 @@ public class FightHandler : BaseHandler
     /// <param name="roomId"></param>
     /// <param name="srcId"></param>
     /// <param name="destId"></param>
-    public void PushKickPlayer(UInt64 roomId, UInt32 srcId, UInt32 destId, UInt32 userId = 0, UInt32 version = 2)
+    public void PushKickPlayer(UInt64 roomId, UInt32 destId, UInt32 userId = 0, UInt32 version = 2)
     {
-        Logger.Info("PushKickPlayer, roomID:{0}, srcId:{1}, destId:{2}", roomId, srcId, destId);
+        Logger.Info("PushKickPlayer, roomID:{0}, destId:{2}", roomId, destId);
 
         KickPlayer kick = new KickPlayer()
         {
             RoomID = roomId,
-            SrcUserID = srcId,
             UserID = destId
         };
         baseServer.PushToMvs(userId, version, (UInt32)MvsGsCmdID.MvsKickPlayerReq, kick);
@@ -318,7 +388,7 @@ public class FightHandler : BaseHandler
     /// </summary>
     /// <param name="roomId"></param>
     /// <param name="gameId"></param>
-    public void PushGetRoomDetail(UInt64 roomId, UInt32 gameId, UInt32 userId = 1, UInt32 version = 2)
+    public void PushGetRoomDetail(UInt64 roomId, UInt32 gameId, UInt32 userId = 0, UInt32 version = 2)
     {
         Logger.Info("PushGetRoomDetail, roomID:{0}, gameId:{1}", roomId, gameId);
         GetRoomDetailReq roomDetail = new GetRoomDetailReq()
@@ -327,6 +397,23 @@ public class FightHandler : BaseHandler
             GameID = gameId
         };
         baseServer.PushToMvs(userId, version, (UInt32)MvsGsCmdID.MvsGetRoomDetailReq, roomDetail);
+    }
+    /// <summary>
+    /// 设置房间自定义属性
+    /// </summary>
+    /// <param name="roomId"></param>
+    /// <param name="gameId"></param>
+    /// <param name="roomProperty"></param>
+    public void PushSetRoomProperty(UInt64 roomId, UInt32 gameId, ByteString roomProperty, UInt32 userId = 0, UInt32 version = 2)
+    {
+        Logger.Info("PushSetRoomProperty, roomID:{0}, gameId:{1}", roomId, gameId);
+        SetRoomPropertyReq roomPropertyReq = new SetRoomPropertyReq()
+        {
+            RoomID = roomId,
+            GameID = gameId,
+            RoomProperty = roomProperty
+        };
+        baseServer.PushToMvs(userId, version, (UInt32)MvsGsCmdID.MvsSetRoomPropertyReq, roomPropertyReq);
     }
     /// <summary>
     /// 推送给Hotel，根据roomID来区分是哪个Hotel

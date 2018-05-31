@@ -15,6 +15,10 @@ enum MvsGsCmdID
 	MvsGetRoomDetailPush = 1211;  //mvs 1211 push -> gs
 	MvsJoinOverReq = 1213;
 	MvsJoinOverRsp = 1214;
+	MvsSetRoomPropertyReq = 1219;
+	MvsSetRoomPropertyRsp = 1220;
+	MvsJoinOpenReq = 1221;
+	MvsJoinOpenRsp = 1222;
 	MvsKickPlayerReq = 1303;
 	MvsKickPlayerRsp = 1304;
 	MvsNetworkStateReq = 1120;
@@ -23,10 +27,11 @@ enum MvsGsCmdID
 //房间状态
 enum RoomState
 {
-  RoomStateNil = 0;
-  RoomStateOpen = 1;
-  RoomStateClosed = 2;
+	RoomStateNil = 0;
+	RoomStateOpen = 1;
+	RoomStateClosed = 2;
 }
+
 //gs->mvs
 message JoinOverReq
 {
@@ -40,6 +45,20 @@ message JoinOverRsp
 {
 	ErrorCode status = 1;			//200.成功  403.房间关闭  404.房间不存在  500.服务器错误
 	bytes cpProto = 2;
+}
+
+message JoinOpenReq
+{
+    uint64 roomID = 1;
+    uint32 gameID = 2;
+    uint32 userID = 3;
+    bytes cpProto = 4;
+}
+
+message JoinOpenRsp
+{
+    ErrorCode status = 1;
+    bytes cpProto = 2;
 }
 
 //gs->mvs
@@ -143,4 +162,20 @@ message JoinExtInfo {
     bytes userProfile = 2;  // 加入房间的玩家属性
     uint64 roomID = 3;      // 要加入的房间ID
     uint32 JoinType = 4;    // 随机加入、自定义属性加入、指定加入等
+}
+
+message SetRoomPropertyReq
+{
+    uint32 gameID = 1;
+    uint64 roomID = 2;
+    uint32 userID = 3;
+    bytes roomProperty = 4;
+}
+
+message SetRoomPropertyRsp
+{
+    ErrorCode status = 1;
+    uint64 roomID = 2;
+    uint32 userID = 3;
+    bytes roomProperty = 4;
 }
