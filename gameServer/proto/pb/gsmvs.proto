@@ -121,15 +121,15 @@ message GetRoomDetailRsp
 
 message RoomDetail
 {
-  uint32 state = 1;			// 开放/关闭
-  uint32 maxPlayer = 2;     // 最大人数
-  int32 mode = 3;
-  int32 canWatch = 4;
-  bytes roomProperty = 5;
-  uint32 owner = 6;
-  uint32 createFlag = 7;
-  repeated PlayerInfo playerInfos = 8;
-  uint64 roomID = 9;
+  uint64 roomID = 1;
+  uint32 state = 2;			// 开放/关闭
+  uint32 maxPlayer = 3;     // 最大人数
+  int32 mode = 4;
+  int32 canWatch = 5;
+  bytes roomProperty = 6;
+  uint32 owner = 7;
+  uint32 createFlag = 8;
+  repeated PlayerInfo playerInfos = 9;
 }
 
 message PlayerInfo

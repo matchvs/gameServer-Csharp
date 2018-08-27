@@ -40,10 +40,10 @@ public static partial class GsmvsReflection {
           "ZXRhaWxSZXESDgoGZ2FtZUlEGAEgASgNEg4KBnJvb21JRBgCIAEoBCJPChBH",
           "ZXRSb29tRGV0YWlsUnNwEhoKBnN0YXR1cxgBIAEoDjIKLkVycm9yQ29kZRIf",
           "Cgpyb29tRGV0YWlsGAIgASgLMgsuUm9vbURldGFpbCK5AQoKUm9vbURldGFp",
-          "bBINCgVzdGF0ZRgBIAEoDRIRCgltYXhQbGF5ZXIYAiABKA0SDAoEbW9kZRgD",
-          "IAEoBRIQCghjYW5XYXRjaBgEIAEoBRIUCgxyb29tUHJvcGVydHkYBSABKAwS",
-          "DQoFb3duZXIYBiABKA0SEgoKY3JlYXRlRmxhZxgHIAEoDRIgCgtwbGF5ZXJJ",
-          "bmZvcxgIIAMoCzILLlBsYXllckluZm8SDgoGcm9vbUlEGAkgASgEIjEKClBs",
+          "bBIOCgZyb29tSUQYASABKAQSDQoFc3RhdGUYAiABKA0SEQoJbWF4UGxheWVy",
+          "GAMgASgNEgwKBG1vZGUYBCABKAUSEAoIY2FuV2F0Y2gYBSABKAUSFAoMcm9v",
+          "bVByb3BlcnR5GAYgASgMEg0KBW93bmVyGAcgASgNEhIKCmNyZWF0ZUZsYWcY",
+          "CCABKA0SIAoLcGxheWVySW5mb3MYCSADKAsyCy5QbGF5ZXJJbmZvIjEKClBs",
           "YXllckluZm8SDgoGdXNlcklEGAEgASgNEhMKC3VzZXJQcm9maWxlGAIgASgM",
           "IsQBCg1DcmVhdGVFeHRJbmZvEg4KBnVzZXJJRBgBIAEoDRITCgt1c2VyUHJv",
           "ZmlsZRgCIAEoDBIOCgZyb29tSUQYAyABKAQSDQoFc3RhdGUYBCABKA0SEQoJ",
@@ -83,7 +83,7 @@ public static partial class GsmvsReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::PushMsg), global::PushMsg.Parser, new[]{ "UserID", "GameID", "RoomID", "Users", "CpProto" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetRoomDetailReq), global::GetRoomDetailReq.Parser, new[]{ "GameID", "RoomID" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetRoomDetailRsp), global::GetRoomDetailRsp.Parser, new[]{ "Status", "RoomDetail" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::RoomDetail), global::RoomDetail.Parser, new[]{ "State", "MaxPlayer", "Mode", "CanWatch", "RoomProperty", "Owner", "CreateFlag", "PlayerInfos", "RoomID" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RoomDetail), global::RoomDetail.Parser, new[]{ "RoomID", "State", "MaxPlayer", "Mode", "CanWatch", "RoomProperty", "Owner", "CreateFlag", "PlayerInfos" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::PlayerInfo), global::PlayerInfo.Parser, new[]{ "UserID", "UserProfile" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CreateExtInfo), global::CreateExtInfo.Parser, new[]{ "UserID", "UserProfile", "RoomID", "State", "MaxPlayer", "Mode", "CanWatch", "RoomProperty", "CreateFlag", "CreateTime" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::JoinExtInfo), global::JoinExtInfo.Parser, new[]{ "UserID", "UserProfile", "RoomID", "JoinType" }, null, null, null),
@@ -2247,6 +2247,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public RoomDetail(RoomDetail other) : this() {
+    roomID_ = other.roomID_;
     state_ = other.state_;
     maxPlayer_ = other.maxPlayer_;
     mode_ = other.mode_;
@@ -2255,7 +2256,6 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     owner_ = other.owner_;
     createFlag_ = other.createFlag_;
     playerInfos_ = other.playerInfos_.Clone();
-    roomID_ = other.roomID_;
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2263,8 +2263,19 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     return new RoomDetail(this);
   }
 
+  /// <summary>Field number for the "roomID" field.</summary>
+  public const int RoomIDFieldNumber = 1;
+  private ulong roomID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong RoomID {
+    get { return roomID_; }
+    set {
+      roomID_ = value;
+    }
+  }
+
   /// <summary>Field number for the "state" field.</summary>
-  public const int StateFieldNumber = 1;
+  public const int StateFieldNumber = 2;
   private uint state_;
   /// <summary>
   /// 开放/关闭
@@ -2278,7 +2289,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
   }
 
   /// <summary>Field number for the "maxPlayer" field.</summary>
-  public const int MaxPlayerFieldNumber = 2;
+  public const int MaxPlayerFieldNumber = 3;
   private uint maxPlayer_;
   /// <summary>
   /// 最大人数
@@ -2292,7 +2303,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
   }
 
   /// <summary>Field number for the "mode" field.</summary>
-  public const int ModeFieldNumber = 3;
+  public const int ModeFieldNumber = 4;
   private int mode_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int Mode {
@@ -2303,7 +2314,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
   }
 
   /// <summary>Field number for the "canWatch" field.</summary>
-  public const int CanWatchFieldNumber = 4;
+  public const int CanWatchFieldNumber = 5;
   private int canWatch_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CanWatch {
@@ -2314,7 +2325,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
   }
 
   /// <summary>Field number for the "roomProperty" field.</summary>
-  public const int RoomPropertyFieldNumber = 5;
+  public const int RoomPropertyFieldNumber = 6;
   private pb::ByteString roomProperty_ = pb::ByteString.Empty;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pb::ByteString RoomProperty {
@@ -2325,7 +2336,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
   }
 
   /// <summary>Field number for the "owner" field.</summary>
-  public const int OwnerFieldNumber = 6;
+  public const int OwnerFieldNumber = 7;
   private uint owner_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public uint Owner {
@@ -2336,7 +2347,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
   }
 
   /// <summary>Field number for the "createFlag" field.</summary>
-  public const int CreateFlagFieldNumber = 7;
+  public const int CreateFlagFieldNumber = 8;
   private uint createFlag_;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public uint CreateFlag {
@@ -2347,24 +2358,13 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
   }
 
   /// <summary>Field number for the "playerInfos" field.</summary>
-  public const int PlayerInfosFieldNumber = 8;
+  public const int PlayerInfosFieldNumber = 9;
   private static readonly pb::FieldCodec<global::PlayerInfo> _repeated_playerInfos_codec
-      = pb::FieldCodec.ForMessage(66, global::PlayerInfo.Parser);
+      = pb::FieldCodec.ForMessage(74, global::PlayerInfo.Parser);
   private readonly pbc::RepeatedField<global::PlayerInfo> playerInfos_ = new pbc::RepeatedField<global::PlayerInfo>();
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pbc::RepeatedField<global::PlayerInfo> PlayerInfos {
     get { return playerInfos_; }
-  }
-
-  /// <summary>Field number for the "roomID" field.</summary>
-  public const int RoomIDFieldNumber = 9;
-  private ulong roomID_;
-  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-  public ulong RoomID {
-    get { return roomID_; }
-    set {
-      roomID_ = value;
-    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2380,6 +2380,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     if (ReferenceEquals(other, this)) {
       return true;
     }
+    if (RoomID != other.RoomID) return false;
     if (State != other.State) return false;
     if (MaxPlayer != other.MaxPlayer) return false;
     if (Mode != other.Mode) return false;
@@ -2388,13 +2389,13 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     if (Owner != other.Owner) return false;
     if (CreateFlag != other.CreateFlag) return false;
     if(!playerInfos_.Equals(other.playerInfos_)) return false;
-    if (RoomID != other.RoomID) return false;
     return true;
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
+    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
     if (State != 0) hash ^= State.GetHashCode();
     if (MaxPlayer != 0) hash ^= MaxPlayer.GetHashCode();
     if (Mode != 0) hash ^= Mode.GetHashCode();
@@ -2403,7 +2404,6 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     if (Owner != 0) hash ^= Owner.GetHashCode();
     if (CreateFlag != 0) hash ^= CreateFlag.GetHashCode();
     hash ^= playerInfos_.GetHashCode();
-    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
     return hash;
   }
 
@@ -2414,44 +2414,47 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public void WriteTo(pb::CodedOutputStream output) {
-    if (State != 0) {
+    if (RoomID != 0UL) {
       output.WriteRawTag(8);
+      output.WriteUInt64(RoomID);
+    }
+    if (State != 0) {
+      output.WriteRawTag(16);
       output.WriteUInt32(State);
     }
     if (MaxPlayer != 0) {
-      output.WriteRawTag(16);
+      output.WriteRawTag(24);
       output.WriteUInt32(MaxPlayer);
     }
     if (Mode != 0) {
-      output.WriteRawTag(24);
+      output.WriteRawTag(32);
       output.WriteInt32(Mode);
     }
     if (CanWatch != 0) {
-      output.WriteRawTag(32);
+      output.WriteRawTag(40);
       output.WriteInt32(CanWatch);
     }
     if (RoomProperty.Length != 0) {
-      output.WriteRawTag(42);
+      output.WriteRawTag(50);
       output.WriteBytes(RoomProperty);
     }
     if (Owner != 0) {
-      output.WriteRawTag(48);
+      output.WriteRawTag(56);
       output.WriteUInt32(Owner);
     }
     if (CreateFlag != 0) {
-      output.WriteRawTag(56);
+      output.WriteRawTag(64);
       output.WriteUInt32(CreateFlag);
     }
     playerInfos_.WriteTo(output, _repeated_playerInfos_codec);
-    if (RoomID != 0UL) {
-      output.WriteRawTag(72);
-      output.WriteUInt64(RoomID);
-    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
+    if (RoomID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+    }
     if (State != 0) {
       size += 1 + pb::CodedOutputStream.ComputeUInt32Size(State);
     }
@@ -2474,9 +2477,6 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
       size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CreateFlag);
     }
     size += playerInfos_.CalculateSize(_repeated_playerInfos_codec);
-    if (RoomID != 0UL) {
-      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
-    }
     return size;
   }
 
@@ -2484,6 +2484,9 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
   public void MergeFrom(RoomDetail other) {
     if (other == null) {
       return;
+    }
+    if (other.RoomID != 0UL) {
+      RoomID = other.RoomID;
     }
     if (other.State != 0) {
       State = other.State;
@@ -2507,9 +2510,6 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
       CreateFlag = other.CreateFlag;
     }
     playerInfos_.Add(other.playerInfos_);
-    if (other.RoomID != 0UL) {
-      RoomID = other.RoomID;
-    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2521,39 +2521,39 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
           input.SkipLastField();
           break;
         case 8: {
-          State = input.ReadUInt32();
+          RoomID = input.ReadUInt64();
           break;
         }
         case 16: {
-          MaxPlayer = input.ReadUInt32();
+          State = input.ReadUInt32();
           break;
         }
         case 24: {
-          Mode = input.ReadInt32();
+          MaxPlayer = input.ReadUInt32();
           break;
         }
         case 32: {
+          Mode = input.ReadInt32();
+          break;
+        }
+        case 40: {
           CanWatch = input.ReadInt32();
           break;
         }
-        case 42: {
+        case 50: {
           RoomProperty = input.ReadBytes();
           break;
         }
-        case 48: {
+        case 56: {
           Owner = input.ReadUInt32();
           break;
         }
-        case 56: {
+        case 64: {
           CreateFlag = input.ReadUInt32();
           break;
         }
-        case 66: {
+        case 74: {
           playerInfos_.AddEntriesFrom(input, _repeated_playerInfos_codec);
-          break;
-        }
-        case 72: {
-          RoomID = input.ReadUInt64();
           break;
         }
       }

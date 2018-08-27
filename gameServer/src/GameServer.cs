@@ -116,7 +116,7 @@ public class GameServer : BaseServer
         }
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsGetRoomDetailPush)
         {
-            msgHandler.OnRoomDetail(req.Message);
+            reply = msgHandler.OnRoomDetail(req.Message);
         }
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsSetRoomPropertyReq)
         {
