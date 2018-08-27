@@ -25,7 +25,7 @@ public abstract class BaseHandler
     public abstract IMessage OnLeaveRoom(ByteString request);
     public abstract IMessage OnKickPlayer(ByteString request);
     public abstract IMessage OnConnectStatus(ByteString request);
-    public abstract void OnRoomDetail(ByteString request);
+    public abstract IMessage OnRoomDetail(ByteString request);
     public abstract IMessage OnSetRoomProperty(ByteString request);
     //HOTEL
     public abstract IMessage OnHotelConnect(ByteString request);

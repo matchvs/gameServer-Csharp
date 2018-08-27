@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package stream;
+
+// GS -> Directory 命令号
+enum GSDirectoryCmdID {
+    InValidGSCmd    = 0;
+    GSLoginCmd = 3001;
+    GSHeartbeatCmd = 3003;
+    GSLogoutCmd = 3005;
+}
+
+/*
+GS主动向Directory注册:
+GSLogin(gameID, svcName, podName, host, port) -> (status)
+*/
+message GSLogin {
+    uint32 gameID = 1;
+    string svcName = 2;
+    string podName = 3;
+    string host = 4;
+    uint32 port = 5;
+}
+
+message GSLoginAck {
+    uint32 status = 1;
+}
+
+/*
+GS主动向Directory心跳 load 是一个（0，100）值，用来衡量当前GS负载情况:
+GSHeartbeat(load) -> (status)
+*/
+message GSHeartbeat {
+    uint32 load = 1;
+}
+
+message GSHeartbeatAck {
+    uint32 status = 1;
+}
+
+/*
+GS主动向Directory心跳:
+GSLogout(gameID, svcName, podName) -> (status)
+*/
+message GSLogout {
+    uint32 gameID = 1;
+    string svcName = 2;
+    string podName = 3;
+}
+
+message GSLogoutAck {
+    uint32 status = 1;
+}

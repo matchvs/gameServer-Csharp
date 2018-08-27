@@ -29,6 +29,7 @@ set PLUGIN=%UserProfile%\.nuget\packages\Grpc.Tools\1.4.1\tools\windows_x64\grpc
 %PROTOC%  -I ./  --csharp_out ../ gshotel.proto --grpc_out ../ --plugin=protoc-gen-grpc=%PLUGIN%
 %PROTOC%  -I ./  --csharp_out ../ errorcode.proto --grpc_out ../ --plugin=protoc-gen-grpc=%PLUGIN%
 %PROTOC%  -I ./  --csharp_out ../ gsmvs.proto --grpc_out ../ --plugin=protoc-gen-grpc=%PLUGIN%
+%PROTOC%  -I ./  --csharp_out ../ gsdirectory.proto --grpc_out ../ --plugin=protoc-gen-grpc=%PLUGIN%
 
 pause
 endlocal

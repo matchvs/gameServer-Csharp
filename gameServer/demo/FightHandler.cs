@@ -203,20 +203,30 @@ public class FightHandler : BaseHandler
     /// 房间详情
     /// </summary>
     /// <param name="msg"></param>
-    public override void OnRoomDetail(ByteString msg)
+    public override IMessage OnRoomDetail(ByteString msg)
     {
         Request request = new Request();
         ByteUtils.ByteStringToObject(request, msg);
 
+        Reply reply = new Reply()
+        {
+            UserID = request.UserID,
+            GameID = request.GameID,
+            RoomID = request.RoomID,
+            Errno = ErrorCode.Ok,
+            ErrMsg = "OnRoomDetail success"
+        };
+
         RoomDetail roomDetail = new RoomDetail();
         ByteUtils.ByteStringToObject(roomDetail, request.CpProto);
 
-        Logger.Info("OnRoomDetail, roomId={0}, state={1}, maxPlayer={2}, mode={3}, canWatch={4}, owner={5}",
-            roomDetail.RoomID, roomDetail.State, roomDetail.MaxPlayer, roomDetail.Mode, roomDetail.CanWatch, roomDetail.Owner);
+        Logger.Info("OnRoomDetail, roomId={0}, state={1}, maxPlayer={2}, mode={3}, canWatch={4}, owner={5}, roomProperty={6}",
+            roomDetail.RoomID, roomDetail.State, roomDetail.MaxPlayer, roomDetail.Mode, roomDetail.CanWatch, roomDetail.Owner, roomDetail.RoomProperty.ToStringUtf8());
         foreach (PlayerInfo player in roomDetail.PlayerInfos)
         {
             Logger.Info("player userId={0}", player.UserID);
         }
+        return reply;
     }
 
     /// <summary>
@@ -261,7 +271,7 @@ public class FightHandler : BaseHandler
 
         PushToHotelMsg pushMsg = new PushToHotelMsg()
         {
-            PushType = PushMsgType.UserTypeExclude,
+            PushType = PushMsgType.UserTypeAll,
             GameID = broadcast.GameID,
             RoomID = broadcast.RoomID,
             CpProto = broadcast.CpProto,
