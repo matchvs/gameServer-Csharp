@@ -21,9 +21,11 @@ using Google.Protobuf;
 public class FightHandler : BaseHandler
 {
     private BaseServer baseServer;
-    public FightHandler(BaseServer server)
+    private RoomManager roomManger;
+    public FightHandler(BaseServer server, RoomManager rmgr)
     {
         baseServer = server;
+        roomManger = rmgr;
     }
     /// <summary>
     /// 创建房间
@@ -326,6 +328,59 @@ public class FightHandler : BaseHandler
                 ByteString roomProperty = Google.Protobuf.ByteString.CopyFromUtf8(result[1]);
                 PushSetRoomProperty(broadcast.RoomID, broadcast.GameID, roomProperty);
             }
+            else if (result[0] == "createRoom")
+            {
+                CreateRoom request = new CreateRoom()
+                {
+                    GameID = broadcast.GameID,
+                    Ttl = 600,
+                    RoomInfo = new RoomInfo()
+                    {
+                        RoomName = "game server room",
+                        MaxPlayer = 2,
+                        Mode = 1,
+                        CanWatch = 1,
+                        Visibility = 1,
+                        RoomProperty = Google.Protobuf.ByteString.CopyFromUtf8("hello"),
+                    },
+                };
+                var reply = CreateRoom(request);
+                Logger.Debug("create room request: {0}, reply: {1}", request, reply);
+            }
+            else if (result[0] == "touchRoom")
+            {
+                String[] param = result[1].Split(",");
+                TouchRoom request = new TouchRoom()
+                {
+                    GameID = broadcast.GameID,
+                    RoomID = UInt64.Parse(param[0]),
+                    Ttl = UInt32.Parse(param[1]),
+                };
+                var reply = TouchRoom(request);
+                Logger.Debug("touch room request: {0}, reply: {1}", request, reply);
+            }
+            else if (result[0] == "destroyRoom")
+            {
+                DestroyRoom request = new DestroyRoom()
+                {
+                    GameID = broadcast.GameID,
+                    RoomID = UInt64.Parse(result[1]),
+                };
+                var reply = DestroyRoom(request);
+                Logger.Debug("destroy room request: {0}, reply: {1}", request, reply);
+            }
+            else if (result[0] == "setFrameSyncRate")
+            {
+                var rate = UInt32.Parse(result[1]);
+                SetFrameSyncRate(broadcast.RoomID, broadcast.GameID, rate, 1);
+                Logger.Debug("set frame sync rate: {0}", rate);
+            }
+            else if (result[0] == "frameBroadcast")
+            {
+                var cpProto = result[1];
+                FrameBroadcast(broadcast.RoomID, broadcast.GameID, ByteString.CopyFromUtf8(cpProto), 2);
+                Logger.Info("frame broadcast: {0}", cpProto);
+            }
         }
 
         Logger.Info("HotelBroadcast end, userID:{0} gameID:{1} roomID:{2} cpProto:{3}", broadcast.UserID, broadcast.GameID, broadcast.RoomID, broadcast.CpProto.ToStringUtf8());
@@ -348,6 +403,26 @@ public class FightHandler : BaseHandler
         ByteUtils.ByteStringToObject(checkin, msg);
         Logger.Info("PlayerCheckin, gameID:{0} roomID:{1} userID:{2}", checkin.GameID, checkin.RoomID, checkin.UserID);
         return new PlayerCheckinAck() { Status = (UInt32)ErrorCode.Ok };   
+    }
+    /// <summary>
+    /// 设置帧率
+    /// </summary>
+    public override void OnHotelSetFrameSyncRate(FrameSyncRate request)
+    {
+        Logger.Info("OnHotelSetFrameSyncRate, gameID:{0} roomID:{1} frameRate:{2}", request.GameID, request.RoomID, request.FrameRate);
+        return;
+    }
+    /// <summary>
+    /// 接收帧数据
+    /// </summary>
+    public override void OnHotelFrameUpdate(FrameData request)
+    {
+        Logger.Info("OnHotelFrameUpdate, gameID:{0} roomID:{1} frameIndex:{2}", request.GameID, request.RoomID, request.FrameIndex);
+        foreach (var item in request.FrameItems)
+        {
+            Logger.Info("SrcUser:{0}, cpProto:{1}", item.SrcUserID, item.CpProto.ToStringUtf8());
+        }
+        return;
     }
     /// <summary>
     /// 主动推送给MVS，房间不可以再加人
@@ -425,6 +500,45 @@ public class FightHandler : BaseHandler
         baseServer.PushToMvs(userId, version, (UInt32)MvsGsCmdID.MvsSetRoomPropertyReq, roomPropertyReq);
     }
     /// <summary>
+    /// 设置帧同步帧率
+    /// </summary>
+    /// <param name="roomId">房间ID</param>
+    /// <param name="gameId">游戏ID</param>
+    /// <param name="rate">帧率</param>
+    /// <param name="enableGS">GameServer是否参与帧同步（0：不参与；1：参与）</param>
+    public void SetFrameSyncRate(UInt64 roomId, UInt32 gameId, UInt32 rate, UInt32 enableGS, UInt32 userId = 1, UInt32 version = 2)
+    {
+        GSSetFrameSyncRate setFrameSyncRateReq = new GSSetFrameSyncRate()
+        {
+            GameID = gameId,
+            RoomID = roomId,
+            FrameRate = rate,
+            Priority = 0,
+            FrameIdx = 1,
+            EnableGS = enableGS,
+        };
+        baseServer.PushToHotel(userId, version, roomId, (UInt32)HotelGsCmdID.GssetFrameSyncRateCmdid, setFrameSyncRateReq);
+    }
+    /// <summary>
+    /// 发送帧消息
+    /// </summary>
+    /// <param name="roomId">房间ID</param>
+    /// <param name="gameId">游戏ID</param>
+    /// <param name="cpProto">消息内容</param>
+    /// <param name="operation">0：只发客户端；1：只发GS；2：同时发送客户端和GS</param>
+    public void FrameBroadcast(UInt64 roomId, UInt32 gameId, ByteString cpProto, Int32 operation, UInt32 userId = 1, UInt32 version = 2)
+    {
+        GSFrameBroadcast frameBroadcastReq = new GSFrameBroadcast()
+        {
+            GameID = gameId,
+            RoomID = roomId,
+            CpProto = cpProto,
+            Priority = 0,
+            Operation = operation,
+        };
+        baseServer.PushToHotel(userId, gameId, roomId, (UInt32)HotelGsCmdID.GsframeBroadcastCmdid, frameBroadcastReq);
+    }
+    /// <summary>
     /// 推送给Hotel，根据roomID来区分是哪个Hotel
     /// </summary>
     /// <param name="roomID"></param>
@@ -432,6 +546,18 @@ public class FightHandler : BaseHandler
     public void PushToHotel(UInt64 roomID, IMessage msg, UInt32 userId = 1, UInt32 version = 2)
     {
         baseServer.PushToHotel(userId, version, roomID, (UInt32)HotelGsCmdID.HotelPushCmdid, msg);
+    }
+    public CreateRoomAck CreateRoom(CreateRoom request)
+    {
+        return roomManger.CreateRoom(request);
+    }
+    public TouchRoomAck TouchRoom(TouchRoom request)
+    {
+        return roomManger.TouchRoom(request);
+    }
+    public DestroyRoomAck DestroyRoom(DestroyRoom request)
+    {
+        return roomManger.DestroyRoom(request);
     }
 }
 

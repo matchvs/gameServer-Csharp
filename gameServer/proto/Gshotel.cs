@@ -33,15 +33,37 @@ public static partial class GshotelReflection {
           "IAEoDCJ2Cg1QbGF5ZXJDaGVja2luEg4KBnVzZXJJRBgBIAEoDRIOCgZnYW1l",
           "SUQYAiABKA0SDgoGcm9vbUlEGAMgASgEEhIKCm1heFBsYXllcnMYBCABKA0S",
           "EAoIY2hlY2tpbnMYBSADKA0SDwoHcGxheWVycxgGIAMoDSIiChBQbGF5ZXJD",
-          "aGVja2luQWNrEg4KBnN0YXR1cxgBIAEoDSqEAgoMSG90ZWxHc0NtZElEEg0K",
-          "CUhvdGVsTm9uZRAAEhcKEkhvdGVsQ3JlYXRlQ29ubmVjdBDdCxIaChVIb3Rl",
-          "bENyZWF0ZUNvbm5lY3RBY2sQ3gsSGAoTSG90ZWxCcm9hZGNhc3RDTURJRBDf",
-          "CxIbChZIb3RlbEJyb2FkY2FzdEFja0NNRElEEOALEhMKDkhvdGVsUHVzaENN",
-          "RElEEOELEhUKEEhvdGVsQ2xvc2VDb25uZXQQ4gsSGAoTSG90ZWxDbG9zZUNv",
-          "bm5ldEFjaxDjCxIXChJIb3RlbFBsYXllckNoZWNraW4QwQwSGgoVSG90ZWxQ",
-          "bGF5ZXJDaGVja2luQWNrEMIMKlcKC1B1c2hNc2dUeXBlEgwKCE5vbmVUeXBl",
-          "EAASFAoQVXNlclR5cGVTcGVjaWZpYxABEhMKD1VzZXJUeXBlRXhjbHVkZRAC",
-          "Eg8KC1VzZXJUeXBlQWxsEANiBnByb3RvMw=="));
+          "aGVja2luQWNrEg4KBnN0YXR1cxgBIAEoDSJ9ChJHU1NldEZyYW1lU3luY1Jh",
+          "dGUSDgoGZ2FtZUlEGAEgASgNEg4KBnJvb21JRBgCIAEoBBIQCghwcmlvcml0",
+          "eRgDIAEoDRIRCglmcmFtZVJhdGUYBCABKA0SEAoIZnJhbWVJZHgYBSABKA0S",
+          "EAoIZW5hYmxlR1MYBiABKA0iJwoVR1NTZXRGcmFtZVN5bmNSYXRlQWNrEg4K",
+          "BnN0YXR1cxgBIAEoDSKWAQoYR1NTZXRGcmFtZVN5bmNSYXRlTm90aWZ5Eg4K",
+          "BmdhbWVJRBgBIAEoDRIOCgZyb29tSUQYAiABKAQSEAoIcHJpb3JpdHkYAyAB",
+          "KA0SEQoJZnJhbWVSYXRlGAQgASgNEhAKCGZyYW1lSWR4GAUgASgNEhEKCXRp",
+          "bWVTdGFtcBgGIAEoBBIQCghlbmFibGVHUxgHIAEoDSJoChBHU0ZyYW1lQnJv",
+          "YWRjYXN0Eg4KBmdhbWVJRBgBIAEoDRIOCgZyb29tSUQYAiABKAQSEAoIcHJp",
+          "b3JpdHkYAyABKA0SDwoHY3BQcm90bxgEIAEoDBIRCglvcGVyYXRpb24YBSAB",
+          "KAUiJQoTR1NGcmFtZUJyb2FkY2FzdEFjaxIOCgZzdGF0dXMYASABKA0ijAEK",
+          "EUdTRnJhbWVEYXRhTm90aWZ5Eg4KBmdhbWVJRBgBIAEoDRIOCgZyb29tSUQY",
+          "AiABKAQSDwoHc3JjX3VpZBgDIAEoDRIQCghwcmlvcml0eRgEIAEoDRIPCgdj",
+          "cFByb3RvGAUgASgMEhEKCXRpbWVTdGFtcBgGIAEoBBIQCghmcmFtZUlkeBgH",
+          "IAEoDSKaAQoRR1NGcmFtZVN5bmNOb3RpZnkSDgoGZ2FtZUlEGAEgASgNEg4K",
+          "BnJvb21JRBgCIAEoBBIQCghwcmlvcml0eRgDIAEoDRIPCgdsYXN0SWR4GAQg",
+          "ASgNEg8KB25leHRJZHgYBSABKA0SDwoHc3RhcnRUUxgGIAEoBBINCgVlbmRU",
+          "UxgHIAEoBBIRCgl0aW1lU3RhbXAYCCABKAQq3AMKDEhvdGVsR3NDbWRJRBIN",
+          "CglIb3RlbE5vbmUQABIXChJIb3RlbENyZWF0ZUNvbm5lY3QQ3QsSGgoVSG90",
+          "ZWxDcmVhdGVDb25uZWN0QWNrEN4LEhgKE0hvdGVsQnJvYWRjYXN0Q01ESUQQ",
+          "3wsSGwoWSG90ZWxCcm9hZGNhc3RBY2tDTURJRBDgCxITCg5Ib3RlbFB1c2hD",
+          "TURJRBDhCxIVChBIb3RlbENsb3NlQ29ubmV0EOILEhgKE0hvdGVsQ2xvc2VD",
+          "b25uZXRBY2sQ4wsSFwoSSG90ZWxQbGF5ZXJDaGVja2luEMEMEhoKFUhvdGVs",
+          "UGxheWVyQ2hlY2tpbkFjaxDCDBIcChdHU1NldEZyYW1lU3luY1JhdGVDTURJ",
+          "RBDDDBIfChpHU1NldEZyYW1lU3luY1JhdGVBY2tDTURJRBDEDBIiCh1HU1Nl",
+          "dEZyYW1lU3luY1JhdGVOb3RpZnlDTURJRBDGDBIaChVHU0ZyYW1lQnJvYWRj",
+          "YXN0Q01ESUQQxwwSHQoYR1NGcmFtZUJyb2FkY2FzdEFja0NNRElEEMgMEhsK",
+          "FkdTRnJhbWVEYXRhTm90aWZ5Q01ESUQQygwSGwoWR1NGcmFtZVN5bmNOb3Rp",
+          "ZnlDTURJRBDMDCpXCgtQdXNoTXNnVHlwZRIMCghOb25lVHlwZRAAEhQKEFVz",
+          "ZXJUeXBlU3BlY2lmaWMQARITCg9Vc2VyVHlwZUV4Y2x1ZGUQAhIPCgtVc2Vy",
+          "VHlwZUFsbBADYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HotelGsCmdID), typeof(global::PushMsgType), }, new pbr::GeneratedClrTypeInfo[] {
@@ -53,7 +75,14 @@ public static partial class GshotelReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::HotelBroadcastAck), global::HotelBroadcastAck.Parser, new[]{ "UserID", "Status" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::PushToHotelMsg), global::PushToHotelMsg.Parser, new[]{ "PushType", "GameID", "RoomID", "DstUids", "CpProto" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::PlayerCheckin), global::PlayerCheckin.Parser, new[]{ "UserID", "GameID", "RoomID", "MaxPlayers", "Checkins", "Players" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::PlayerCheckinAck), global::PlayerCheckinAck.Parser, new[]{ "Status" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::PlayerCheckinAck), global::PlayerCheckinAck.Parser, new[]{ "Status" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSSetFrameSyncRate), global::GSSetFrameSyncRate.Parser, new[]{ "GameID", "RoomID", "Priority", "FrameRate", "FrameIdx", "EnableGS" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSSetFrameSyncRateAck), global::GSSetFrameSyncRateAck.Parser, new[]{ "Status" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSSetFrameSyncRateNotify), global::GSSetFrameSyncRateNotify.Parser, new[]{ "GameID", "RoomID", "Priority", "FrameRate", "FrameIdx", "TimeStamp", "EnableGS" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameBroadcast), global::GSFrameBroadcast.Parser, new[]{ "GameID", "RoomID", "Priority", "CpProto", "Operation" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameBroadcastAck), global::GSFrameBroadcastAck.Parser, new[]{ "Status" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameDataNotify), global::GSFrameDataNotify.Parser, new[]{ "GameID", "RoomID", "SrcUid", "Priority", "CpProto", "TimeStamp", "FrameIdx" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameSyncNotify), global::GSFrameSyncNotify.Parser, new[]{ "GameID", "RoomID", "Priority", "LastIdx", "NextIdx", "StartTS", "EndTS", "TimeStamp" }, null, null, null)
         }));
   }
   #endregion
@@ -86,6 +115,28 @@ public enum HotelGsCmdID {
   /// </summary>
   [pbr::OriginalName("HotelPlayerCheckin")] HotelPlayerCheckin = 1601,
   [pbr::OriginalName("HotelPlayerCheckinAck")] HotelPlayerCheckinAck = 1602,
+  /// <summary>
+  /// 设置帧率
+  /// </summary>
+  [pbr::OriginalName("GSSetFrameSyncRateCMDID")] GssetFrameSyncRateCmdid = 1603,
+  [pbr::OriginalName("GSSetFrameSyncRateAckCMDID")] GssetFrameSyncRateAckCmdid = 1604,
+  /// <summary>
+  /// 设置帧率通知
+  /// </summary>
+  [pbr::OriginalName("GSSetFrameSyncRateNotifyCMDID")] GssetFrameSyncRateNotifyCmdid = 1606,
+  /// <summary>
+  /// 发送帧数据
+  /// </summary>
+  [pbr::OriginalName("GSFrameBroadcastCMDID")] GsframeBroadcastCmdid = 1607,
+  [pbr::OriginalName("GSFrameBroadcastAckCMDID")] GsframeBroadcastAckCmdid = 1608,
+  /// <summary>
+  /// 帧数据通知
+  /// </summary>
+  [pbr::OriginalName("GSFrameDataNotifyCMDID")] GsframeDataNotifyCmdid = 1610,
+  /// <summary>
+  /// 帧同步通知
+  /// </summary>
+  [pbr::OriginalName("GSFrameSyncNotifyCMDID")] GsframeSyncNotifyCmdid = 1612,
 }
 
 /// <summary>
@@ -1645,6 +1696,1666 @@ public sealed partial class PlayerCheckinAck : pb::IMessage<PlayerCheckinAck> {
           break;
         case 8: {
           Status = input.ReadUInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate> {
+  private static readonly pb::MessageParser<GSSetFrameSyncRate> _parser = new pb::MessageParser<GSSetFrameSyncRate>(() => new GSSetFrameSyncRate());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSSetFrameSyncRate> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[9]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRate() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRate(GSSetFrameSyncRate other) : this() {
+    gameID_ = other.gameID_;
+    roomID_ = other.roomID_;
+    priority_ = other.priority_;
+    frameRate_ = other.frameRate_;
+    frameIdx_ = other.frameIdx_;
+    enableGS_ = other.enableGS_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRate Clone() {
+    return new GSSetFrameSyncRate(this);
+  }
+
+  /// <summary>Field number for the "gameID" field.</summary>
+  public const int GameIDFieldNumber = 1;
+  private uint gameID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint GameID {
+    get { return gameID_; }
+    set {
+      gameID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "roomID" field.</summary>
+  public const int RoomIDFieldNumber = 2;
+  private ulong roomID_;
+  /// <summary>
+  /// 房间ID
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong RoomID {
+    get { return roomID_; }
+    set {
+      roomID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "priority" field.</summary>
+  public const int PriorityFieldNumber = 3;
+  private uint priority_;
+  /// <summary>
+  /// 要设置的通道的优先级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Priority {
+    get { return priority_; }
+    set {
+      priority_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "frameRate" field.</summary>
+  public const int FrameRateFieldNumber = 4;
+  private uint frameRate_;
+  /// <summary>
+  /// 同步帧率(0-20,且能被1000整除)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint FrameRate {
+    get { return frameRate_; }
+    set {
+      frameRate_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "frameIdx" field.</summary>
+  public const int FrameIdxFieldNumber = 5;
+  private uint frameIdx_;
+  /// <summary>
+  /// 初始帧编号(frameRate > 0 时有效),frameIdx 需 > 0
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint FrameIdx {
+    get { return frameIdx_; }
+    set {
+      frameIdx_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "enableGS" field.</summary>
+  public const int EnableGSFieldNumber = 6;
+  private uint enableGS_;
+  /// <summary>
+  /// GameServer是否参与帧同步（0：不参与；1：参与）
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint EnableGS {
+    get { return enableGS_; }
+    set {
+      enableGS_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSSetFrameSyncRate);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSSetFrameSyncRate other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (GameID != other.GameID) return false;
+    if (RoomID != other.RoomID) return false;
+    if (Priority != other.Priority) return false;
+    if (FrameRate != other.FrameRate) return false;
+    if (FrameIdx != other.FrameIdx) return false;
+    if (EnableGS != other.EnableGS) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (GameID != 0) hash ^= GameID.GetHashCode();
+    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+    if (Priority != 0) hash ^= Priority.GetHashCode();
+    if (FrameRate != 0) hash ^= FrameRate.GetHashCode();
+    if (FrameIdx != 0) hash ^= FrameIdx.GetHashCode();
+    if (EnableGS != 0) hash ^= EnableGS.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (GameID != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(GameID);
+    }
+    if (RoomID != 0UL) {
+      output.WriteRawTag(16);
+      output.WriteUInt64(RoomID);
+    }
+    if (Priority != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(Priority);
+    }
+    if (FrameRate != 0) {
+      output.WriteRawTag(32);
+      output.WriteUInt32(FrameRate);
+    }
+    if (FrameIdx != 0) {
+      output.WriteRawTag(40);
+      output.WriteUInt32(FrameIdx);
+    }
+    if (EnableGS != 0) {
+      output.WriteRawTag(48);
+      output.WriteUInt32(EnableGS);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (GameID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+    }
+    if (RoomID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+    }
+    if (Priority != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
+    }
+    if (FrameRate != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FrameRate);
+    }
+    if (FrameIdx != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FrameIdx);
+    }
+    if (EnableGS != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EnableGS);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSSetFrameSyncRate other) {
+    if (other == null) {
+      return;
+    }
+    if (other.GameID != 0) {
+      GameID = other.GameID;
+    }
+    if (other.RoomID != 0UL) {
+      RoomID = other.RoomID;
+    }
+    if (other.Priority != 0) {
+      Priority = other.Priority;
+    }
+    if (other.FrameRate != 0) {
+      FrameRate = other.FrameRate;
+    }
+    if (other.FrameIdx != 0) {
+      FrameIdx = other.FrameIdx;
+    }
+    if (other.EnableGS != 0) {
+      EnableGS = other.EnableGS;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          GameID = input.ReadUInt32();
+          break;
+        }
+        case 16: {
+          RoomID = input.ReadUInt64();
+          break;
+        }
+        case 24: {
+          Priority = input.ReadUInt32();
+          break;
+        }
+        case 32: {
+          FrameRate = input.ReadUInt32();
+          break;
+        }
+        case 40: {
+          FrameIdx = input.ReadUInt32();
+          break;
+        }
+        case 48: {
+          EnableGS = input.ReadUInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class GSSetFrameSyncRateAck : pb::IMessage<GSSetFrameSyncRateAck> {
+  private static readonly pb::MessageParser<GSSetFrameSyncRateAck> _parser = new pb::MessageParser<GSSetFrameSyncRateAck>(() => new GSSetFrameSyncRateAck());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSSetFrameSyncRateAck> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[10]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRateAck() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRateAck(GSSetFrameSyncRateAck other) : this() {
+    status_ = other.status_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRateAck Clone() {
+    return new GSSetFrameSyncRateAck(this);
+  }
+
+  /// <summary>Field number for the "status" field.</summary>
+  public const int StatusFieldNumber = 1;
+  private uint status_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Status {
+    get { return status_; }
+    set {
+      status_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSSetFrameSyncRateAck);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSSetFrameSyncRateAck other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Status != other.Status) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Status != 0) hash ^= Status.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (Status != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(Status);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Status != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Status);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSSetFrameSyncRateAck other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Status != 0) {
+      Status = other.Status;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          Status = input.ReadUInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSyncRateNotify> {
+  private static readonly pb::MessageParser<GSSetFrameSyncRateNotify> _parser = new pb::MessageParser<GSSetFrameSyncRateNotify>(() => new GSSetFrameSyncRateNotify());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSSetFrameSyncRateNotify> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[11]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRateNotify() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRateNotify(GSSetFrameSyncRateNotify other) : this() {
+    gameID_ = other.gameID_;
+    roomID_ = other.roomID_;
+    priority_ = other.priority_;
+    frameRate_ = other.frameRate_;
+    frameIdx_ = other.frameIdx_;
+    timeStamp_ = other.timeStamp_;
+    enableGS_ = other.enableGS_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSSetFrameSyncRateNotify Clone() {
+    return new GSSetFrameSyncRateNotify(this);
+  }
+
+  /// <summary>Field number for the "gameID" field.</summary>
+  public const int GameIDFieldNumber = 1;
+  private uint gameID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint GameID {
+    get { return gameID_; }
+    set {
+      gameID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "roomID" field.</summary>
+  public const int RoomIDFieldNumber = 2;
+  private ulong roomID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong RoomID {
+    get { return roomID_; }
+    set {
+      roomID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "priority" field.</summary>
+  public const int PriorityFieldNumber = 3;
+  private uint priority_;
+  /// <summary>
+  /// 要设置的通道的优先级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Priority {
+    get { return priority_; }
+    set {
+      priority_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "frameRate" field.</summary>
+  public const int FrameRateFieldNumber = 4;
+  private uint frameRate_;
+  /// <summary>
+  /// 同步帧率
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint FrameRate {
+    get { return frameRate_; }
+    set {
+      frameRate_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "frameIdx" field.</summary>
+  public const int FrameIdxFieldNumber = 5;
+  private uint frameIdx_;
+  /// <summary>
+  /// 初始帧编号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint FrameIdx {
+    get { return frameIdx_; }
+    set {
+      frameIdx_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "timeStamp" field.</summary>
+  public const int TimeStampFieldNumber = 6;
+  private ulong timeStamp_;
+  /// <summary>
+  /// 系统时间戳
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong TimeStamp {
+    get { return timeStamp_; }
+    set {
+      timeStamp_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "enableGS" field.</summary>
+  public const int EnableGSFieldNumber = 7;
+  private uint enableGS_;
+  /// <summary>
+  /// GameServer是否参与帧同步（0：不参与；1：参与）
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint EnableGS {
+    get { return enableGS_; }
+    set {
+      enableGS_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSSetFrameSyncRateNotify);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSSetFrameSyncRateNotify other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (GameID != other.GameID) return false;
+    if (RoomID != other.RoomID) return false;
+    if (Priority != other.Priority) return false;
+    if (FrameRate != other.FrameRate) return false;
+    if (FrameIdx != other.FrameIdx) return false;
+    if (TimeStamp != other.TimeStamp) return false;
+    if (EnableGS != other.EnableGS) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (GameID != 0) hash ^= GameID.GetHashCode();
+    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+    if (Priority != 0) hash ^= Priority.GetHashCode();
+    if (FrameRate != 0) hash ^= FrameRate.GetHashCode();
+    if (FrameIdx != 0) hash ^= FrameIdx.GetHashCode();
+    if (TimeStamp != 0UL) hash ^= TimeStamp.GetHashCode();
+    if (EnableGS != 0) hash ^= EnableGS.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (GameID != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(GameID);
+    }
+    if (RoomID != 0UL) {
+      output.WriteRawTag(16);
+      output.WriteUInt64(RoomID);
+    }
+    if (Priority != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(Priority);
+    }
+    if (FrameRate != 0) {
+      output.WriteRawTag(32);
+      output.WriteUInt32(FrameRate);
+    }
+    if (FrameIdx != 0) {
+      output.WriteRawTag(40);
+      output.WriteUInt32(FrameIdx);
+    }
+    if (TimeStamp != 0UL) {
+      output.WriteRawTag(48);
+      output.WriteUInt64(TimeStamp);
+    }
+    if (EnableGS != 0) {
+      output.WriteRawTag(56);
+      output.WriteUInt32(EnableGS);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (GameID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+    }
+    if (RoomID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+    }
+    if (Priority != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
+    }
+    if (FrameRate != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FrameRate);
+    }
+    if (FrameIdx != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FrameIdx);
+    }
+    if (TimeStamp != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(TimeStamp);
+    }
+    if (EnableGS != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EnableGS);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSSetFrameSyncRateNotify other) {
+    if (other == null) {
+      return;
+    }
+    if (other.GameID != 0) {
+      GameID = other.GameID;
+    }
+    if (other.RoomID != 0UL) {
+      RoomID = other.RoomID;
+    }
+    if (other.Priority != 0) {
+      Priority = other.Priority;
+    }
+    if (other.FrameRate != 0) {
+      FrameRate = other.FrameRate;
+    }
+    if (other.FrameIdx != 0) {
+      FrameIdx = other.FrameIdx;
+    }
+    if (other.TimeStamp != 0UL) {
+      TimeStamp = other.TimeStamp;
+    }
+    if (other.EnableGS != 0) {
+      EnableGS = other.EnableGS;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          GameID = input.ReadUInt32();
+          break;
+        }
+        case 16: {
+          RoomID = input.ReadUInt64();
+          break;
+        }
+        case 24: {
+          Priority = input.ReadUInt32();
+          break;
+        }
+        case 32: {
+          FrameRate = input.ReadUInt32();
+          break;
+        }
+        case 40: {
+          FrameIdx = input.ReadUInt32();
+          break;
+        }
+        case 48: {
+          TimeStamp = input.ReadUInt64();
+          break;
+        }
+        case 56: {
+          EnableGS = input.ReadUInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class GSFrameBroadcast : pb::IMessage<GSFrameBroadcast> {
+  private static readonly pb::MessageParser<GSFrameBroadcast> _parser = new pb::MessageParser<GSFrameBroadcast>(() => new GSFrameBroadcast());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSFrameBroadcast> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[12]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameBroadcast() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameBroadcast(GSFrameBroadcast other) : this() {
+    gameID_ = other.gameID_;
+    roomID_ = other.roomID_;
+    priority_ = other.priority_;
+    cpProto_ = other.cpProto_;
+    operation_ = other.operation_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameBroadcast Clone() {
+    return new GSFrameBroadcast(this);
+  }
+
+  /// <summary>Field number for the "gameID" field.</summary>
+  public const int GameIDFieldNumber = 1;
+  private uint gameID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint GameID {
+    get { return gameID_; }
+    set {
+      gameID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "roomID" field.</summary>
+  public const int RoomIDFieldNumber = 2;
+  private ulong roomID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong RoomID {
+    get { return roomID_; }
+    set {
+      roomID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "priority" field.</summary>
+  public const int PriorityFieldNumber = 3;
+  private uint priority_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Priority {
+    get { return priority_; }
+    set {
+      priority_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "cpProto" field.</summary>
+  public const int CpProtoFieldNumber = 4;
+  private pb::ByteString cpProto_ = pb::ByteString.Empty;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pb::ByteString CpProto {
+    get { return cpProto_; }
+    set {
+      cpProto_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "operation" field.</summary>
+  public const int OperationFieldNumber = 5;
+  private int operation_;
+  /// <summary>
+  /// 0：只发客户端；1：只发GS；2：同时发送客户端和GS
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Operation {
+    get { return operation_; }
+    set {
+      operation_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSFrameBroadcast);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSFrameBroadcast other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (GameID != other.GameID) return false;
+    if (RoomID != other.RoomID) return false;
+    if (Priority != other.Priority) return false;
+    if (CpProto != other.CpProto) return false;
+    if (Operation != other.Operation) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (GameID != 0) hash ^= GameID.GetHashCode();
+    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+    if (Priority != 0) hash ^= Priority.GetHashCode();
+    if (CpProto.Length != 0) hash ^= CpProto.GetHashCode();
+    if (Operation != 0) hash ^= Operation.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (GameID != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(GameID);
+    }
+    if (RoomID != 0UL) {
+      output.WriteRawTag(16);
+      output.WriteUInt64(RoomID);
+    }
+    if (Priority != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(Priority);
+    }
+    if (CpProto.Length != 0) {
+      output.WriteRawTag(34);
+      output.WriteBytes(CpProto);
+    }
+    if (Operation != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(Operation);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (GameID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+    }
+    if (RoomID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+    }
+    if (Priority != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
+    }
+    if (CpProto.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeBytesSize(CpProto);
+    }
+    if (Operation != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Operation);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSFrameBroadcast other) {
+    if (other == null) {
+      return;
+    }
+    if (other.GameID != 0) {
+      GameID = other.GameID;
+    }
+    if (other.RoomID != 0UL) {
+      RoomID = other.RoomID;
+    }
+    if (other.Priority != 0) {
+      Priority = other.Priority;
+    }
+    if (other.CpProto.Length != 0) {
+      CpProto = other.CpProto;
+    }
+    if (other.Operation != 0) {
+      Operation = other.Operation;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          GameID = input.ReadUInt32();
+          break;
+        }
+        case 16: {
+          RoomID = input.ReadUInt64();
+          break;
+        }
+        case 24: {
+          Priority = input.ReadUInt32();
+          break;
+        }
+        case 34: {
+          CpProto = input.ReadBytes();
+          break;
+        }
+        case 40: {
+          Operation = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class GSFrameBroadcastAck : pb::IMessage<GSFrameBroadcastAck> {
+  private static readonly pb::MessageParser<GSFrameBroadcastAck> _parser = new pb::MessageParser<GSFrameBroadcastAck>(() => new GSFrameBroadcastAck());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSFrameBroadcastAck> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[13]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameBroadcastAck() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameBroadcastAck(GSFrameBroadcastAck other) : this() {
+    status_ = other.status_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameBroadcastAck Clone() {
+    return new GSFrameBroadcastAck(this);
+  }
+
+  /// <summary>Field number for the "status" field.</summary>
+  public const int StatusFieldNumber = 1;
+  private uint status_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Status {
+    get { return status_; }
+    set {
+      status_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSFrameBroadcastAck);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSFrameBroadcastAck other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Status != other.Status) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Status != 0) hash ^= Status.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (Status != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(Status);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Status != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Status);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSFrameBroadcastAck other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Status != 0) {
+      Status = other.Status;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          Status = input.ReadUInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class GSFrameDataNotify : pb::IMessage<GSFrameDataNotify> {
+  private static readonly pb::MessageParser<GSFrameDataNotify> _parser = new pb::MessageParser<GSFrameDataNotify>(() => new GSFrameDataNotify());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSFrameDataNotify> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[14]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameDataNotify() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameDataNotify(GSFrameDataNotify other) : this() {
+    gameID_ = other.gameID_;
+    roomID_ = other.roomID_;
+    srcUid_ = other.srcUid_;
+    priority_ = other.priority_;
+    cpProto_ = other.cpProto_;
+    timeStamp_ = other.timeStamp_;
+    frameIdx_ = other.frameIdx_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameDataNotify Clone() {
+    return new GSFrameDataNotify(this);
+  }
+
+  /// <summary>Field number for the "gameID" field.</summary>
+  public const int GameIDFieldNumber = 1;
+  private uint gameID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint GameID {
+    get { return gameID_; }
+    set {
+      gameID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "roomID" field.</summary>
+  public const int RoomIDFieldNumber = 2;
+  private ulong roomID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong RoomID {
+    get { return roomID_; }
+    set {
+      roomID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "src_uid" field.</summary>
+  public const int SrcUidFieldNumber = 3;
+  private uint srcUid_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint SrcUid {
+    get { return srcUid_; }
+    set {
+      srcUid_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "priority" field.</summary>
+  public const int PriorityFieldNumber = 4;
+  private uint priority_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Priority {
+    get { return priority_; }
+    set {
+      priority_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "cpProto" field.</summary>
+  public const int CpProtoFieldNumber = 5;
+  private pb::ByteString cpProto_ = pb::ByteString.Empty;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pb::ByteString CpProto {
+    get { return cpProto_; }
+    set {
+      cpProto_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "timeStamp" field.</summary>
+  public const int TimeStampFieldNumber = 6;
+  private ulong timeStamp_;
+  /// <summary>
+  /// 帧数据时间戳
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong TimeStamp {
+    get { return timeStamp_; }
+    set {
+      timeStamp_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "frameIdx" field.</summary>
+  public const int FrameIdxFieldNumber = 7;
+  private uint frameIdx_;
+  /// <summary>
+  /// 帧编号-帧同步时有效(>0)
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint FrameIdx {
+    get { return frameIdx_; }
+    set {
+      frameIdx_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSFrameDataNotify);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSFrameDataNotify other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (GameID != other.GameID) return false;
+    if (RoomID != other.RoomID) return false;
+    if (SrcUid != other.SrcUid) return false;
+    if (Priority != other.Priority) return false;
+    if (CpProto != other.CpProto) return false;
+    if (TimeStamp != other.TimeStamp) return false;
+    if (FrameIdx != other.FrameIdx) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (GameID != 0) hash ^= GameID.GetHashCode();
+    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+    if (SrcUid != 0) hash ^= SrcUid.GetHashCode();
+    if (Priority != 0) hash ^= Priority.GetHashCode();
+    if (CpProto.Length != 0) hash ^= CpProto.GetHashCode();
+    if (TimeStamp != 0UL) hash ^= TimeStamp.GetHashCode();
+    if (FrameIdx != 0) hash ^= FrameIdx.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (GameID != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(GameID);
+    }
+    if (RoomID != 0UL) {
+      output.WriteRawTag(16);
+      output.WriteUInt64(RoomID);
+    }
+    if (SrcUid != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(SrcUid);
+    }
+    if (Priority != 0) {
+      output.WriteRawTag(32);
+      output.WriteUInt32(Priority);
+    }
+    if (CpProto.Length != 0) {
+      output.WriteRawTag(42);
+      output.WriteBytes(CpProto);
+    }
+    if (TimeStamp != 0UL) {
+      output.WriteRawTag(48);
+      output.WriteUInt64(TimeStamp);
+    }
+    if (FrameIdx != 0) {
+      output.WriteRawTag(56);
+      output.WriteUInt32(FrameIdx);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (GameID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+    }
+    if (RoomID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+    }
+    if (SrcUid != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(SrcUid);
+    }
+    if (Priority != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
+    }
+    if (CpProto.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeBytesSize(CpProto);
+    }
+    if (TimeStamp != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(TimeStamp);
+    }
+    if (FrameIdx != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FrameIdx);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSFrameDataNotify other) {
+    if (other == null) {
+      return;
+    }
+    if (other.GameID != 0) {
+      GameID = other.GameID;
+    }
+    if (other.RoomID != 0UL) {
+      RoomID = other.RoomID;
+    }
+    if (other.SrcUid != 0) {
+      SrcUid = other.SrcUid;
+    }
+    if (other.Priority != 0) {
+      Priority = other.Priority;
+    }
+    if (other.CpProto.Length != 0) {
+      CpProto = other.CpProto;
+    }
+    if (other.TimeStamp != 0UL) {
+      TimeStamp = other.TimeStamp;
+    }
+    if (other.FrameIdx != 0) {
+      FrameIdx = other.FrameIdx;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          GameID = input.ReadUInt32();
+          break;
+        }
+        case 16: {
+          RoomID = input.ReadUInt64();
+          break;
+        }
+        case 24: {
+          SrcUid = input.ReadUInt32();
+          break;
+        }
+        case 32: {
+          Priority = input.ReadUInt32();
+          break;
+        }
+        case 42: {
+          CpProto = input.ReadBytes();
+          break;
+        }
+        case 48: {
+          TimeStamp = input.ReadUInt64();
+          break;
+        }
+        case 56: {
+          FrameIdx = input.ReadUInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class GSFrameSyncNotify : pb::IMessage<GSFrameSyncNotify> {
+  private static readonly pb::MessageParser<GSFrameSyncNotify> _parser = new pb::MessageParser<GSFrameSyncNotify>(() => new GSFrameSyncNotify());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSFrameSyncNotify> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[15]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameSyncNotify() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameSyncNotify(GSFrameSyncNotify other) : this() {
+    gameID_ = other.gameID_;
+    roomID_ = other.roomID_;
+    priority_ = other.priority_;
+    lastIdx_ = other.lastIdx_;
+    nextIdx_ = other.nextIdx_;
+    startTS_ = other.startTS_;
+    endTS_ = other.endTS_;
+    timeStamp_ = other.timeStamp_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSFrameSyncNotify Clone() {
+    return new GSFrameSyncNotify(this);
+  }
+
+  /// <summary>Field number for the "gameID" field.</summary>
+  public const int GameIDFieldNumber = 1;
+  private uint gameID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint GameID {
+    get { return gameID_; }
+    set {
+      gameID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "roomID" field.</summary>
+  public const int RoomIDFieldNumber = 2;
+  private ulong roomID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong RoomID {
+    get { return roomID_; }
+    set {
+      roomID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "priority" field.</summary>
+  public const int PriorityFieldNumber = 3;
+  private uint priority_;
+  /// <summary>
+  /// 要设置的通道的优先级
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Priority {
+    get { return priority_; }
+    set {
+      priority_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "lastIdx" field.</summary>
+  public const int LastIdxFieldNumber = 4;
+  private uint lastIdx_;
+  /// <summary>
+  /// 当前帧编号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint LastIdx {
+    get { return lastIdx_; }
+    set {
+      lastIdx_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "nextIdx" field.</summary>
+  public const int NextIdxFieldNumber = 5;
+  private uint nextIdx_;
+  /// <summary>
+  /// 下一帧编号
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint NextIdx {
+    get { return nextIdx_; }
+    set {
+      nextIdx_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "startTS" field.</summary>
+  public const int StartTSFieldNumber = 6;
+  private ulong startTS_;
+  /// <summary>
+  /// 本帧开始时间戳
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong StartTS {
+    get { return startTS_; }
+    set {
+      startTS_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "endTS" field.</summary>
+  public const int EndTSFieldNumber = 7;
+  private ulong endTS_;
+  /// <summary>
+  /// 本帧结束时间戳
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong EndTS {
+    get { return endTS_; }
+    set {
+      endTS_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "timeStamp" field.</summary>
+  public const int TimeStampFieldNumber = 8;
+  private ulong timeStamp_;
+  /// <summary>
+  /// 系统时间戳
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong TimeStamp {
+    get { return timeStamp_; }
+    set {
+      timeStamp_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSFrameSyncNotify);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSFrameSyncNotify other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (GameID != other.GameID) return false;
+    if (RoomID != other.RoomID) return false;
+    if (Priority != other.Priority) return false;
+    if (LastIdx != other.LastIdx) return false;
+    if (NextIdx != other.NextIdx) return false;
+    if (StartTS != other.StartTS) return false;
+    if (EndTS != other.EndTS) return false;
+    if (TimeStamp != other.TimeStamp) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (GameID != 0) hash ^= GameID.GetHashCode();
+    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+    if (Priority != 0) hash ^= Priority.GetHashCode();
+    if (LastIdx != 0) hash ^= LastIdx.GetHashCode();
+    if (NextIdx != 0) hash ^= NextIdx.GetHashCode();
+    if (StartTS != 0UL) hash ^= StartTS.GetHashCode();
+    if (EndTS != 0UL) hash ^= EndTS.GetHashCode();
+    if (TimeStamp != 0UL) hash ^= TimeStamp.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (GameID != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(GameID);
+    }
+    if (RoomID != 0UL) {
+      output.WriteRawTag(16);
+      output.WriteUInt64(RoomID);
+    }
+    if (Priority != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(Priority);
+    }
+    if (LastIdx != 0) {
+      output.WriteRawTag(32);
+      output.WriteUInt32(LastIdx);
+    }
+    if (NextIdx != 0) {
+      output.WriteRawTag(40);
+      output.WriteUInt32(NextIdx);
+    }
+    if (StartTS != 0UL) {
+      output.WriteRawTag(48);
+      output.WriteUInt64(StartTS);
+    }
+    if (EndTS != 0UL) {
+      output.WriteRawTag(56);
+      output.WriteUInt64(EndTS);
+    }
+    if (TimeStamp != 0UL) {
+      output.WriteRawTag(64);
+      output.WriteUInt64(TimeStamp);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (GameID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+    }
+    if (RoomID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+    }
+    if (Priority != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Priority);
+    }
+    if (LastIdx != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(LastIdx);
+    }
+    if (NextIdx != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(NextIdx);
+    }
+    if (StartTS != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(StartTS);
+    }
+    if (EndTS != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(EndTS);
+    }
+    if (TimeStamp != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(TimeStamp);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSFrameSyncNotify other) {
+    if (other == null) {
+      return;
+    }
+    if (other.GameID != 0) {
+      GameID = other.GameID;
+    }
+    if (other.RoomID != 0UL) {
+      RoomID = other.RoomID;
+    }
+    if (other.Priority != 0) {
+      Priority = other.Priority;
+    }
+    if (other.LastIdx != 0) {
+      LastIdx = other.LastIdx;
+    }
+    if (other.NextIdx != 0) {
+      NextIdx = other.NextIdx;
+    }
+    if (other.StartTS != 0UL) {
+      StartTS = other.StartTS;
+    }
+    if (other.EndTS != 0UL) {
+      EndTS = other.EndTS;
+    }
+    if (other.TimeStamp != 0UL) {
+      TimeStamp = other.TimeStamp;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          GameID = input.ReadUInt32();
+          break;
+        }
+        case 16: {
+          RoomID = input.ReadUInt64();
+          break;
+        }
+        case 24: {
+          Priority = input.ReadUInt32();
+          break;
+        }
+        case 32: {
+          LastIdx = input.ReadUInt32();
+          break;
+        }
+        case 40: {
+          NextIdx = input.ReadUInt32();
+          break;
+        }
+        case 48: {
+          StartTS = input.ReadUInt64();
+          break;
+        }
+        case 56: {
+          EndTS = input.ReadUInt64();
+          break;
+        }
+        case 64: {
+          TimeStamp = input.ReadUInt64();
           break;
         }
       }

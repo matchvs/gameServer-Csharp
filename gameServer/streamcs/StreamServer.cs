@@ -151,7 +151,7 @@ public class StreamServer : CSStream.CSStreamBase
         }
         catch (RpcException e)
         {
-            Logger.Info("e:", e);
+            Logger.Info("catch exception: {0}", e);
         }
 
         Logger.Info("requestTask over!");
@@ -164,8 +164,14 @@ public class StreamServer : CSStream.CSStreamBase
     /// <returns></returns>
     public async Task PushToMvs(Package.Types.Frame package)
     {
-        Logger.Debug("PushToMvs");
-        await this.responseStream.WriteAsync(package);
+        try
+        {
+            await this.responseStream.WriteAsync(package);
+        }
+        catch (RpcException e)
+        {
+            Logger.Warn("Push to mvs err: {0}", e.Status);
+        }
     }
     /// <summary>
     /// 推送给指定的hotel
@@ -175,14 +181,17 @@ public class StreamServer : CSStream.CSStreamBase
     /// <returns></returns>
     public async Task PushToHotel(UInt64 roomID, Package.Types.Frame package)
     {
-        if (hotelMap.TryGetValue(roomID, out IServerStreamWriter<Package.Types.Frame> response))
+        try
         {
-            Logger.Debug("PushToHotel roomID={0}", roomID);
-            await response.WriteAsync(package);
-            return;
+            if (hotelMap.TryGetValue(roomID, out IServerStreamWriter<Package.Types.Frame> response))
+            {
+                await response.WriteAsync(package);
+            }
         }
-
-        Logger.Warn("PushToHotel failed, roomID={0}", roomID);
+        catch (RpcException e)
+        {
+            Logger.Warn("Push to hotel err: {0}", e.Status);
+        }
     }
     /// <summary>
     /// 删除hotel的stream映射关系

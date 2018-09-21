@@ -23,6 +23,7 @@ public class GameServer : BaseServer
     private BaseHandler msgHandler;
     private List<UInt32> connections = new List<UInt32>();
     private StreamServer serverImp;
+    private Dictionary<UInt64, Dictionary<UInt32, FrameData>> roomFrames;
 
     public Gsconfig ConfData
     {
@@ -33,7 +34,12 @@ public class GameServer : BaseServer
     {
         ConfData = JsonUtils.DecodeCps(filePath);
         Logger.SetLevel(ConfData.LogLevel);
-
+        if (ConfData.RegConf.Enable)
+        {
+            var reg = new Register(ConfData.RegConf);
+            reg.Run();
+        }
+        roomFrames = new Dictionary<UInt64, Dictionary<UInt32, FrameData>>();
     }
     public void Bind(BaseHandler msgHandler)
     {
@@ -85,6 +91,18 @@ public class GameServer : BaseServer
         else if (req.CmdId == (UInt32)HotelGsCmdID.HotelPlayerCheckin)
         {
             reply = msgHandler.OnHotelCheckin(req.Message);
+        }
+        else if (req.CmdId == (UInt32)HotelGsCmdID.GssetFrameSyncRateNotifyCmdid)
+        {
+            reply = SetFrameSyncRateNotify(req.Message);
+        }
+        else if (req.CmdId == (UInt32)HotelGsCmdID.GsframeDataNotifyCmdid)
+        {
+            reply = FrameDataNotify(req.Message);
+        }
+        else if (req.CmdId == (UInt32)HotelGsCmdID.GsframeSyncNotifyCmdid)
+        {
+            reply = FrameSyncNotify(req.Message);
         }
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsJoinRoomReq)
         {
@@ -175,6 +193,93 @@ public class GameServer : BaseServer
     /// <param name="roomID"></param>
     public override void DeleteStreamMap(UInt64 roomID)
     {
+        roomFrames.Remove(roomID);
         serverImp.DeleteStreamMap(roomID);
+    }
+
+    private IMessage SetFrameSyncRateNotify(ByteString message)
+    {
+        GSSetFrameSyncRateNotify request = new GSSetFrameSyncRateNotify();
+        ByteUtils.ByteStringToObject(request, message);
+        GSSetFrameSyncRateAck reply = new GSSetFrameSyncRateAck() 
+        {
+            Status = (UInt32)ErrorCode.Ok   
+        };
+        
+        msgHandler.OnHotelSetFrameSyncRate(new FrameSyncRate()
+        {
+            GameID = request.GameID,
+            RoomID = request.RoomID,
+            FrameRate = request.FrameRate,
+            FrameIndex = request.FrameIdx,
+            Timestamp = request.TimeStamp,
+            EnableGS = request.EnableGS,
+        });
+
+        return reply;
+    }
+
+    private IMessage FrameDataNotify(ByteString message)
+    {
+        GSFrameDataNotify request = new GSFrameDataNotify();
+        ByteUtils.ByteStringToObject(request, message);
+        GSFrameBroadcastAck reply = new GSFrameBroadcastAck()
+        {
+            Status = (UInt32)ErrorCode.Ok
+        };
+
+        Dictionary<UInt32, FrameData> roomFrame;
+        if (!roomFrames.TryGetValue(request.RoomID, out roomFrame))
+        {
+            roomFrame = new Dictionary<UInt32, FrameData>();
+            roomFrames[request.RoomID] = roomFrame;
+        }
+
+        FrameData frame;
+        if (!roomFrame.TryGetValue(request.FrameIdx, out frame))
+        {
+            frame = new FrameData()
+            {
+                GameID = request.GameID,
+                RoomID = request.RoomID,
+                FrameIndex = request.FrameIdx,
+                FrameItems = new List<FrameItem>(),
+            };
+            roomFrame[request.FrameIdx] = frame;
+        }
+
+        FrameItem item = new FrameItem()
+        {
+            SrcUserID = request.SrcUid,
+            CpProto = request.CpProto,
+            Timestamp = request.TimeStamp,
+        };
+
+        frame.FrameItems.Add(item);
+
+        return reply;
+    }
+
+    private IMessage FrameSyncNotify(ByteString message)
+    {
+        GSFrameSyncNotify request = new GSFrameSyncNotify();
+        ByteUtils.ByteStringToObject(request, message);
+        GSFrameBroadcastAck reply = new GSFrameBroadcastAck()
+        {
+            Status = (UInt32)ErrorCode.Ok
+        };
+
+        Dictionary<UInt32, FrameData> roomFrame;
+        if (roomFrames.TryGetValue(request.RoomID, out roomFrame))
+        {
+            FrameData frame;
+            if (roomFrame.Remove(request.LastIdx, out frame))
+            {
+                frame.FrameWaitCount = roomFrame.Count;
+                msgHandler.OnHotelFrameUpdate(frame);
+            }
+        }
+
+        return reply;
     }
 }

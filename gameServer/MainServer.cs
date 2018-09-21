@@ -23,15 +23,17 @@ class MainServer
         Logger.Init();
         Logger.Info("game service start...");
 
-        GameServer gameServer = new GameServer();
-        string conPath = System.AppDomain.CurrentDomain.BaseDirectory;
-        gameServer.Init(System.IO.Path.Combine(conPath, "conf/gs.json"));
+        string confPath = System.AppDomain.CurrentDomain.BaseDirectory;
+        string confFile = System.IO.Path.Combine(confPath, "conf/gs.json");
 
-        FightHandler fight = new FightHandler(gameServer);
+        GameServer gameServer = new GameServer();
+        gameServer.Init(confFile);
+        RoomManager roomManager = new RoomManager(confFile);
+        FightHandler fight = new FightHandler(gameServer, roomManager);
         gameServer.Bind(fight);
 
         int pid = System.Diagnostics.Process.GetCurrentProcess().Id;
-        File.WriteAllText(System.IO.Path.Combine(conPath, "gameServer.dll_pid"), pid.ToString());
+        File.WriteAllText(System.IO.Path.Combine(confPath, "gameServer.dll_pid"), pid.ToString());
 
         Logger.Info("game service run...");
         gameServer.Run();

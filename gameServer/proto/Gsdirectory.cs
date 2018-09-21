@@ -28,18 +28,44 @@ namespace Stream {
             "dGF0dXMYASABKA0iGwoLR1NIZWFydGJlYXQSDAoEbG9hZBgBIAEoDSIgCg5H",
             "U0hlYXJ0YmVhdEFjaxIOCgZzdGF0dXMYASABKA0iPAoIR1NMb2dvdXQSDgoG",
             "Z2FtZUlEGAEgASgNEg8KB3N2Y05hbWUYAiABKAkSDwoHcG9kTmFtZRgDIAEo",
-            "CSIdCgtHU0xvZ291dEFjaxIOCgZzdGF0dXMYASABKA0qXAoQR1NEaXJlY3Rv",
-            "cnlDbWRJRBIQCgxJblZhbGlkR1NDbWQQABIPCgpHU0xvZ2luQ21kELkXEhMK",
-            "DkdTSGVhcnRiZWF0Q21kELsXEhAKC0dTTG9nb3V0Q21kEL0XYgZwcm90bzM="));
+            "CSIdCgtHU0xvZ291dEFjaxIOCgZzdGF0dXMYASABKA0ivgEKCFJvb21JbmZv",
+            "EhIKBnJvb21JRBgBIAEoBEICMAESEAoIcm9vbU5hbWUYAiABKAkSEQoJbWF4",
+            "UGxheWVyGAMgASgNEgwKBG1vZGUYBCABKAUSEAoIY2FuV2F0Y2gYBSABKAUS",
+            "EgoKdmlzaWJpbGl0eRgGIAEoBRIUCgxyb29tUHJvcGVydHkYByABKAwSDQoF",
+            "b3duZXIYCCABKA0SIAoFc3RhdGUYCSABKA4yES5zdHJlYW0uUm9vbVN0YXRl",
+            "InAKCkNyZWF0ZVJvb20SDwoHc3ZjTmFtZRgBIAEoCRIPCgdwb2ROYW1lGAIg",
+            "ASgJEg4KBmdhbWVJRBgDIAEoDRIjCglyb29tX2luZm8YBCABKAsyEC5zdHJl",
+            "YW0uUm9vbUluZm8SCwoDdHRsGAUgASgNIjMKDUNyZWF0ZVJvb21BY2sSDgoG",
+            "c3RhdHVzGAEgASgNEhIKBnJvb21JRBgCIAEoBEICMAEiXgoJVG91Y2hSb29t",
+            "Eg8KB3N2Y05hbWUYASABKAkSDwoHcG9kTmFtZRgCIAEoCRIOCgZnYW1lSUQY",
+            "AyABKA0SEgoGcm9vbUlEGAQgASgEQgIwARILCgN0dGwYBSABKA0iHgoMVG91",
+            "Y2hSb29tQWNrEg4KBnN0YXR1cxgBIAEoDSJTCgtEZXN0cm95Um9vbRIPCgdz",
+            "dmNOYW1lGAEgASgJEg8KB3BvZE5hbWUYAiABKAkSDgoGZ2FtZUlEGAMgASgN",
+            "EhIKBnJvb21JRBgEIAEoBEICMAEiIAoORGVzdHJveVJvb21BY2sSDgoGc3Rh",
+            "dHVzGAEgASgNKp4BChBHU0RpcmVjdG9yeUNtZElEEhAKDEluVmFsaWRHU0Nt",
+            "ZBAAEg8KCkdTTG9naW5DbWQQuRcSEwoOR1NIZWFydGJlYXRDbWQQuxcSEAoL",
+            "R1NMb2dvdXRDbWQQvRcSFAoPR1NDcmVhdGVSb29tQ21kEKEfEhMKDkdTVG91",
+            "Y2hSb29tQ21kEKMfEhUKEEdTRGVzdHJveVJvb21DbWQQpR8qYQoKQ3JlYXRl",
+            "RmxhZxIVChFDcmVhdGVSb29tVW5rbm93bhAAEhQKEENyZWF0ZVJvb21TeXN0",
+            "ZW0QARIUChBDcmVhdGVSb29tUGxheWVyEAISEAoMQ3JlYXRlUm9vbUdTEAMq",
+            "RQoJUm9vbVN0YXRlEhAKDFJvb21TdGF0ZU5pbBAAEhEKDVJvb21TdGF0ZU9w",
+            "ZW4QARITCg9Sb29tU3RhdGVDbG9zZWQQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Stream.GSDirectoryCmdID), }, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Stream.GSDirectoryCmdID), typeof(global::Stream.CreateFlag), typeof(global::Stream.RoomState), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLogin), global::Stream.GSLogin.Parser, new[]{ "GameID", "SvcName", "PodName", "Host", "Port" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLoginAck), global::Stream.GSLoginAck.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSHeartbeat), global::Stream.GSHeartbeat.Parser, new[]{ "Load" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSHeartbeatAck), global::Stream.GSHeartbeatAck.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLogout), global::Stream.GSLogout.Parser, new[]{ "GameID", "SvcName", "PodName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLogoutAck), global::Stream.GSLogoutAck.Parser, new[]{ "Status" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLogoutAck), global::Stream.GSLogoutAck.Parser, new[]{ "Status" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.RoomInfo), global::Stream.RoomInfo.Parser, new[]{ "RoomID", "RoomName", "MaxPlayer", "Mode", "CanWatch", "Visibility", "RoomProperty", "Owner", "State" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.CreateRoom), global::Stream.CreateRoom.Parser, new[]{ "SvcName", "PodName", "GameID", "RoomInfo", "Ttl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.CreateRoomAck), global::Stream.CreateRoomAck.Parser, new[]{ "Status", "RoomID" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.TouchRoom), global::Stream.TouchRoom.Parser, new[]{ "SvcName", "PodName", "GameID", "RoomID", "Ttl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.TouchRoomAck), global::Stream.TouchRoomAck.Parser, new[]{ "Status" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.DestroyRoom), global::Stream.DestroyRoom.Parser, new[]{ "SvcName", "PodName", "GameID", "RoomID" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.DestroyRoomAck), global::Stream.DestroyRoomAck.Parser, new[]{ "Status" }, null, null, null)
           }));
     }
     #endregion
@@ -54,6 +80,28 @@ namespace Stream {
     [pbr::OriginalName("GSLoginCmd")] GsloginCmd = 3001,
     [pbr::OriginalName("GSHeartbeatCmd")] GsheartbeatCmd = 3003,
     [pbr::OriginalName("GSLogoutCmd")] GslogoutCmd = 3005,
+    [pbr::OriginalName("GSCreateRoomCmd")] GscreateRoomCmd = 4001,
+    [pbr::OriginalName("GSTouchRoomCmd")] GstouchRoomCmd = 4003,
+    [pbr::OriginalName("GSDestroyRoomCmd")] GsdestroyRoomCmd = 4005,
+  }
+
+  /// <summary>
+  /// 房间创建途径
+  /// </summary>
+  public enum CreateFlag {
+    [pbr::OriginalName("CreateRoomUnknown")] CreateRoomUnknown = 0,
+    [pbr::OriginalName("CreateRoomSystem")] CreateRoomSystem = 1,
+    [pbr::OriginalName("CreateRoomPlayer")] CreateRoomPlayer = 2,
+    [pbr::OriginalName("CreateRoomGS")] CreateRoomGs = 3,
+  }
+
+  /// <summary>
+  ///房间状态
+  /// </summary>
+  public enum RoomState {
+    [pbr::OriginalName("RoomStateNil")] Nil = 0,
+    [pbr::OriginalName("RoomStateOpen")] Open = 1,
+    [pbr::OriginalName("RoomStateClosed")] Closed = 2,
   }
 
   #endregion
@@ -918,6 +966,1415 @@ namespace Stream {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void MergeFrom(GSLogoutAck other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Status = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  /// 房间信息
+  /// </summary>
+  public sealed partial class RoomInfo : pb::IMessage<RoomInfo> {
+    private static readonly pb::MessageParser<RoomInfo> _parser = new pb::MessageParser<RoomInfo>(() => new RoomInfo());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<RoomInfo> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Stream.GsdirectoryReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomInfo() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomInfo(RoomInfo other) : this() {
+      roomID_ = other.roomID_;
+      roomName_ = other.roomName_;
+      maxPlayer_ = other.maxPlayer_;
+      mode_ = other.mode_;
+      canWatch_ = other.canWatch_;
+      visibility_ = other.visibility_;
+      roomProperty_ = other.roomProperty_;
+      owner_ = other.owner_;
+      state_ = other.state_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public RoomInfo Clone() {
+      return new RoomInfo(this);
+    }
+
+    /// <summary>Field number for the "roomID" field.</summary>
+    public const int RoomIDFieldNumber = 1;
+    private ulong roomID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong RoomID {
+      get { return roomID_; }
+      set {
+        roomID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "roomName" field.</summary>
+    public const int RoomNameFieldNumber = 2;
+    private string roomName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string RoomName {
+      get { return roomName_; }
+      set {
+        roomName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "maxPlayer" field.</summary>
+    public const int MaxPlayerFieldNumber = 3;
+    private uint maxPlayer_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint MaxPlayer {
+      get { return maxPlayer_; }
+      set {
+        maxPlayer_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mode" field.</summary>
+    public const int ModeFieldNumber = 4;
+    private int mode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Mode {
+      get { return mode_; }
+      set {
+        mode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "canWatch" field.</summary>
+    public const int CanWatchFieldNumber = 5;
+    private int canWatch_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CanWatch {
+      get { return canWatch_; }
+      set {
+        canWatch_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "visibility" field.</summary>
+    public const int VisibilityFieldNumber = 6;
+    private int visibility_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Visibility {
+      get { return visibility_; }
+      set {
+        visibility_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "roomProperty" field.</summary>
+    public const int RoomPropertyFieldNumber = 7;
+    private pb::ByteString roomProperty_ = pb::ByteString.Empty;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pb::ByteString RoomProperty {
+      get { return roomProperty_; }
+      set {
+        roomProperty_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "owner" field.</summary>
+    public const int OwnerFieldNumber = 8;
+    private uint owner_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Owner {
+      get { return owner_; }
+      set {
+        owner_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "state" field.</summary>
+    public const int StateFieldNumber = 9;
+    private global::Stream.RoomState state_ = 0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Stream.RoomState State {
+      get { return state_; }
+      set {
+        state_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as RoomInfo);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(RoomInfo other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (RoomID != other.RoomID) return false;
+      if (RoomName != other.RoomName) return false;
+      if (MaxPlayer != other.MaxPlayer) return false;
+      if (Mode != other.Mode) return false;
+      if (CanWatch != other.CanWatch) return false;
+      if (Visibility != other.Visibility) return false;
+      if (RoomProperty != other.RoomProperty) return false;
+      if (Owner != other.Owner) return false;
+      if (State != other.State) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+      if (RoomName.Length != 0) hash ^= RoomName.GetHashCode();
+      if (MaxPlayer != 0) hash ^= MaxPlayer.GetHashCode();
+      if (Mode != 0) hash ^= Mode.GetHashCode();
+      if (CanWatch != 0) hash ^= CanWatch.GetHashCode();
+      if (Visibility != 0) hash ^= Visibility.GetHashCode();
+      if (RoomProperty.Length != 0) hash ^= RoomProperty.GetHashCode();
+      if (Owner != 0) hash ^= Owner.GetHashCode();
+      if (State != 0) hash ^= State.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (RoomID != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(RoomID);
+      }
+      if (RoomName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(RoomName);
+      }
+      if (MaxPlayer != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(MaxPlayer);
+      }
+      if (Mode != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(Mode);
+      }
+      if (CanWatch != 0) {
+        output.WriteRawTag(40);
+        output.WriteInt32(CanWatch);
+      }
+      if (Visibility != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(Visibility);
+      }
+      if (RoomProperty.Length != 0) {
+        output.WriteRawTag(58);
+        output.WriteBytes(RoomProperty);
+      }
+      if (Owner != 0) {
+        output.WriteRawTag(64);
+        output.WriteUInt32(Owner);
+      }
+      if (State != 0) {
+        output.WriteRawTag(72);
+        output.WriteEnum((int) State);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (RoomID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+      }
+      if (RoomName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(RoomName);
+      }
+      if (MaxPlayer != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MaxPlayer);
+      }
+      if (Mode != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Mode);
+      }
+      if (CanWatch != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(CanWatch);
+      }
+      if (Visibility != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Visibility);
+      }
+      if (RoomProperty.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeBytesSize(RoomProperty);
+      }
+      if (Owner != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Owner);
+      }
+      if (State != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) State);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(RoomInfo other) {
+      if (other == null) {
+        return;
+      }
+      if (other.RoomID != 0UL) {
+        RoomID = other.RoomID;
+      }
+      if (other.RoomName.Length != 0) {
+        RoomName = other.RoomName;
+      }
+      if (other.MaxPlayer != 0) {
+        MaxPlayer = other.MaxPlayer;
+      }
+      if (other.Mode != 0) {
+        Mode = other.Mode;
+      }
+      if (other.CanWatch != 0) {
+        CanWatch = other.CanWatch;
+      }
+      if (other.Visibility != 0) {
+        Visibility = other.Visibility;
+      }
+      if (other.RoomProperty.Length != 0) {
+        RoomProperty = other.RoomProperty;
+      }
+      if (other.Owner != 0) {
+        Owner = other.Owner;
+      }
+      if (other.State != 0) {
+        State = other.State;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            RoomID = input.ReadUInt64();
+            break;
+          }
+          case 18: {
+            RoomName = input.ReadString();
+            break;
+          }
+          case 24: {
+            MaxPlayer = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            Mode = input.ReadInt32();
+            break;
+          }
+          case 40: {
+            CanWatch = input.ReadInt32();
+            break;
+          }
+          case 48: {
+            Visibility = input.ReadInt32();
+            break;
+          }
+          case 58: {
+            RoomProperty = input.ReadBytes();
+            break;
+          }
+          case 64: {
+            Owner = input.ReadUInt32();
+            break;
+          }
+          case 72: {
+            state_ = (global::Stream.RoomState) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///
+  ///GS主动创建房间:
+  ///CreateRoom(svcName, podName, gameID, roomInfo, ttl) -> (status, roomID)
+  /// </summary>
+  public sealed partial class CreateRoom : pb::IMessage<CreateRoom> {
+    private static readonly pb::MessageParser<CreateRoom> _parser = new pb::MessageParser<CreateRoom>(() => new CreateRoom());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CreateRoom> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Stream.GsdirectoryReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateRoom() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateRoom(CreateRoom other) : this() {
+      svcName_ = other.svcName_;
+      podName_ = other.podName_;
+      gameID_ = other.gameID_;
+      RoomInfo = other.roomInfo_ != null ? other.RoomInfo.Clone() : null;
+      ttl_ = other.ttl_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateRoom Clone() {
+      return new CreateRoom(this);
+    }
+
+    /// <summary>Field number for the "svcName" field.</summary>
+    public const int SvcNameFieldNumber = 1;
+    private string svcName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SvcName {
+      get { return svcName_; }
+      set {
+        svcName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "podName" field.</summary>
+    public const int PodNameFieldNumber = 2;
+    private string podName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PodName {
+      get { return podName_; }
+      set {
+        podName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "gameID" field.</summary>
+    public const int GameIDFieldNumber = 3;
+    private uint gameID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GameID {
+      get { return gameID_; }
+      set {
+        gameID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "room_info" field.</summary>
+    public const int RoomInfoFieldNumber = 4;
+    private global::Stream.RoomInfo roomInfo_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::Stream.RoomInfo RoomInfo {
+      get { return roomInfo_; }
+      set {
+        roomInfo_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ttl" field.</summary>
+    public const int TtlFieldNumber = 5;
+    private uint ttl_;
+    /// <summary>
+    /// 空房间ttl
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Ttl {
+      get { return ttl_; }
+      set {
+        ttl_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CreateRoom);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CreateRoom other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SvcName != other.SvcName) return false;
+      if (PodName != other.PodName) return false;
+      if (GameID != other.GameID) return false;
+      if (!object.Equals(RoomInfo, other.RoomInfo)) return false;
+      if (Ttl != other.Ttl) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SvcName.Length != 0) hash ^= SvcName.GetHashCode();
+      if (PodName.Length != 0) hash ^= PodName.GetHashCode();
+      if (GameID != 0) hash ^= GameID.GetHashCode();
+      if (roomInfo_ != null) hash ^= RoomInfo.GetHashCode();
+      if (Ttl != 0) hash ^= Ttl.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (SvcName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(SvcName);
+      }
+      if (PodName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PodName);
+      }
+      if (GameID != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(GameID);
+      }
+      if (roomInfo_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(RoomInfo);
+      }
+      if (Ttl != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(Ttl);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (SvcName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SvcName);
+      }
+      if (PodName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PodName);
+      }
+      if (GameID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+      }
+      if (roomInfo_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(RoomInfo);
+      }
+      if (Ttl != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Ttl);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CreateRoom other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SvcName.Length != 0) {
+        SvcName = other.SvcName;
+      }
+      if (other.PodName.Length != 0) {
+        PodName = other.PodName;
+      }
+      if (other.GameID != 0) {
+        GameID = other.GameID;
+      }
+      if (other.roomInfo_ != null) {
+        if (roomInfo_ == null) {
+          roomInfo_ = new global::Stream.RoomInfo();
+        }
+        RoomInfo.MergeFrom(other.RoomInfo);
+      }
+      if (other.Ttl != 0) {
+        Ttl = other.Ttl;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            SvcName = input.ReadString();
+            break;
+          }
+          case 18: {
+            PodName = input.ReadString();
+            break;
+          }
+          case 24: {
+            GameID = input.ReadUInt32();
+            break;
+          }
+          case 34: {
+            if (roomInfo_ == null) {
+              roomInfo_ = new global::Stream.RoomInfo();
+            }
+            input.ReadMessage(roomInfo_);
+            break;
+          }
+          case 40: {
+            Ttl = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class CreateRoomAck : pb::IMessage<CreateRoomAck> {
+    private static readonly pb::MessageParser<CreateRoomAck> _parser = new pb::MessageParser<CreateRoomAck>(() => new CreateRoomAck());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<CreateRoomAck> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Stream.GsdirectoryReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateRoomAck() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateRoomAck(CreateRoomAck other) : this() {
+      status_ = other.status_;
+      roomID_ = other.roomID_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public CreateRoomAck Clone() {
+      return new CreateRoomAck(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private uint status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "roomID" field.</summary>
+    public const int RoomIDFieldNumber = 2;
+    private ulong roomID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong RoomID {
+      get { return roomID_; }
+      set {
+        roomID_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as CreateRoomAck);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(CreateRoomAck other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Status != other.Status) return false;
+      if (RoomID != other.RoomID) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Status != 0) hash ^= Status.GetHashCode();
+      if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Status != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Status);
+      }
+      if (RoomID != 0UL) {
+        output.WriteRawTag(16);
+        output.WriteUInt64(RoomID);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Status);
+      }
+      if (RoomID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(CreateRoomAck other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+      if (other.RoomID != 0UL) {
+        RoomID = other.RoomID;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Status = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            RoomID = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///
+  ///GS重置房间TTL:
+  ///TouchRoom(gameID, roomID, ttl) -> (status)
+  /// </summary>
+  public sealed partial class TouchRoom : pb::IMessage<TouchRoom> {
+    private static readonly pb::MessageParser<TouchRoom> _parser = new pb::MessageParser<TouchRoom>(() => new TouchRoom());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TouchRoom> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Stream.GsdirectoryReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TouchRoom() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TouchRoom(TouchRoom other) : this() {
+      svcName_ = other.svcName_;
+      podName_ = other.podName_;
+      gameID_ = other.gameID_;
+      roomID_ = other.roomID_;
+      ttl_ = other.ttl_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TouchRoom Clone() {
+      return new TouchRoom(this);
+    }
+
+    /// <summary>Field number for the "svcName" field.</summary>
+    public const int SvcNameFieldNumber = 1;
+    private string svcName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SvcName {
+      get { return svcName_; }
+      set {
+        svcName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "podName" field.</summary>
+    public const int PodNameFieldNumber = 2;
+    private string podName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PodName {
+      get { return podName_; }
+      set {
+        podName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "gameID" field.</summary>
+    public const int GameIDFieldNumber = 3;
+    private uint gameID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GameID {
+      get { return gameID_; }
+      set {
+        gameID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "roomID" field.</summary>
+    public const int RoomIDFieldNumber = 4;
+    private ulong roomID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong RoomID {
+      get { return roomID_; }
+      set {
+        roomID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ttl" field.</summary>
+    public const int TtlFieldNumber = 5;
+    private uint ttl_;
+    /// <summary>
+    /// 空房间ttl
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Ttl {
+      get { return ttl_; }
+      set {
+        ttl_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TouchRoom);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TouchRoom other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SvcName != other.SvcName) return false;
+      if (PodName != other.PodName) return false;
+      if (GameID != other.GameID) return false;
+      if (RoomID != other.RoomID) return false;
+      if (Ttl != other.Ttl) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SvcName.Length != 0) hash ^= SvcName.GetHashCode();
+      if (PodName.Length != 0) hash ^= PodName.GetHashCode();
+      if (GameID != 0) hash ^= GameID.GetHashCode();
+      if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+      if (Ttl != 0) hash ^= Ttl.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (SvcName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(SvcName);
+      }
+      if (PodName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PodName);
+      }
+      if (GameID != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(GameID);
+      }
+      if (RoomID != 0UL) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(RoomID);
+      }
+      if (Ttl != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(Ttl);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (SvcName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SvcName);
+      }
+      if (PodName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PodName);
+      }
+      if (GameID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+      }
+      if (RoomID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+      }
+      if (Ttl != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Ttl);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TouchRoom other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SvcName.Length != 0) {
+        SvcName = other.SvcName;
+      }
+      if (other.PodName.Length != 0) {
+        PodName = other.PodName;
+      }
+      if (other.GameID != 0) {
+        GameID = other.GameID;
+      }
+      if (other.RoomID != 0UL) {
+        RoomID = other.RoomID;
+      }
+      if (other.Ttl != 0) {
+        Ttl = other.Ttl;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            SvcName = input.ReadString();
+            break;
+          }
+          case 18: {
+            PodName = input.ReadString();
+            break;
+          }
+          case 24: {
+            GameID = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            RoomID = input.ReadUInt64();
+            break;
+          }
+          case 40: {
+            Ttl = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class TouchRoomAck : pb::IMessage<TouchRoomAck> {
+    private static readonly pb::MessageParser<TouchRoomAck> _parser = new pb::MessageParser<TouchRoomAck>(() => new TouchRoomAck());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TouchRoomAck> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Stream.GsdirectoryReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TouchRoomAck() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TouchRoomAck(TouchRoomAck other) : this() {
+      status_ = other.status_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TouchRoomAck Clone() {
+      return new TouchRoomAck(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private uint status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TouchRoomAck);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TouchRoomAck other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Status != other.Status) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Status != 0) hash ^= Status.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Status != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Status);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Status);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TouchRoomAck other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Status != 0) {
+        Status = other.Status;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Status = input.ReadUInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  /// <summary>
+  ///
+  ///GS主动销毁房间:
+  ///DestroyRoom(svcName, podName, gameID, roomID) -> (status)
+  /// </summary>
+  public sealed partial class DestroyRoom : pb::IMessage<DestroyRoom> {
+    private static readonly pb::MessageParser<DestroyRoom> _parser = new pb::MessageParser<DestroyRoom>(() => new DestroyRoom());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DestroyRoom> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Stream.GsdirectoryReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DestroyRoom() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DestroyRoom(DestroyRoom other) : this() {
+      svcName_ = other.svcName_;
+      podName_ = other.podName_;
+      gameID_ = other.gameID_;
+      roomID_ = other.roomID_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DestroyRoom Clone() {
+      return new DestroyRoom(this);
+    }
+
+    /// <summary>Field number for the "svcName" field.</summary>
+    public const int SvcNameFieldNumber = 1;
+    private string svcName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SvcName {
+      get { return svcName_; }
+      set {
+        svcName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "podName" field.</summary>
+    public const int PodNameFieldNumber = 2;
+    private string podName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string PodName {
+      get { return podName_; }
+      set {
+        podName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "gameID" field.</summary>
+    public const int GameIDFieldNumber = 3;
+    private uint gameID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint GameID {
+      get { return gameID_; }
+      set {
+        gameID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "roomID" field.</summary>
+    public const int RoomIDFieldNumber = 4;
+    private ulong roomID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong RoomID {
+      get { return roomID_; }
+      set {
+        roomID_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DestroyRoom);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DestroyRoom other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (SvcName != other.SvcName) return false;
+      if (PodName != other.PodName) return false;
+      if (GameID != other.GameID) return false;
+      if (RoomID != other.RoomID) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (SvcName.Length != 0) hash ^= SvcName.GetHashCode();
+      if (PodName.Length != 0) hash ^= PodName.GetHashCode();
+      if (GameID != 0) hash ^= GameID.GetHashCode();
+      if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (SvcName.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(SvcName);
+      }
+      if (PodName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(PodName);
+      }
+      if (GameID != 0) {
+        output.WriteRawTag(24);
+        output.WriteUInt32(GameID);
+      }
+      if (RoomID != 0UL) {
+        output.WriteRawTag(32);
+        output.WriteUInt64(RoomID);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (SvcName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SvcName);
+      }
+      if (PodName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(PodName);
+      }
+      if (GameID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+      }
+      if (RoomID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DestroyRoom other) {
+      if (other == null) {
+        return;
+      }
+      if (other.SvcName.Length != 0) {
+        SvcName = other.SvcName;
+      }
+      if (other.PodName.Length != 0) {
+        PodName = other.PodName;
+      }
+      if (other.GameID != 0) {
+        GameID = other.GameID;
+      }
+      if (other.RoomID != 0UL) {
+        RoomID = other.RoomID;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 10: {
+            SvcName = input.ReadString();
+            break;
+          }
+          case 18: {
+            PodName = input.ReadString();
+            break;
+          }
+          case 24: {
+            GameID = input.ReadUInt32();
+            break;
+          }
+          case 32: {
+            RoomID = input.ReadUInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class DestroyRoomAck : pb::IMessage<DestroyRoomAck> {
+    private static readonly pb::MessageParser<DestroyRoomAck> _parser = new pb::MessageParser<DestroyRoomAck>(() => new DestroyRoomAck());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<DestroyRoomAck> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Stream.GsdirectoryReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DestroyRoomAck() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DestroyRoomAck(DestroyRoomAck other) : this() {
+      status_ = other.status_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public DestroyRoomAck Clone() {
+      return new DestroyRoomAck(this);
+    }
+
+    /// <summary>Field number for the "status" field.</summary>
+    public const int StatusFieldNumber = 1;
+    private uint status_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint Status {
+      get { return status_; }
+      set {
+        status_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as DestroyRoomAck);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(DestroyRoomAck other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Status != other.Status) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Status != 0) hash ^= Status.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Status != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(Status);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Status != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Status);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(DestroyRoomAck other) {
       if (other == null) {
         return;
       }

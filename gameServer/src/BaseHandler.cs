@@ -32,4 +32,6 @@ public abstract class BaseHandler
     public abstract IMessage OnHotelBroadCast(ByteString request);
     public abstract IMessage OnHotelCloseConnect(ByteString request);
     public abstract IMessage OnHotelCheckin(ByteString request);
+    public abstract void OnHotelSetFrameSyncRate(FrameSyncRate request);
+    public abstract void OnHotelFrameUpdate(FrameData request);
 }

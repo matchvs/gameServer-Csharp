@@ -16,6 +16,18 @@ enum HotelGsCmdID{
     // 玩家checkin
     HotelPlayerCheckin = 1601;
     HotelPlayerCheckinAck = 1602;
+    // 设置帧率
+    GSSetFrameSyncRateCMDID    = 1603;
+    GSSetFrameSyncRateAckCMDID = 1604;
+    // 设置帧率通知
+    GSSetFrameSyncRateNotifyCMDID = 1606;
+    // 发送帧数据
+    GSFrameBroadcastCMDID    = 1607;
+    GSFrameBroadcastAckCMDID = 1608;
+    // 帧数据通知
+    GSFrameDataNotifyCMDID = 1610;
+    // 帧同步通知
+    GSFrameSyncNotifyCMDID = 1612;
 }
 
 //推送hotel消息类型
@@ -87,4 +99,60 @@ message PlayerCheckin {
 //玩家checkin消息返回
 message PlayerCheckinAck {
     uint32 status = 1;
+}
+
+message GSSetFrameSyncRate {
+    uint32 gameID = 1;
+    uint64 roomID = 2;      // 房间ID
+    uint32 priority = 3;    // 要设置的通道的优先级
+    uint32 frameRate = 4;   // 同步帧率(0-20,且能被1000整除)
+    uint32 frameIdx = 5;    // 初始帧编号(frameRate > 0 时有效),frameIdx 需 > 0
+    uint32 enableGS = 6;    // GameServer是否参与帧同步（0：不参与；1：参与）
+}
+
+message GSSetFrameSyncRateAck {
+    uint32 status = 1;
+}
+
+message GSSetFrameSyncRateNotify {
+    uint32 gameID = 1;
+    uint64 roomID = 2;
+    uint32 priority = 3;    // 要设置的通道的优先级
+    uint32 frameRate = 4;   // 同步帧率
+    uint32 frameIdx = 5;    // 初始帧编号
+    uint64 timeStamp = 6;   // 系统时间戳
+    uint32 enableGS = 7;    // GameServer是否参与帧同步（0：不参与；1：参与）
+}
+
+message GSFrameBroadcast {
+    uint32 gameID = 1;
+    uint64 roomID = 2;
+    uint32 priority = 3;
+    bytes cpProto = 4;
+    int32 operation = 5;    // 0：只发客户端；1：只发GS；2：同时发送客户端和GS
+}
+
+message GSFrameBroadcastAck {
+    uint32 status = 1;
+}
+
+message GSFrameDataNotify {
+    uint32 gameID = 1;
+    uint64 roomID = 2;
+    uint32 src_uid = 3;
+    uint32 priority = 4;
+    bytes cpProto = 5;
+    uint64 timeStamp = 6; // 帧数据时间戳
+    uint32 frameIdx = 7;  // 帧编号-帧同步时有效(>0)
+}
+
+message GSFrameSyncNotify {
+    uint32 gameID = 1;
+    uint64 roomID = 2;
+    uint32 priority = 3;    // 要设置的通道的优先级
+    uint32 lastIdx = 4;     // 当前帧编号
+    uint32 nextIdx = 5;     // 下一帧编号
+    uint64 startTS = 6;     // 本帧开始时间戳
+    uint64 endTS = 7;       // 本帧结束时间戳
+    uint64 timeStamp = 8;   // 系统时间戳
 }
