@@ -111,7 +111,7 @@ public class StreamServer : CSStream.CSStreamBase
                     {
                         if (p.CmdId == (UInt32)HotelGsCmdID.HotelCreateConnect
                             || p.CmdId == (UInt32)HotelGsCmdID.HotelBroadcastCmdid
-                            || p.CmdId == (UInt32)HotelGsCmdID.HotelCloseConnet)
+                            || p.CmdId == (UInt32)HotelGsCmdID.HotelPlayerCheckin)
                         {
                             if (p.CmdId == (UInt32)HotelGsCmdID.HotelCreateConnect)
                             {

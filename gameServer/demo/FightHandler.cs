@@ -320,7 +320,7 @@ public class FightHandler : BaseHandler
                 {
                     UInt32 gameID = UInt32.Parse(param[0]);
                     UInt64 roomID = UInt64.Parse(param[1]);
-                    PushGetRoomDetail(roomID, gameID);
+                    PushGetRoomDetail(roomID, gameID, 2);
                 }
             }
             else if (result[0] == "setRoomProperty")
@@ -342,6 +342,13 @@ public class FightHandler : BaseHandler
                         CanWatch = 1,
                         Visibility = 1,
                         RoomProperty = Google.Protobuf.ByteString.CopyFromUtf8("hello"),
+                    },
+                    WatchSetting = new WatchSetting()
+                    {
+                        MaxWatch = 3,
+                        WatchPersistent = false,
+                        WatchDelayMs = 10*1000,
+                        CacheTime = 60*1000,
                     },
                 };
                 var reply = CreateRoom(request);
@@ -472,13 +479,15 @@ public class FightHandler : BaseHandler
     /// </summary>
     /// <param name="roomId"></param>
     /// <param name="gameId"></param>
-    public void PushGetRoomDetail(UInt64 roomId, UInt32 gameId, UInt32 userId = 0, UInt32 version = 2)
+    /// <param name="latestWatcherNum"></param>
+    public void PushGetRoomDetail(UInt64 roomId, UInt32 gameId, UInt32 latestWatcherNum, UInt32 userId = 0, UInt32 version = 2)
     {
         Logger.Info("PushGetRoomDetail, roomID:{0}, gameId:{1}", roomId, gameId);
         GetRoomDetailReq roomDetail = new GetRoomDetailReq()
         {
             RoomID = roomId,
-            GameID = gameId
+            GameID = gameId,
+            LatestWatcherNum = latestWatcherNum,
         };
         baseServer.PushToMvs(userId, version, (UInt32)MvsGsCmdID.MvsGetRoomDetailReq, roomDetail);
     }

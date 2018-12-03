@@ -22,36 +22,37 @@ namespace Stream {
     static GsdirectoryReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChFnc2RpcmVjdG9yeS5wcm90bxIGc3RyZWFtIlcKB0dTTG9naW4SDgoGZ2Ft",
-            "ZUlEGAEgASgNEg8KB3N2Y05hbWUYAiABKAkSDwoHcG9kTmFtZRgDIAEoCRIM",
-            "CgRob3N0GAQgASgJEgwKBHBvcnQYBSABKA0iHAoKR1NMb2dpbkFjaxIOCgZz",
-            "dGF0dXMYASABKA0iGwoLR1NIZWFydGJlYXQSDAoEbG9hZBgBIAEoDSIgCg5H",
-            "U0hlYXJ0YmVhdEFjaxIOCgZzdGF0dXMYASABKA0iPAoIR1NMb2dvdXQSDgoG",
-            "Z2FtZUlEGAEgASgNEg8KB3N2Y05hbWUYAiABKAkSDwoHcG9kTmFtZRgDIAEo",
-            "CSIdCgtHU0xvZ291dEFjaxIOCgZzdGF0dXMYASABKA0ivgEKCFJvb21JbmZv",
-            "EhIKBnJvb21JRBgBIAEoBEICMAESEAoIcm9vbU5hbWUYAiABKAkSEQoJbWF4",
-            "UGxheWVyGAMgASgNEgwKBG1vZGUYBCABKAUSEAoIY2FuV2F0Y2gYBSABKAUS",
-            "EgoKdmlzaWJpbGl0eRgGIAEoBRIUCgxyb29tUHJvcGVydHkYByABKAwSDQoF",
-            "b3duZXIYCCABKA0SIAoFc3RhdGUYCSABKA4yES5zdHJlYW0uUm9vbVN0YXRl",
-            "InAKCkNyZWF0ZVJvb20SDwoHc3ZjTmFtZRgBIAEoCRIPCgdwb2ROYW1lGAIg",
-            "ASgJEg4KBmdhbWVJRBgDIAEoDRIjCglyb29tX2luZm8YBCABKAsyEC5zdHJl",
-            "YW0uUm9vbUluZm8SCwoDdHRsGAUgASgNIjMKDUNyZWF0ZVJvb21BY2sSDgoG",
-            "c3RhdHVzGAEgASgNEhIKBnJvb21JRBgCIAEoBEICMAEiXgoJVG91Y2hSb29t",
-            "Eg8KB3N2Y05hbWUYASABKAkSDwoHcG9kTmFtZRgCIAEoCRIOCgZnYW1lSUQY",
-            "AyABKA0SEgoGcm9vbUlEGAQgASgEQgIwARILCgN0dGwYBSABKA0iHgoMVG91",
-            "Y2hSb29tQWNrEg4KBnN0YXR1cxgBIAEoDSJTCgtEZXN0cm95Um9vbRIPCgdz",
-            "dmNOYW1lGAEgASgJEg8KB3BvZE5hbWUYAiABKAkSDgoGZ2FtZUlEGAMgASgN",
-            "EhIKBnJvb21JRBgEIAEoBEICMAEiIAoORGVzdHJveVJvb21BY2sSDgoGc3Rh",
-            "dHVzGAEgASgNKp4BChBHU0RpcmVjdG9yeUNtZElEEhAKDEluVmFsaWRHU0Nt",
-            "ZBAAEg8KCkdTTG9naW5DbWQQuRcSEwoOR1NIZWFydGJlYXRDbWQQuxcSEAoL",
-            "R1NMb2dvdXRDbWQQvRcSFAoPR1NDcmVhdGVSb29tQ21kEKEfEhMKDkdTVG91",
-            "Y2hSb29tQ21kEKMfEhUKEEdTRGVzdHJveVJvb21DbWQQpR8qYQoKQ3JlYXRl",
-            "RmxhZxIVChFDcmVhdGVSb29tVW5rbm93bhAAEhQKEENyZWF0ZVJvb21TeXN0",
-            "ZW0QARIUChBDcmVhdGVSb29tUGxheWVyEAISEAoMQ3JlYXRlUm9vbUdTEAMq",
-            "RQoJUm9vbVN0YXRlEhAKDFJvb21TdGF0ZU5pbBAAEhEKDVJvb21TdGF0ZU9w",
-            "ZW4QARITCg9Sb29tU3RhdGVDbG9zZWQQAmIGcHJvdG8z"));
+            "ChFnc2RpcmVjdG9yeS5wcm90bxIGc3RyZWFtGgxjb21tb24ucHJvdG8iVwoH",
+            "R1NMb2dpbhIOCgZnYW1lSUQYASABKA0SDwoHc3ZjTmFtZRgCIAEoCRIPCgdw",
+            "b2ROYW1lGAMgASgJEgwKBGhvc3QYBCABKAkSDAoEcG9ydBgFIAEoDSIcCgpH",
+            "U0xvZ2luQWNrEg4KBnN0YXR1cxgBIAEoDSIbCgtHU0hlYXJ0YmVhdBIMCgRs",
+            "b2FkGAEgASgNIiAKDkdTSGVhcnRiZWF0QWNrEg4KBnN0YXR1cxgBIAEoDSI8",
+            "CghHU0xvZ291dBIOCgZnYW1lSUQYASABKA0SDwoHc3ZjTmFtZRgCIAEoCRIP",
+            "Cgdwb2ROYW1lGAMgASgJIh0KC0dTTG9nb3V0QWNrEg4KBnN0YXR1cxgBIAEo",
+            "DSK+AQoIUm9vbUluZm8SEgoGcm9vbUlEGAEgASgEQgIwARIQCghyb29tTmFt",
+            "ZRgCIAEoCRIRCgltYXhQbGF5ZXIYAyABKA0SDAoEbW9kZRgEIAEoBRIQCghj",
+            "YW5XYXRjaBgFIAEoBRISCgp2aXNpYmlsaXR5GAYgASgFEhQKDHJvb21Qcm9w",
+            "ZXJ0eRgHIAEoDBINCgVvd25lchgIIAEoDRIgCgVzdGF0ZRgJIAEoDjIRLnN0",
+            "cmVhbS5Sb29tU3RhdGUilQEKCkNyZWF0ZVJvb20SDwoHc3ZjTmFtZRgBIAEo",
+            "CRIPCgdwb2ROYW1lGAIgASgJEg4KBmdhbWVJRBgDIAEoDRIjCglyb29tX2lu",
+            "Zm8YBCABKAsyEC5zdHJlYW0uUm9vbUluZm8SCwoDdHRsGAUgASgNEiMKDHdh",
+            "dGNoU2V0dGluZxgGIAEoCzINLldhdGNoU2V0dGluZyIzCg1DcmVhdGVSb29t",
+            "QWNrEg4KBnN0YXR1cxgBIAEoDRISCgZyb29tSUQYAiABKARCAjABIl4KCVRv",
+            "dWNoUm9vbRIPCgdzdmNOYW1lGAEgASgJEg8KB3BvZE5hbWUYAiABKAkSDgoG",
+            "Z2FtZUlEGAMgASgNEhIKBnJvb21JRBgEIAEoBEICMAESCwoDdHRsGAUgASgN",
+            "Ih4KDFRvdWNoUm9vbUFjaxIOCgZzdGF0dXMYASABKA0iUwoLRGVzdHJveVJv",
+            "b20SDwoHc3ZjTmFtZRgBIAEoCRIPCgdwb2ROYW1lGAIgASgJEg4KBmdhbWVJ",
+            "RBgDIAEoDRISCgZyb29tSUQYBCABKARCAjABIiAKDkRlc3Ryb3lSb29tQWNr",
+            "Eg4KBnN0YXR1cxgBIAEoDSqeAQoQR1NEaXJlY3RvcnlDbWRJRBIQCgxJblZh",
+            "bGlkR1NDbWQQABIPCgpHU0xvZ2luQ21kELkXEhMKDkdTSGVhcnRiZWF0Q21k",
+            "ELsXEhAKC0dTTG9nb3V0Q21kEL0XEhQKD0dTQ3JlYXRlUm9vbUNtZBChHxIT",
+            "Cg5HU1RvdWNoUm9vbUNtZBCjHxIVChBHU0Rlc3Ryb3lSb29tQ21kEKUfKmEK",
+            "CkNyZWF0ZUZsYWcSFQoRQ3JlYXRlUm9vbVVua25vd24QABIUChBDcmVhdGVS",
+            "b29tU3lzdGVtEAESFAoQQ3JlYXRlUm9vbVBsYXllchACEhAKDENyZWF0ZVJv",
+            "b21HUxADKkUKCVJvb21TdGF0ZRIQCgxSb29tU3RhdGVOaWwQABIRCg1Sb29t",
+            "U3RhdGVPcGVuEAESEwoPUm9vbVN0YXRlQ2xvc2VkEAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { },
+          new pbr::FileDescriptor[] { global::CommonReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Stream.GSDirectoryCmdID), typeof(global::Stream.CreateFlag), typeof(global::Stream.RoomState), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLogin), global::Stream.GSLogin.Parser, new[]{ "GameID", "SvcName", "PodName", "Host", "Port" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLoginAck), global::Stream.GSLoginAck.Parser, new[]{ "Status" }, null, null, null),
@@ -60,7 +61,7 @@ namespace Stream {
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLogout), global::Stream.GSLogout.Parser, new[]{ "GameID", "SvcName", "PodName" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.GSLogoutAck), global::Stream.GSLogoutAck.Parser, new[]{ "Status" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.RoomInfo), global::Stream.RoomInfo.Parser, new[]{ "RoomID", "RoomName", "MaxPlayer", "Mode", "CanWatch", "Visibility", "RoomProperty", "Owner", "State" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.CreateRoom), global::Stream.CreateRoom.Parser, new[]{ "SvcName", "PodName", "GameID", "RoomInfo", "Ttl" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Stream.CreateRoom), global::Stream.CreateRoom.Parser, new[]{ "SvcName", "PodName", "GameID", "RoomInfo", "Ttl", "WatchSetting" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.CreateRoomAck), global::Stream.CreateRoomAck.Parser, new[]{ "Status", "RoomID" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.TouchRoom), global::Stream.TouchRoom.Parser, new[]{ "SvcName", "PodName", "GameID", "RoomID", "Ttl" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Stream.TouchRoomAck), global::Stream.TouchRoomAck.Parser, new[]{ "Status" }, null, null, null),
@@ -1370,6 +1371,7 @@ namespace Stream {
       gameID_ = other.gameID_;
       RoomInfo = other.roomInfo_ != null ? other.RoomInfo.Clone() : null;
       ttl_ = other.ttl_;
+      WatchSetting = other.watchSetting_ != null ? other.WatchSetting.Clone() : null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1435,6 +1437,17 @@ namespace Stream {
       }
     }
 
+    /// <summary>Field number for the "watchSetting" field.</summary>
+    public const int WatchSettingFieldNumber = 6;
+    private global::WatchSetting watchSetting_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::WatchSetting WatchSetting {
+      get { return watchSetting_; }
+      set {
+        watchSetting_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as CreateRoom);
@@ -1453,6 +1466,7 @@ namespace Stream {
       if (GameID != other.GameID) return false;
       if (!object.Equals(RoomInfo, other.RoomInfo)) return false;
       if (Ttl != other.Ttl) return false;
+      if (!object.Equals(WatchSetting, other.WatchSetting)) return false;
       return true;
     }
 
@@ -1464,6 +1478,7 @@ namespace Stream {
       if (GameID != 0) hash ^= GameID.GetHashCode();
       if (roomInfo_ != null) hash ^= RoomInfo.GetHashCode();
       if (Ttl != 0) hash ^= Ttl.GetHashCode();
+      if (watchSetting_ != null) hash ^= WatchSetting.GetHashCode();
       return hash;
     }
 
@@ -1494,6 +1509,10 @@ namespace Stream {
         output.WriteRawTag(40);
         output.WriteUInt32(Ttl);
       }
+      if (watchSetting_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(WatchSetting);
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1513,6 +1532,9 @@ namespace Stream {
       }
       if (Ttl != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Ttl);
+      }
+      if (watchSetting_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(WatchSetting);
       }
       return size;
     }
@@ -1539,6 +1561,12 @@ namespace Stream {
       }
       if (other.Ttl != 0) {
         Ttl = other.Ttl;
+      }
+      if (other.watchSetting_ != null) {
+        if (watchSetting_ == null) {
+          watchSetting_ = new global::WatchSetting();
+        }
+        WatchSetting.MergeFrom(other.WatchSetting);
       }
     }
 
@@ -1571,6 +1599,13 @@ namespace Stream {
           }
           case 40: {
             Ttl = input.ReadUInt32();
+            break;
+          }
+          case 50: {
+            if (watchSetting_ == null) {
+              watchSetting_ = new global::WatchSetting();
+            }
+            input.ReadMessage(watchSetting_);
             break;
           }
         }
