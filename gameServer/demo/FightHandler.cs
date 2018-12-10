@@ -228,6 +228,19 @@ public class FightHandler : BaseHandler
         {
             Logger.Info("player userId={0}", player.UserID);
         }
+        foreach (BrigadeInfo brigade in roomDetail.Brigades)
+        {
+            Logger.Info("brigade brigadeId={0}", brigade.BrigadeID);
+            foreach (TeamDetail team in brigade.Teams)
+            {
+                Logger.Info("team teamId={0}, password={1}, capacity={2}, mode={3}, visibility={4}, owner={5}",
+                    team.TeamInfo.TeamID, team.TeamInfo.Password, team.TeamInfo.Capacity, team.TeamInfo.Mode, team.TeamInfo.Visibility, team.TeamInfo.Owner);
+                foreach (PlayerInfo player in team.Player)
+                {
+                    Logger.Info("player userId={0}", player.UserID);
+                }
+            }
+        }
         return reply;
     }
 

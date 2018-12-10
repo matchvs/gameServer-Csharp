@@ -40,40 +40,46 @@ public static partial class GsmvsReflection {
           "KAwiTAoQR2V0Um9vbURldGFpbFJlcRIOCgZnYW1lSUQYASABKA0SDgoGcm9v",
           "bUlEGAIgASgEEhgKEGxhdGVzdFdhdGNoZXJOdW0YAyABKA0iTwoQR2V0Um9v",
           "bURldGFpbFJzcBIaCgZzdGF0dXMYASABKA4yCi5FcnJvckNvZGUSHwoKcm9v",
-          "bURldGFpbBgCIAEoCzILLlJvb21EZXRhaWwi2AEKClJvb21EZXRhaWwSDgoG",
+          "bURldGFpbBgCIAEoCzILLlJvb21EZXRhaWwi+AEKClJvb21EZXRhaWwSDgoG",
           "cm9vbUlEGAEgASgEEg0KBXN0YXRlGAIgASgNEhEKCW1heFBsYXllchgDIAEo",
           "DRIMCgRtb2RlGAQgASgFEhAKCGNhbldhdGNoGAUgASgFEhQKDHJvb21Qcm9w",
           "ZXJ0eRgGIAEoDBINCgVvd25lchgHIAEoDRISCgpjcmVhdGVGbGFnGAggASgN",
           "EiAKC3BsYXllckluZm9zGAkgAygLMgsuUGxheWVySW5mbxIdCgl3YXRjaFJv",
-          "b20YCiABKAsyCi5XYXRjaFJvb20iMQoKUGxheWVySW5mbxIOCgZ1c2VySUQY",
-          "ASABKA0SEwoLdXNlclByb2ZpbGUYAiABKAwixAEKDUNyZWF0ZUV4dEluZm8S",
-          "DgoGdXNlcklEGAEgASgNEhMKC3VzZXJQcm9maWxlGAIgASgMEg4KBnJvb21J",
-          "RBgDIAEoBBINCgVzdGF0ZRgEIAEoDRIRCgltYXhQbGF5ZXIYBSABKA0SDAoE",
-          "bW9kZRgGIAEoBRIQCghjYW5XYXRjaBgHIAEoBRIUCgxyb29tUHJvcGVydHkY",
-          "CCABKAwSEgoKY3JlYXRlRmxhZxgJIAEoDRISCgpDcmVhdGVUaW1lGAogASgE",
-          "IlQKC0pvaW5FeHRJbmZvEg4KBnVzZXJJRBgBIAEoDRITCgt1c2VyUHJvZmls",
-          "ZRgCIAEoDBIOCgZyb29tSUQYAyABKAQSEAoISm9pblR5cGUYBCABKA0iWgoS",
-          "U2V0Um9vbVByb3BlcnR5UmVxEg4KBmdhbWVJRBgBIAEoDRIOCgZyb29tSUQY",
-          "AiABKAQSDgoGdXNlcklEGAMgASgNEhQKDHJvb21Qcm9wZXJ0eRgEIAEoDCJm",
-          "ChJTZXRSb29tUHJvcGVydHlSc3ASGgoGc3RhdHVzGAEgASgOMgouRXJyb3JD",
-          "b2RlEg4KBnJvb21JRBgCIAEoBBIOCgZ1c2VySUQYAyABKA0SFAoMcm9vbVBy",
-          "b3BlcnR5GAQgASgMImUKCVdhdGNoSW5mbxISCgZyb29tSUQYASABKARCAjAB",
-          "Eg0KBXN0YXRlGAIgASgNEiMKDHdhdGNoU2V0dGluZxgDIAEoCzINLldhdGNo",
-          "U2V0dGluZxIQCghjdXJXYXRjaBgEIAEoDSJNCglXYXRjaFJvb20SHQoJd2F0",
-          "Y2hJbmZvGAEgASgLMgouV2F0Y2hJbmZvEiEKDHdhdGNoUGxheWVycxgCIAMo",
-          "CzILLlBsYXllckluZm8q2wMKCk12c0dzQ21kSUQSDgoKTXZzQ21kTm9uZRAA",
-          "EhMKDk12c0pvaW5Sb29tUmVxELEJEhMKDk12c0pvaW5Sb29tUnNwELIJEhUK",
-          "EE12c0NyZWF0ZVJvb21SZXEQswkSFQoQTXZzQ3JlYXRlUm9vbVJzcBC0CRIU",
-          "Cg9NdnNMZWF2ZVJvb21SZXEQtQkSFAoPTXZzTGVhdmVSb29tUnNwELYJEhgK",
-          "E012c0dldFJvb21EZXRhaWxSZXEQuQkSGAoTTXZzR2V0Um9vbURldGFpbFJz",
-          "cBC6CRIZChRNdnNHZXRSb29tRGV0YWlsUHVzaBC7CRITCg5NdnNKb2luT3Zl",
-          "clJlcRC9CRITCg5NdnNKb2luT3ZlclJzcBC+CRIaChVNdnNTZXRSb29tUHJv",
-          "cGVydHlSZXEQwwkSGgoVTXZzU2V0Um9vbVByb3BlcnR5UnNwEMQJEhMKDk12",
-          "c0pvaW5PcGVuUmVxEMUJEhMKDk12c0pvaW5PcGVuUnNwEMYJEhUKEE12c0tp",
-          "Y2tQbGF5ZXJSZXEQlwoSFQoQTXZzS2lja1BsYXllclJzcBCYChIXChJNdnNO",
-          "ZXR3b3JrU3RhdGVSZXEQ4AgSFwoSTXZzTmV0d29ya1N0YXRlUnNwEOEIKkUK",
-          "CVJvb21TdGF0ZRIQCgxSb29tU3RhdGVOaWwQABIRCg1Sb29tU3RhdGVPcGVu",
-          "EAESEwoPUm9vbVN0YXRlQ2xvc2VkEAJiBnByb3RvMw=="));
+          "b20YCiABKAsyCi5XYXRjaFJvb20SHgoIYnJpZ2FkZXMYCyADKAsyDC5Ccmln",
+          "YWRlSW5mbyIxCgpQbGF5ZXJJbmZvEg4KBnVzZXJJRBgBIAEoDRITCgt1c2Vy",
+          "UHJvZmlsZRgCIAEoDCLEAQoNQ3JlYXRlRXh0SW5mbxIOCgZ1c2VySUQYASAB",
+          "KA0SEwoLdXNlclByb2ZpbGUYAiABKAwSDgoGcm9vbUlEGAMgASgEEg0KBXN0",
+          "YXRlGAQgASgNEhEKCW1heFBsYXllchgFIAEoDRIMCgRtb2RlGAYgASgFEhAK",
+          "CGNhbldhdGNoGAcgASgFEhQKDHJvb21Qcm9wZXJ0eRgIIAEoDBISCgpjcmVh",
+          "dGVGbGFnGAkgASgNEhIKCkNyZWF0ZVRpbWUYCiABKAQiVAoLSm9pbkV4dElu",
+          "Zm8SDgoGdXNlcklEGAEgASgNEhMKC3VzZXJQcm9maWxlGAIgASgMEg4KBnJv",
+          "b21JRBgDIAEoBBIQCghKb2luVHlwZRgEIAEoDSJaChJTZXRSb29tUHJvcGVy",
+          "dHlSZXESDgoGZ2FtZUlEGAEgASgNEg4KBnJvb21JRBgCIAEoBBIOCgZ1c2Vy",
+          "SUQYAyABKA0SFAoMcm9vbVByb3BlcnR5GAQgASgMImYKElNldFJvb21Qcm9w",
+          "ZXJ0eVJzcBIaCgZzdGF0dXMYASABKA4yCi5FcnJvckNvZGUSDgoGcm9vbUlE",
+          "GAIgASgEEg4KBnVzZXJJRBgDIAEoDRIUCgxyb29tUHJvcGVydHkYBCABKAwi",
+          "ZQoJV2F0Y2hJbmZvEhIKBnJvb21JRBgBIAEoBEICMAESDQoFc3RhdGUYAiAB",
+          "KA0SIwoMd2F0Y2hTZXR0aW5nGAMgASgLMg0uV2F0Y2hTZXR0aW5nEhAKCGN1",
+          "cldhdGNoGAQgASgNIk0KCVdhdGNoUm9vbRIdCgl3YXRjaEluZm8YASABKAsy",
+          "Ci5XYXRjaEluZm8SIQoMd2F0Y2hQbGF5ZXJzGAIgAygLMgsuUGxheWVySW5m",
+          "byJzCghUZWFtSW5mbxISCgZ0ZWFtSUQYASABKARCAjABEhAKCHBhc3N3b3Jk",
+          "GAIgASgJEhAKCGNhcGFjaXR5GAMgASgNEgwKBG1vZGUYBCABKAUSEgoKdmlz",
+          "aWJpbGl0eRgFIAEoBRINCgVvd25lchgGIAEoDSJGCgpUZWFtRGV0YWlsEhsK",
+          "CHRlYW1JbmZvGAEgASgLMgkuVGVhbUluZm8SGwoGcGxheWVyGAIgAygLMgsu",
+          "UGxheWVySW5mbyI8CgtCcmlnYWRlSW5mbxIRCglicmlnYWRlSUQYASABKA0S",
+          "GgoFdGVhbXMYAiADKAsyCy5UZWFtRGV0YWlsKtsDCgpNdnNHc0NtZElEEg4K",
+          "Ck12c0NtZE5vbmUQABITCg5NdnNKb2luUm9vbVJlcRCxCRITCg5NdnNKb2lu",
+          "Um9vbVJzcBCyCRIVChBNdnNDcmVhdGVSb29tUmVxELMJEhUKEE12c0NyZWF0",
+          "ZVJvb21Sc3AQtAkSFAoPTXZzTGVhdmVSb29tUmVxELUJEhQKD012c0xlYXZl",
+          "Um9vbVJzcBC2CRIYChNNdnNHZXRSb29tRGV0YWlsUmVxELkJEhgKE012c0dl",
+          "dFJvb21EZXRhaWxSc3AQugkSGQoUTXZzR2V0Um9vbURldGFpbFB1c2gQuwkS",
+          "EwoOTXZzSm9pbk92ZXJSZXEQvQkSEwoOTXZzSm9pbk92ZXJSc3AQvgkSGgoV",
+          "TXZzU2V0Um9vbVByb3BlcnR5UmVxEMMJEhoKFU12c1NldFJvb21Qcm9wZXJ0",
+          "eVJzcBDECRITCg5NdnNKb2luT3BlblJlcRDFCRITCg5NdnNKb2luT3BlblJz",
+          "cBDGCRIVChBNdnNLaWNrUGxheWVyUmVxEJcKEhUKEE12c0tpY2tQbGF5ZXJS",
+          "c3AQmAoSFwoSTXZzTmV0d29ya1N0YXRlUmVxEOAIEhcKEk12c05ldHdvcmtT",
+          "dGF0ZVJzcBDhCCpFCglSb29tU3RhdGUSEAoMUm9vbVN0YXRlTmlsEAASEQoN",
+          "Um9vbVN0YXRlT3BlbhABEhMKD1Jvb21TdGF0ZUNsb3NlZBACYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { global::ErrorcodeReflection.Descriptor, global::CommonReflection.Descriptor, },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::MvsGsCmdID), typeof(global::RoomState), }, new pbr::GeneratedClrTypeInfo[] {
@@ -88,14 +94,17 @@ public static partial class GsmvsReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::PushMsg), global::PushMsg.Parser, new[]{ "UserID", "GameID", "RoomID", "Users", "CpProto" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetRoomDetailReq), global::GetRoomDetailReq.Parser, new[]{ "GameID", "RoomID", "LatestWatcherNum" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GetRoomDetailRsp), global::GetRoomDetailRsp.Parser, new[]{ "Status", "RoomDetail" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::RoomDetail), global::RoomDetail.Parser, new[]{ "RoomID", "State", "MaxPlayer", "Mode", "CanWatch", "RoomProperty", "Owner", "CreateFlag", "PlayerInfos", "WatchRoom" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::RoomDetail), global::RoomDetail.Parser, new[]{ "RoomID", "State", "MaxPlayer", "Mode", "CanWatch", "RoomProperty", "Owner", "CreateFlag", "PlayerInfos", "WatchRoom", "Brigades" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::PlayerInfo), global::PlayerInfo.Parser, new[]{ "UserID", "UserProfile" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::CreateExtInfo), global::CreateExtInfo.Parser, new[]{ "UserID", "UserProfile", "RoomID", "State", "MaxPlayer", "Mode", "CanWatch", "RoomProperty", "CreateFlag", "CreateTime" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::JoinExtInfo), global::JoinExtInfo.Parser, new[]{ "UserID", "UserProfile", "RoomID", "JoinType" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::SetRoomPropertyReq), global::SetRoomPropertyReq.Parser, new[]{ "GameID", "RoomID", "UserID", "RoomProperty" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::SetRoomPropertyRsp), global::SetRoomPropertyRsp.Parser, new[]{ "Status", "RoomID", "UserID", "RoomProperty" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::WatchInfo), global::WatchInfo.Parser, new[]{ "RoomID", "State", "WatchSetting", "CurWatch" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::WatchRoom), global::WatchRoom.Parser, new[]{ "WatchInfo", "WatchPlayers" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::WatchRoom), global::WatchRoom.Parser, new[]{ "WatchInfo", "WatchPlayers" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TeamInfo), global::TeamInfo.Parser, new[]{ "TeamID", "Password", "Capacity", "Mode", "Visibility", "Owner" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::TeamDetail), global::TeamDetail.Parser, new[]{ "TeamInfo", "Player" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::BrigadeInfo), global::BrigadeInfo.Parser, new[]{ "BrigadeID", "Teams" }, null, null, null)
         }));
   }
   #endregion
@@ -2295,6 +2304,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     createFlag_ = other.createFlag_;
     playerInfos_ = other.playerInfos_.Clone();
     WatchRoom = other.watchRoom_ != null ? other.WatchRoom.Clone() : null;
+    brigades_ = other.brigades_.Clone();
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2417,6 +2427,16 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     }
   }
 
+  /// <summary>Field number for the "brigades" field.</summary>
+  public const int BrigadesFieldNumber = 11;
+  private static readonly pb::FieldCodec<global::BrigadeInfo> _repeated_brigades_codec
+      = pb::FieldCodec.ForMessage(90, global::BrigadeInfo.Parser);
+  private readonly pbc::RepeatedField<global::BrigadeInfo> brigades_ = new pbc::RepeatedField<global::BrigadeInfo>();
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::BrigadeInfo> Brigades {
+    get { return brigades_; }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as RoomDetail);
@@ -2440,6 +2460,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     if (CreateFlag != other.CreateFlag) return false;
     if(!playerInfos_.Equals(other.playerInfos_)) return false;
     if (!object.Equals(WatchRoom, other.WatchRoom)) return false;
+    if(!brigades_.Equals(other.brigades_)) return false;
     return true;
   }
 
@@ -2456,6 +2477,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     if (CreateFlag != 0) hash ^= CreateFlag.GetHashCode();
     hash ^= playerInfos_.GetHashCode();
     if (watchRoom_ != null) hash ^= WatchRoom.GetHashCode();
+    hash ^= brigades_.GetHashCode();
     return hash;
   }
 
@@ -2503,6 +2525,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
       output.WriteRawTag(82);
       output.WriteMessage(WatchRoom);
     }
+    brigades_.WriteTo(output, _repeated_brigades_codec);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2536,6 +2559,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
     if (watchRoom_ != null) {
       size += 1 + pb::CodedOutputStream.ComputeMessageSize(WatchRoom);
     }
+    size += brigades_.CalculateSize(_repeated_brigades_codec);
     return size;
   }
 
@@ -2575,6 +2599,7 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
       }
       WatchRoom.MergeFrom(other.WatchRoom);
     }
+    brigades_.Add(other.brigades_);
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2626,6 +2651,10 @@ public sealed partial class RoomDetail : pb::IMessage<RoomDetail> {
             watchRoom_ = new global::WatchRoom();
           }
           input.ReadMessage(watchRoom_);
+          break;
+        }
+        case 90: {
+          brigades_.AddEntriesFrom(input, _repeated_brigades_codec);
           break;
         }
       }
@@ -4149,6 +4178,564 @@ public sealed partial class WatchRoom : pb::IMessage<WatchRoom> {
         }
         case 18: {
           watchPlayers_.AddEntriesFrom(input, _repeated_watchPlayers_codec);
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+/// <summary>
+//////////////////////////// 组队匹配相关的协议 start ///////////////////////////
+/// </summary>
+public sealed partial class TeamInfo : pb::IMessage<TeamInfo> {
+  private static readonly pb::MessageParser<TeamInfo> _parser = new pb::MessageParser<TeamInfo>(() => new TeamInfo());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<TeamInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GsmvsReflection.Descriptor.MessageTypes[19]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public TeamInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public TeamInfo(TeamInfo other) : this() {
+    teamID_ = other.teamID_;
+    password_ = other.password_;
+    capacity_ = other.capacity_;
+    mode_ = other.mode_;
+    visibility_ = other.visibility_;
+    owner_ = other.owner_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public TeamInfo Clone() {
+    return new TeamInfo(this);
+  }
+
+  /// <summary>Field number for the "teamID" field.</summary>
+  public const int TeamIDFieldNumber = 1;
+  private ulong teamID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong TeamID {
+    get { return teamID_; }
+    set {
+      teamID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "password" field.</summary>
+  public const int PasswordFieldNumber = 2;
+  private string password_ = "";
+  /// <summary>
+  /// 密码，空表示无密码
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public string Password {
+    get { return password_; }
+    set {
+      password_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+    }
+  }
+
+  /// <summary>Field number for the "capacity" field.</summary>
+  public const int CapacityFieldNumber = 3;
+  private uint capacity_;
+  /// <summary>
+  /// 队伍人数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Capacity {
+    get { return capacity_; }
+    set {
+      capacity_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "mode" field.</summary>
+  public const int ModeFieldNumber = 4;
+  private int mode_;
+  /// <summary>
+  /// 游戏模式
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Mode {
+    get { return mode_; }
+    set {
+      mode_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "visibility" field.</summary>
+  public const int VisibilityFieldNumber = 5;
+  private int visibility_;
+  /// <summary>
+  /// 是否可见，0不可见、1可见
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int Visibility {
+    get { return visibility_; }
+    set {
+      visibility_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "owner" field.</summary>
+  public const int OwnerFieldNumber = 6;
+  private uint owner_;
+  /// <summary>
+  /// 队长
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Owner {
+    get { return owner_; }
+    set {
+      owner_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as TeamInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(TeamInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (TeamID != other.TeamID) return false;
+    if (Password != other.Password) return false;
+    if (Capacity != other.Capacity) return false;
+    if (Mode != other.Mode) return false;
+    if (Visibility != other.Visibility) return false;
+    if (Owner != other.Owner) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (TeamID != 0UL) hash ^= TeamID.GetHashCode();
+    if (Password.Length != 0) hash ^= Password.GetHashCode();
+    if (Capacity != 0) hash ^= Capacity.GetHashCode();
+    if (Mode != 0) hash ^= Mode.GetHashCode();
+    if (Visibility != 0) hash ^= Visibility.GetHashCode();
+    if (Owner != 0) hash ^= Owner.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (TeamID != 0UL) {
+      output.WriteRawTag(8);
+      output.WriteUInt64(TeamID);
+    }
+    if (Password.Length != 0) {
+      output.WriteRawTag(18);
+      output.WriteString(Password);
+    }
+    if (Capacity != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(Capacity);
+    }
+    if (Mode != 0) {
+      output.WriteRawTag(32);
+      output.WriteInt32(Mode);
+    }
+    if (Visibility != 0) {
+      output.WriteRawTag(40);
+      output.WriteInt32(Visibility);
+    }
+    if (Owner != 0) {
+      output.WriteRawTag(48);
+      output.WriteUInt32(Owner);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (TeamID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(TeamID);
+    }
+    if (Password.Length != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeStringSize(Password);
+    }
+    if (Capacity != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Capacity);
+    }
+    if (Mode != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Mode);
+    }
+    if (Visibility != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(Visibility);
+    }
+    if (Owner != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Owner);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(TeamInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.TeamID != 0UL) {
+      TeamID = other.TeamID;
+    }
+    if (other.Password.Length != 0) {
+      Password = other.Password;
+    }
+    if (other.Capacity != 0) {
+      Capacity = other.Capacity;
+    }
+    if (other.Mode != 0) {
+      Mode = other.Mode;
+    }
+    if (other.Visibility != 0) {
+      Visibility = other.Visibility;
+    }
+    if (other.Owner != 0) {
+      Owner = other.Owner;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          TeamID = input.ReadUInt64();
+          break;
+        }
+        case 18: {
+          Password = input.ReadString();
+          break;
+        }
+        case 24: {
+          Capacity = input.ReadUInt32();
+          break;
+        }
+        case 32: {
+          Mode = input.ReadInt32();
+          break;
+        }
+        case 40: {
+          Visibility = input.ReadInt32();
+          break;
+        }
+        case 48: {
+          Owner = input.ReadUInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class TeamDetail : pb::IMessage<TeamDetail> {
+  private static readonly pb::MessageParser<TeamDetail> _parser = new pb::MessageParser<TeamDetail>(() => new TeamDetail());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<TeamDetail> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GsmvsReflection.Descriptor.MessageTypes[20]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public TeamDetail() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public TeamDetail(TeamDetail other) : this() {
+    TeamInfo = other.teamInfo_ != null ? other.TeamInfo.Clone() : null;
+    player_ = other.player_.Clone();
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public TeamDetail Clone() {
+    return new TeamDetail(this);
+  }
+
+  /// <summary>Field number for the "teamInfo" field.</summary>
+  public const int TeamInfoFieldNumber = 1;
+  private global::TeamInfo teamInfo_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public global::TeamInfo TeamInfo {
+    get { return teamInfo_; }
+    set {
+      teamInfo_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "player" field.</summary>
+  public const int PlayerFieldNumber = 2;
+  private static readonly pb::FieldCodec<global::PlayerInfo> _repeated_player_codec
+      = pb::FieldCodec.ForMessage(18, global::PlayerInfo.Parser);
+  private readonly pbc::RepeatedField<global::PlayerInfo> player_ = new pbc::RepeatedField<global::PlayerInfo>();
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::PlayerInfo> Player {
+    get { return player_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as TeamDetail);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(TeamDetail other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (!object.Equals(TeamInfo, other.TeamInfo)) return false;
+    if(!player_.Equals(other.player_)) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (teamInfo_ != null) hash ^= TeamInfo.GetHashCode();
+    hash ^= player_.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (teamInfo_ != null) {
+      output.WriteRawTag(10);
+      output.WriteMessage(TeamInfo);
+    }
+    player_.WriteTo(output, _repeated_player_codec);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (teamInfo_ != null) {
+      size += 1 + pb::CodedOutputStream.ComputeMessageSize(TeamInfo);
+    }
+    size += player_.CalculateSize(_repeated_player_codec);
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(TeamDetail other) {
+    if (other == null) {
+      return;
+    }
+    if (other.teamInfo_ != null) {
+      if (teamInfo_ == null) {
+        teamInfo_ = new global::TeamInfo();
+      }
+      TeamInfo.MergeFrom(other.TeamInfo);
+    }
+    player_.Add(other.player_);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 10: {
+          if (teamInfo_ == null) {
+            teamInfo_ = new global::TeamInfo();
+          }
+          input.ReadMessage(teamInfo_);
+          break;
+        }
+        case 18: {
+          player_.AddEntriesFrom(input, _repeated_player_codec);
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+/// <summary>
+/// 大队
+/// </summary>
+public sealed partial class BrigadeInfo : pb::IMessage<BrigadeInfo> {
+  private static readonly pb::MessageParser<BrigadeInfo> _parser = new pb::MessageParser<BrigadeInfo>(() => new BrigadeInfo());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<BrigadeInfo> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GsmvsReflection.Descriptor.MessageTypes[21]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public BrigadeInfo() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public BrigadeInfo(BrigadeInfo other) : this() {
+    brigadeID_ = other.brigadeID_;
+    teams_ = other.teams_.Clone();
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public BrigadeInfo Clone() {
+    return new BrigadeInfo(this);
+  }
+
+  /// <summary>Field number for the "brigadeID" field.</summary>
+  public const int BrigadeIDFieldNumber = 1;
+  private uint brigadeID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint BrigadeID {
+    get { return brigadeID_; }
+    set {
+      brigadeID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "teams" field.</summary>
+  public const int TeamsFieldNumber = 2;
+  private static readonly pb::FieldCodec<global::TeamDetail> _repeated_teams_codec
+      = pb::FieldCodec.ForMessage(18, global::TeamDetail.Parser);
+  private readonly pbc::RepeatedField<global::TeamDetail> teams_ = new pbc::RepeatedField<global::TeamDetail>();
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public pbc::RepeatedField<global::TeamDetail> Teams {
+    get { return teams_; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as BrigadeInfo);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(BrigadeInfo other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (BrigadeID != other.BrigadeID) return false;
+    if(!teams_.Equals(other.teams_)) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (BrigadeID != 0) hash ^= BrigadeID.GetHashCode();
+    hash ^= teams_.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (BrigadeID != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(BrigadeID);
+    }
+    teams_.WriteTo(output, _repeated_teams_codec);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (BrigadeID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(BrigadeID);
+    }
+    size += teams_.CalculateSize(_repeated_teams_codec);
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(BrigadeInfo other) {
+    if (other == null) {
+      return;
+    }
+    if (other.BrigadeID != 0) {
+      BrigadeID = other.BrigadeID;
+    }
+    teams_.Add(other.teams_);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          BrigadeID = input.ReadUInt32();
+          break;
+        }
+        case 18: {
+          teams_.AddEntriesFrom(input, _repeated_teams_codec);
           break;
         }
       }
