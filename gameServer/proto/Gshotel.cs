@@ -33,14 +33,15 @@ public static partial class GshotelReflection {
           "IAEoDCJ2Cg1QbGF5ZXJDaGVja2luEg4KBnVzZXJJRBgBIAEoDRIOCgZnYW1l",
           "SUQYAiABKA0SDgoGcm9vbUlEGAMgASgEEhIKCm1heFBsYXllcnMYBCABKA0S",
           "EAoIY2hlY2tpbnMYBSADKA0SDwoHcGxheWVycxgGIAMoDSIiChBQbGF5ZXJD",
-          "aGVja2luQWNrEg4KBnN0YXR1cxgBIAEoDSJ9ChJHU1NldEZyYW1lU3luY1Jh",
-          "dGUSDgoGZ2FtZUlEGAEgASgNEg4KBnJvb21JRBgCIAEoBBIQCghwcmlvcml0",
-          "eRgDIAEoDRIRCglmcmFtZVJhdGUYBCABKA0SEAoIZnJhbWVJZHgYBSABKA0S",
-          "EAoIZW5hYmxlR1MYBiABKA0iJwoVR1NTZXRGcmFtZVN5bmNSYXRlQWNrEg4K",
-          "BnN0YXR1cxgBIAEoDSKWAQoYR1NTZXRGcmFtZVN5bmNSYXRlTm90aWZ5Eg4K",
-          "BmdhbWVJRBgBIAEoDRIOCgZyb29tSUQYAiABKAQSEAoIcHJpb3JpdHkYAyAB",
-          "KA0SEQoJZnJhbWVSYXRlGAQgASgNEhAKCGZyYW1lSWR4GAUgASgNEhEKCXRp",
-          "bWVTdGFtcBgGIAEoBBIQCghlbmFibGVHUxgHIAEoDSJoChBHU0ZyYW1lQnJv",
+          "aGVja2luQWNrEg4KBnN0YXR1cxgBIAEoDSKTAQoSR1NTZXRGcmFtZVN5bmNS",
+          "YXRlEg4KBmdhbWVJRBgBIAEoDRIOCgZyb29tSUQYAiABKAQSEAoIcHJpb3Jp",
+          "dHkYAyABKA0SEQoJZnJhbWVSYXRlGAQgASgNEhAKCGZyYW1lSWR4GAUgASgN",
+          "EhAKCGVuYWJsZUdTGAYgASgNEhQKDGNhY2hlRnJhbWVNUxgHIAEoBSInChVH",
+          "U1NldEZyYW1lU3luY1JhdGVBY2sSDgoGc3RhdHVzGAEgASgNIqwBChhHU1Nl",
+          "dEZyYW1lU3luY1JhdGVOb3RpZnkSDgoGZ2FtZUlEGAEgASgNEg4KBnJvb21J",
+          "RBgCIAEoBBIQCghwcmlvcml0eRgDIAEoDRIRCglmcmFtZVJhdGUYBCABKA0S",
+          "EAoIZnJhbWVJZHgYBSABKA0SEQoJdGltZVN0YW1wGAYgASgEEhAKCGVuYWJs",
+          "ZUdTGAcgASgNEhQKDGNhY2hlRnJhbWVNUxgIIAEoBSJoChBHU0ZyYW1lQnJv",
           "YWRjYXN0Eg4KBmdhbWVJRBgBIAEoDRIOCgZyb29tSUQYAiABKAQSEAoIcHJp",
           "b3JpdHkYAyABKA0SDwoHY3BQcm90bxgEIAEoDBIRCglvcGVyYXRpb24YBSAB",
           "KAUiJQoTR1NGcmFtZUJyb2FkY2FzdEFjaxIOCgZzdGF0dXMYASABKA0ijAEK",
@@ -50,20 +51,24 @@ public static partial class GshotelReflection {
           "IAEoDSKaAQoRR1NGcmFtZVN5bmNOb3RpZnkSDgoGZ2FtZUlEGAEgASgNEg4K",
           "BnJvb21JRBgCIAEoBBIQCghwcmlvcml0eRgDIAEoDRIPCgdsYXN0SWR4GAQg",
           "ASgNEg8KB25leHRJZHgYBSABKA0SDwoHc3RhcnRUUxgGIAEoBBINCgVlbmRU",
-          "UxgHIAEoBBIRCgl0aW1lU3RhbXAYCCABKAQq3AMKDEhvdGVsR3NDbWRJRBIN",
-          "CglIb3RlbE5vbmUQABIXChJIb3RlbENyZWF0ZUNvbm5lY3QQ3QsSGgoVSG90",
-          "ZWxDcmVhdGVDb25uZWN0QWNrEN4LEhgKE0hvdGVsQnJvYWRjYXN0Q01ESUQQ",
-          "3wsSGwoWSG90ZWxCcm9hZGNhc3RBY2tDTURJRBDgCxITCg5Ib3RlbFB1c2hD",
-          "TURJRBDhCxIVChBIb3RlbENsb3NlQ29ubmV0EOILEhgKE0hvdGVsQ2xvc2VD",
-          "b25uZXRBY2sQ4wsSFwoSSG90ZWxQbGF5ZXJDaGVja2luEMEMEhoKFUhvdGVs",
-          "UGxheWVyQ2hlY2tpbkFjaxDCDBIcChdHU1NldEZyYW1lU3luY1JhdGVDTURJ",
-          "RBDDDBIfChpHU1NldEZyYW1lU3luY1JhdGVBY2tDTURJRBDEDBIiCh1HU1Nl",
-          "dEZyYW1lU3luY1JhdGVOb3RpZnlDTURJRBDGDBIaChVHU0ZyYW1lQnJvYWRj",
-          "YXN0Q01ESUQQxwwSHQoYR1NGcmFtZUJyb2FkY2FzdEFja0NNRElEEMgMEhsK",
-          "FkdTRnJhbWVEYXRhTm90aWZ5Q01ESUQQygwSGwoWR1NGcmFtZVN5bmNOb3Rp",
-          "ZnlDTURJRBDMDCpXCgtQdXNoTXNnVHlwZRIMCghOb25lVHlwZRAAEhQKEFVz",
-          "ZXJUeXBlU3BlY2lmaWMQARITCg9Vc2VyVHlwZUV4Y2x1ZGUQAhIPCgtVc2Vy",
-          "VHlwZUFsbBADYgZwcm90bzM="));
+          "UxgHIAEoBBIRCgl0aW1lU3RhbXAYCCABKAQiRgoOR1NHZXRDYWNoZURhdGES",
+          "DgoGZ2FtZUlEGAEgASgNEg4KBnJvb21JRBgCIAEoBBIUCgxjYWNoZUZyYW1l",
+          "TVMYAyABKAUiSQoRR1NHZXRDYWNoZURhdGFBY2sSDgoGc3RhdHVzGAEgASgN",
+          "EhIKCmZyYW1lQ291bnQYAiABKA0SEAoITXNnQ291bnQYAyABKA0qmAQKDEhv",
+          "dGVsR3NDbWRJRBINCglIb3RlbE5vbmUQABIXChJIb3RlbENyZWF0ZUNvbm5l",
+          "Y3QQ3QsSGgoVSG90ZWxDcmVhdGVDb25uZWN0QWNrEN4LEhgKE0hvdGVsQnJv",
+          "YWRjYXN0Q01ESUQQ3wsSGwoWSG90ZWxCcm9hZGNhc3RBY2tDTURJRBDgCxIT",
+          "Cg5Ib3RlbFB1c2hDTURJRBDhCxIVChBIb3RlbENsb3NlQ29ubmV0EOILEhgK",
+          "E0hvdGVsQ2xvc2VDb25uZXRBY2sQ4wsSFwoSSG90ZWxQbGF5ZXJDaGVja2lu",
+          "EMEMEhoKFUhvdGVsUGxheWVyQ2hlY2tpbkFjaxDCDBIcChdHU1NldEZyYW1l",
+          "U3luY1JhdGVDTURJRBDDDBIfChpHU1NldEZyYW1lU3luY1JhdGVBY2tDTURJ",
+          "RBDEDBIiCh1HU1NldEZyYW1lU3luY1JhdGVOb3RpZnlDTURJRBDGDBIaChVH",
+          "U0ZyYW1lQnJvYWRjYXN0Q01ESUQQxwwSHQoYR1NGcmFtZUJyb2FkY2FzdEFj",
+          "a0NNRElEEMgMEhsKFkdTRnJhbWVEYXRhTm90aWZ5Q01ESUQQygwSGwoWR1NG",
+          "cmFtZVN5bmNOb3RpZnlDTURJRBDMDBIYChNHU0dldENhY2hlRGF0YUNNRElE",
+          "EM0MEiAKG0dTR2V0Q2FjaGVEYXRhQ01ESURBY2tDTURJRBDODCpXCgtQdXNo",
+          "TXNnVHlwZRIMCghOb25lVHlwZRAAEhQKEFVzZXJUeXBlU3BlY2lmaWMQARIT",
+          "Cg9Vc2VyVHlwZUV4Y2x1ZGUQAhIPCgtVc2VyVHlwZUFsbBADYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
         new pbr::GeneratedClrTypeInfo(new[] {typeof(global::HotelGsCmdID), typeof(global::PushMsgType), }, new pbr::GeneratedClrTypeInfo[] {
@@ -76,13 +81,15 @@ public static partial class GshotelReflection {
           new pbr::GeneratedClrTypeInfo(typeof(global::PushToHotelMsg), global::PushToHotelMsg.Parser, new[]{ "PushType", "GameID", "RoomID", "DstUids", "CpProto" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::PlayerCheckin), global::PlayerCheckin.Parser, new[]{ "UserID", "GameID", "RoomID", "MaxPlayers", "Checkins", "Players" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::PlayerCheckinAck), global::PlayerCheckinAck.Parser, new[]{ "Status" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::GSSetFrameSyncRate), global::GSSetFrameSyncRate.Parser, new[]{ "GameID", "RoomID", "Priority", "FrameRate", "FrameIdx", "EnableGS" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSSetFrameSyncRate), global::GSSetFrameSyncRate.Parser, new[]{ "GameID", "RoomID", "Priority", "FrameRate", "FrameIdx", "EnableGS", "CacheFrameMS" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GSSetFrameSyncRateAck), global::GSSetFrameSyncRateAck.Parser, new[]{ "Status" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::GSSetFrameSyncRateNotify), global::GSSetFrameSyncRateNotify.Parser, new[]{ "GameID", "RoomID", "Priority", "FrameRate", "FrameIdx", "TimeStamp", "EnableGS" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSSetFrameSyncRateNotify), global::GSSetFrameSyncRateNotify.Parser, new[]{ "GameID", "RoomID", "Priority", "FrameRate", "FrameIdx", "TimeStamp", "EnableGS", "CacheFrameMS" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameBroadcast), global::GSFrameBroadcast.Parser, new[]{ "GameID", "RoomID", "Priority", "CpProto", "Operation" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameBroadcastAck), global::GSFrameBroadcastAck.Parser, new[]{ "Status" }, null, null, null),
           new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameDataNotify), global::GSFrameDataNotify.Parser, new[]{ "GameID", "RoomID", "SrcUid", "Priority", "CpProto", "TimeStamp", "FrameIdx" }, null, null, null),
-          new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameSyncNotify), global::GSFrameSyncNotify.Parser, new[]{ "GameID", "RoomID", "Priority", "LastIdx", "NextIdx", "StartTS", "EndTS", "TimeStamp" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSFrameSyncNotify), global::GSFrameSyncNotify.Parser, new[]{ "GameID", "RoomID", "Priority", "LastIdx", "NextIdx", "StartTS", "EndTS", "TimeStamp" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSGetCacheData), global::GSGetCacheData.Parser, new[]{ "GameID", "RoomID", "CacheFrameMS" }, null, null, null),
+          new pbr::GeneratedClrTypeInfo(typeof(global::GSGetCacheDataAck), global::GSGetCacheDataAck.Parser, new[]{ "Status", "FrameCount", "MsgCount" }, null, null, null)
         }));
   }
   #endregion
@@ -137,6 +144,11 @@ public enum HotelGsCmdID {
   /// 帧同步通知
   /// </summary>
   [pbr::OriginalName("GSFrameSyncNotifyCMDID")] GsframeSyncNotifyCmdid = 1612,
+  /// <summary>
+  /// 获取帧缓存数据
+  /// </summary>
+  [pbr::OriginalName("GSGetCacheDataCMDID")] GsgetCacheDataCmdid = 1613,
+  [pbr::OriginalName("GSGetCacheDataCMDIDAckCMDID")] GsgetCacheDataCmdidackCmdid = 1614,
 }
 
 /// <summary>
@@ -1734,6 +1746,7 @@ public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate
     frameRate_ = other.frameRate_;
     frameIdx_ = other.frameIdx_;
     enableGS_ = other.enableGS_;
+    cacheFrameMS_ = other.cacheFrameMS_;
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1822,6 +1835,20 @@ public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate
     }
   }
 
+  /// <summary>Field number for the "cacheFrameMS" field.</summary>
+  public const int CacheFrameMSFieldNumber = 7;
+  private int cacheFrameMS_;
+  /// <summary>
+  /// 缓存帧的毫秒数 0 为不开启缓存功能；-1 为缓存所有数据；
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CacheFrameMS {
+    get { return cacheFrameMS_; }
+    set {
+      cacheFrameMS_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as GSSetFrameSyncRate);
@@ -1841,6 +1868,7 @@ public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate
     if (FrameRate != other.FrameRate) return false;
     if (FrameIdx != other.FrameIdx) return false;
     if (EnableGS != other.EnableGS) return false;
+    if (CacheFrameMS != other.CacheFrameMS) return false;
     return true;
   }
 
@@ -1853,6 +1881,7 @@ public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate
     if (FrameRate != 0) hash ^= FrameRate.GetHashCode();
     if (FrameIdx != 0) hash ^= FrameIdx.GetHashCode();
     if (EnableGS != 0) hash ^= EnableGS.GetHashCode();
+    if (CacheFrameMS != 0) hash ^= CacheFrameMS.GetHashCode();
     return hash;
   }
 
@@ -1887,6 +1916,10 @@ public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate
       output.WriteRawTag(48);
       output.WriteUInt32(EnableGS);
     }
+    if (CacheFrameMS != 0) {
+      output.WriteRawTag(56);
+      output.WriteInt32(CacheFrameMS);
+    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1909,6 +1942,9 @@ public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate
     }
     if (EnableGS != 0) {
       size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EnableGS);
+    }
+    if (CacheFrameMS != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CacheFrameMS);
     }
     return size;
   }
@@ -1935,6 +1971,9 @@ public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate
     }
     if (other.EnableGS != 0) {
       EnableGS = other.EnableGS;
+    }
+    if (other.CacheFrameMS != 0) {
+      CacheFrameMS = other.CacheFrameMS;
     }
   }
 
@@ -1968,6 +2007,10 @@ public sealed partial class GSSetFrameSyncRate : pb::IMessage<GSSetFrameSyncRate
         }
         case 48: {
           EnableGS = input.ReadUInt32();
+          break;
+        }
+        case 56: {
+          CacheFrameMS = input.ReadInt32();
           break;
         }
       }
@@ -2124,6 +2167,7 @@ public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSy
     frameIdx_ = other.frameIdx_;
     timeStamp_ = other.timeStamp_;
     enableGS_ = other.enableGS_;
+    cacheFrameMS_ = other.cacheFrameMS_;
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2223,6 +2267,20 @@ public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSy
     }
   }
 
+  /// <summary>Field number for the "cacheFrameMS" field.</summary>
+  public const int CacheFrameMSFieldNumber = 8;
+  private int cacheFrameMS_;
+  /// <summary>
+  /// 帧缓存设置
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CacheFrameMS {
+    get { return cacheFrameMS_; }
+    set {
+      cacheFrameMS_ = value;
+    }
+  }
+
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override bool Equals(object other) {
     return Equals(other as GSSetFrameSyncRateNotify);
@@ -2243,6 +2301,7 @@ public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSy
     if (FrameIdx != other.FrameIdx) return false;
     if (TimeStamp != other.TimeStamp) return false;
     if (EnableGS != other.EnableGS) return false;
+    if (CacheFrameMS != other.CacheFrameMS) return false;
     return true;
   }
 
@@ -2256,6 +2315,7 @@ public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSy
     if (FrameIdx != 0) hash ^= FrameIdx.GetHashCode();
     if (TimeStamp != 0UL) hash ^= TimeStamp.GetHashCode();
     if (EnableGS != 0) hash ^= EnableGS.GetHashCode();
+    if (CacheFrameMS != 0) hash ^= CacheFrameMS.GetHashCode();
     return hash;
   }
 
@@ -2294,6 +2354,10 @@ public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSy
       output.WriteRawTag(56);
       output.WriteUInt32(EnableGS);
     }
+    if (CacheFrameMS != 0) {
+      output.WriteRawTag(64);
+      output.WriteInt32(CacheFrameMS);
+    }
   }
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2319,6 +2383,9 @@ public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSy
     }
     if (EnableGS != 0) {
       size += 1 + pb::CodedOutputStream.ComputeUInt32Size(EnableGS);
+    }
+    if (CacheFrameMS != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CacheFrameMS);
     }
     return size;
   }
@@ -2348,6 +2415,9 @@ public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSy
     }
     if (other.EnableGS != 0) {
       EnableGS = other.EnableGS;
+    }
+    if (other.CacheFrameMS != 0) {
+      CacheFrameMS = other.CacheFrameMS;
     }
   }
 
@@ -2385,6 +2455,10 @@ public sealed partial class GSSetFrameSyncRateNotify : pb::IMessage<GSSetFrameSy
         }
         case 56: {
           EnableGS = input.ReadUInt32();
+          break;
+        }
+        case 64: {
+          CacheFrameMS = input.ReadInt32();
           break;
         }
       }
@@ -3356,6 +3430,364 @@ public sealed partial class GSFrameSyncNotify : pb::IMessage<GSFrameSyncNotify> 
         }
         case 64: {
           TimeStamp = input.ReadUInt64();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+/// <summary>
+/// 获取缓存的帧数据
+/// </summary>
+public sealed partial class GSGetCacheData : pb::IMessage<GSGetCacheData> {
+  private static readonly pb::MessageParser<GSGetCacheData> _parser = new pb::MessageParser<GSGetCacheData>(() => new GSGetCacheData());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSGetCacheData> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[16]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSGetCacheData() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSGetCacheData(GSGetCacheData other) : this() {
+    gameID_ = other.gameID_;
+    roomID_ = other.roomID_;
+    cacheFrameMS_ = other.cacheFrameMS_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSGetCacheData Clone() {
+    return new GSGetCacheData(this);
+  }
+
+  /// <summary>Field number for the "gameID" field.</summary>
+  public const int GameIDFieldNumber = 1;
+  private uint gameID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint GameID {
+    get { return gameID_; }
+    set {
+      gameID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "roomID" field.</summary>
+  public const int RoomIDFieldNumber = 2;
+  private ulong roomID_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public ulong RoomID {
+    get { return roomID_; }
+    set {
+      roomID_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "cacheFrameMS" field.</summary>
+  public const int CacheFrameMSFieldNumber = 3;
+  private int cacheFrameMS_;
+  /// <summary>
+  /// 想要获取的毫秒数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CacheFrameMS {
+    get { return cacheFrameMS_; }
+    set {
+      cacheFrameMS_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSGetCacheData);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSGetCacheData other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (GameID != other.GameID) return false;
+    if (RoomID != other.RoomID) return false;
+    if (CacheFrameMS != other.CacheFrameMS) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (GameID != 0) hash ^= GameID.GetHashCode();
+    if (RoomID != 0UL) hash ^= RoomID.GetHashCode();
+    if (CacheFrameMS != 0) hash ^= CacheFrameMS.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (GameID != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(GameID);
+    }
+    if (RoomID != 0UL) {
+      output.WriteRawTag(16);
+      output.WriteUInt64(RoomID);
+    }
+    if (CacheFrameMS != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(CacheFrameMS);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (GameID != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GameID);
+    }
+    if (RoomID != 0UL) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt64Size(RoomID);
+    }
+    if (CacheFrameMS != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(CacheFrameMS);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSGetCacheData other) {
+    if (other == null) {
+      return;
+    }
+    if (other.GameID != 0) {
+      GameID = other.GameID;
+    }
+    if (other.RoomID != 0UL) {
+      RoomID = other.RoomID;
+    }
+    if (other.CacheFrameMS != 0) {
+      CacheFrameMS = other.CacheFrameMS;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          GameID = input.ReadUInt32();
+          break;
+        }
+        case 16: {
+          RoomID = input.ReadUInt64();
+          break;
+        }
+        case 24: {
+          CacheFrameMS = input.ReadInt32();
+          break;
+        }
+      }
+    }
+  }
+
+}
+
+public sealed partial class GSGetCacheDataAck : pb::IMessage<GSGetCacheDataAck> {
+  private static readonly pb::MessageParser<GSGetCacheDataAck> _parser = new pb::MessageParser<GSGetCacheDataAck>(() => new GSGetCacheDataAck());
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pb::MessageParser<GSGetCacheDataAck> Parser { get { return _parser; } }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public static pbr::MessageDescriptor Descriptor {
+    get { return global::GshotelReflection.Descriptor.MessageTypes[17]; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  pbr::MessageDescriptor pb::IMessage.Descriptor {
+    get { return Descriptor; }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSGetCacheDataAck() {
+    OnConstruction();
+  }
+
+  partial void OnConstruction();
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSGetCacheDataAck(GSGetCacheDataAck other) : this() {
+    status_ = other.status_;
+    frameCount_ = other.frameCount_;
+    msgCount_ = other.msgCount_;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public GSGetCacheDataAck Clone() {
+    return new GSGetCacheDataAck(this);
+  }
+
+  /// <summary>Field number for the "status" field.</summary>
+  public const int StatusFieldNumber = 1;
+  private uint status_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint Status {
+    get { return status_; }
+    set {
+      status_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "frameCount" field.</summary>
+  public const int FrameCountFieldNumber = 2;
+  private uint frameCount_;
+  /// <summary>
+  /// 帧数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint FrameCount {
+    get { return frameCount_; }
+    set {
+      frameCount_ = value;
+    }
+  }
+
+  /// <summary>Field number for the "MsgCount" field.</summary>
+  public const int MsgCountFieldNumber = 3;
+  private uint msgCount_;
+  /// <summary>
+  /// 消息数
+  /// </summary>
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public uint MsgCount {
+    get { return msgCount_; }
+    set {
+      msgCount_ = value;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override bool Equals(object other) {
+    return Equals(other as GSGetCacheDataAck);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public bool Equals(GSGetCacheDataAck other) {
+    if (ReferenceEquals(other, null)) {
+      return false;
+    }
+    if (ReferenceEquals(other, this)) {
+      return true;
+    }
+    if (Status != other.Status) return false;
+    if (FrameCount != other.FrameCount) return false;
+    if (MsgCount != other.MsgCount) return false;
+    return true;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override int GetHashCode() {
+    int hash = 1;
+    if (Status != 0) hash ^= Status.GetHashCode();
+    if (FrameCount != 0) hash ^= FrameCount.GetHashCode();
+    if (MsgCount != 0) hash ^= MsgCount.GetHashCode();
+    return hash;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public override string ToString() {
+    return pb::JsonFormatter.ToDiagnosticString(this);
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void WriteTo(pb::CodedOutputStream output) {
+    if (Status != 0) {
+      output.WriteRawTag(8);
+      output.WriteUInt32(Status);
+    }
+    if (FrameCount != 0) {
+      output.WriteRawTag(16);
+      output.WriteUInt32(FrameCount);
+    }
+    if (MsgCount != 0) {
+      output.WriteRawTag(24);
+      output.WriteUInt32(MsgCount);
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int CalculateSize() {
+    int size = 0;
+    if (Status != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Status);
+    }
+    if (FrameCount != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(FrameCount);
+    }
+    if (MsgCount != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeUInt32Size(MsgCount);
+    }
+    return size;
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(GSGetCacheDataAck other) {
+    if (other == null) {
+      return;
+    }
+    if (other.Status != 0) {
+      Status = other.Status;
+    }
+    if (other.FrameCount != 0) {
+      FrameCount = other.FrameCount;
+    }
+    if (other.MsgCount != 0) {
+      MsgCount = other.MsgCount;
+    }
+  }
+
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public void MergeFrom(pb::CodedInputStream input) {
+    uint tag;
+    while ((tag = input.ReadTag()) != 0) {
+      switch(tag) {
+        default:
+          input.SkipLastField();
+          break;
+        case 8: {
+          Status = input.ReadUInt32();
+          break;
+        }
+        case 16: {
+          FrameCount = input.ReadUInt32();
+          break;
+        }
+        case 24: {
+          MsgCount = input.ReadUInt32();
           break;
         }
       }

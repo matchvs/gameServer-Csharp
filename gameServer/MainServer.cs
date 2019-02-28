@@ -15,6 +15,7 @@
 using System;
 using System.IO;
 using System.Threading;
+using Stream;
 
 class MainServer
 {
@@ -29,8 +30,9 @@ class MainServer
         GameServer gameServer = new GameServer();
         gameServer.Init(confFile);
         RoomManager roomManager = new RoomManager(confFile);
-        FightHandler fight = new FightHandler(gameServer, roomManager);
-        gameServer.Bind(fight);
+        Metrics metrics = new Metrics(confFile);
+        FightHandler fight = new FightHandler(gameServer, roomManager, metrics);
+        gameServer.Bind(fight, metrics);
 
         int pid = System.Diagnostics.Process.GetCurrentProcess().Id;
         File.WriteAllText(System.IO.Path.Combine(confPath, "gameServer.dll_pid"), pid.ToString());

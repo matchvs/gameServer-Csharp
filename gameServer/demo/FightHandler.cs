@@ -22,10 +22,12 @@ public class FightHandler : BaseHandler
 {
     private BaseServer baseServer;
     private RoomManager roomManger;
-    public FightHandler(BaseServer server, RoomManager rmgr)
+    private Metrics metrics;
+    public FightHandler(BaseServer server, RoomManager rmgr, Metrics metrics)
     {
-        baseServer = server;
-        roomManger = rmgr;
+        this.baseServer = server;
+        this.roomManger = rmgr;
+        this.metrics = metrics;
     }
     /// <summary>
     /// 创建房间
@@ -391,15 +393,44 @@ public class FightHandler : BaseHandler
             }
             else if (result[0] == "setFrameSyncRate")
             {
+                if (result.Length < 3)
+                {
+                    Logger.Error("set frame sync rate error: no cacheFrameMS");
+                    return new HotelBroadcastAck() { UserID = broadcast.UserID, Status = (UInt32)ErrorCode.BadRequest };
+                }
+
                 var rate = UInt32.Parse(result[1]);
-                SetFrameSyncRate(broadcast.RoomID, broadcast.GameID, rate, 1);
+                var cacheFrameMS = Int32.Parse(result[2]);
+                SetFrameSyncRate(broadcast.RoomID, broadcast.GameID, rate, 1, cacheFrameMS);
                 Logger.Debug("set frame sync rate: {0}", rate);
+            }
+            else if (result[0] == "getCacheData")
+            {
+                Int32 cacheFrameMS = Int32.Parse(result[1]);
+                GetCacheData(broadcast.RoomID, broadcast.GameID, cacheFrameMS);
+                Logger.Debug("get cache frame data: {0}", cacheFrameMS);
             }
             else if (result[0] == "frameBroadcast")
             {
                 var cpProto = result[1];
                 FrameBroadcast(broadcast.RoomID, broadcast.GameID, ByteString.CopyFromUtf8(cpProto), 2);
                 Logger.Info("frame broadcast: {0}", cpProto);
+            }
+            else if (result[0] == "metric")
+            {
+                if (result.Length >= 3)
+                {
+                    string name = result[1];
+                    double value = double.Parse(result[2]);
+                    MetricPoint point = new MetricPoint()
+                    {
+                        Name = name,
+                        Value = value,
+                        Attr = MetricAttr.Custom,
+                    };
+                    ReportAck ack = ReportMetrics(point);
+                    Logger.Info("Set matric response: {0}", ack);
+                }
             }
         }
 
@@ -429,7 +460,8 @@ public class FightHandler : BaseHandler
     /// </summary>
     public override void OnHotelSetFrameSyncRate(FrameSyncRate request)
     {
-        Logger.Info("OnHotelSetFrameSyncRate, gameID:{0} roomID:{1} frameRate:{2}", request.GameID, request.RoomID, request.FrameRate);
+        Logger.Info("OnHotelSetFrameSyncRate, gameID:{0} roomID:{1} frameRate:{2} enableGS:{3} cacheFrameMS:{4}",
+            request.GameID, request.RoomID, request.FrameRate, request.EnableGS, request.CacheFrameMS);
         return;
     }
     /// <summary>
@@ -528,7 +560,8 @@ public class FightHandler : BaseHandler
     /// <param name="gameId">游戏ID</param>
     /// <param name="rate">帧率</param>
     /// <param name="enableGS">GameServer是否参与帧同步（0：不参与；1：参与）</param>
-    public void SetFrameSyncRate(UInt64 roomId, UInt32 gameId, UInt32 rate, UInt32 enableGS, UInt32 userId = 1, UInt32 version = 2)
+    /// <param name="cacheFrameMS">缓存帧的毫秒数（0为不开启缓存功能，-1为缓存所有数据，毫秒数的上限制为1小时）</param>
+    public void SetFrameSyncRate(UInt64 roomId, UInt32 gameId, UInt32 rate, UInt32 enableGS, Int32 cacheFrameMS, UInt32 userId = 1, UInt32 version = 2)
     {
         GSSetFrameSyncRate setFrameSyncRateReq = new GSSetFrameSyncRate()
         {
@@ -538,8 +571,25 @@ public class FightHandler : BaseHandler
             Priority = 0,
             FrameIdx = 1,
             EnableGS = enableGS,
+            CacheFrameMS = cacheFrameMS,
         };
         baseServer.PushToHotel(userId, version, roomId, (UInt32)HotelGsCmdID.GssetFrameSyncRateCmdid, setFrameSyncRateReq);
+    }
+    /// <summary>           
+    /// 获取帧缓存数据
+    /// </summary>
+    /// <param name="roomId">房间ID</param>
+    /// <param name="gameId">游戏ID</param>
+    /// <param name="cacheFrameMS">缓存帧的毫秒数（-1表示获取所有，毫秒数的上限制为1小时）</param>
+    public void GetCacheData(UInt64 roomId, UInt32 gameId, Int32 cacheFrameMS, UInt32 userId = 1, UInt32 version = 2)
+    {
+        GSGetCacheData getCacheDataReq = new GSGetCacheData()
+        {
+            GameID = gameId,
+            RoomID = roomId,
+            CacheFrameMS = cacheFrameMS,
+        };
+        baseServer.PushToHotel(userId, version, roomId, (UInt32)HotelGsCmdID.GsgetCacheDataCmdid, getCacheDataReq);
     }
     /// <summary>
     /// 发送帧消息
@@ -580,6 +630,10 @@ public class FightHandler : BaseHandler
     public DestroyRoomAck DestroyRoom(DestroyRoom request)
     {
         return roomManger.DestroyRoom(request);
+    }
+    public ReportAck ReportMetrics(params MetricPoint[] points)
+    {
+        return metrics.Report(points);
     }
 }
 

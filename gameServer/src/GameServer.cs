@@ -24,7 +24,7 @@ public class GameServer : BaseServer
     private List<UInt32> connections = new List<UInt32>();
     private StreamServer serverImp;
     private Dictionary<UInt64, Dictionary<UInt32, FrameData>> roomFrames;
-
+    private Metrics metrics;
     public Gsconfig ConfData
     {
         get;
@@ -41,9 +41,10 @@ public class GameServer : BaseServer
         }
         roomFrames = new Dictionary<UInt64, Dictionary<UInt32, FrameData>>();
     }
-    public void Bind(BaseHandler msgHandler)
+    public void Bind(BaseHandler msgHandler, Metrics metrics)
     {
         this.msgHandler = msgHandler;
+        this.metrics = metrics;
     }
     public override void Run()
     {
@@ -79,18 +80,22 @@ public class GameServer : BaseServer
         if (req.CmdId == (UInt32)HotelGsCmdID.HotelCreateConnect)
         {
             reply = msgHandler.OnHotelConnect(req.Message);
+            metrics.RoomCountIncrement();
         }
         else if (req.CmdId == (UInt32)HotelGsCmdID.HotelBroadcastCmdid)
         {
             reply = msgHandler.OnHotelBroadCast(req.Message);
+            metrics.MessageCountIncrement();
         }
         else if (req.CmdId == (UInt32)HotelGsCmdID.HotelCloseConnet)
         {
             reply = msgHandler.OnHotelCloseConnect(req.Message);
+            metrics.RoomCountDecrement();
         }
         else if (req.CmdId == (UInt32)HotelGsCmdID.HotelPlayerCheckin)
         {
             reply = msgHandler.OnHotelCheckin(req.Message);
+            metrics.PlayerCountIncrement();
         }
         else if (req.CmdId == (UInt32)HotelGsCmdID.GssetFrameSyncRateNotifyCmdid)
         {
@@ -99,6 +104,7 @@ public class GameServer : BaseServer
         else if (req.CmdId == (UInt32)HotelGsCmdID.GsframeDataNotifyCmdid)
         {
             reply = FrameDataNotify(req.Message);
+            metrics.MessageCountIncrement();
         }
         else if (req.CmdId == (UInt32)HotelGsCmdID.GsframeSyncNotifyCmdid)
         {
@@ -115,6 +121,7 @@ public class GameServer : BaseServer
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsLeaveRoomReq)
         {
             reply = msgHandler.OnLeaveRoom(req.Message);
+            metrics.PlayerCountDecrement();
         }
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsJoinOverReq)
         {
@@ -127,9 +134,18 @@ public class GameServer : BaseServer
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsKickPlayerReq)
         {
             reply = msgHandler.OnKickPlayer(req.Message);
+            metrics.PlayerCountDecrement();
         }
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsNetworkStateReq)
         {
+            Request request = new Request();
+            ByteUtils.ByteStringToObject(request, req.Message);
+            string status = request.CpProto.ToStringUtf8();
+            //1.掉线了  2.重连成功  3.重连失败
+            if (status == "3")
+            {
+                metrics.PlayerCountDecrement();
+            }
             reply = msgHandler.OnConnectStatus(req.Message);
         }
         else if (req.CmdId == (UInt32)MvsGsCmdID.MvsGetRoomDetailPush)
@@ -186,6 +202,7 @@ public class GameServer : BaseServer
             Message = ByteUtils.ObjectToByteString(msg)
         };
         serverImp.PushToHotel(roomID, package).Wait();
+        metrics.MessageCountIncrement();
     }
     /// <summary>
     /// 删除stream映射
@@ -214,6 +231,7 @@ public class GameServer : BaseServer
             FrameIndex = request.FrameIdx,
             Timestamp = request.TimeStamp,
             EnableGS = request.EnableGS,
+            CacheFrameMS = request.CacheFrameMS,
         });
 
         return reply;
@@ -268,6 +286,8 @@ public class GameServer : BaseServer
         {
             Status = (UInt32)ErrorCode.Ok
         };
+
+        Logger.Debug("FrameSync, LastIndex:{0}, NextIndex:{1}", request.LastIdx, request.NextIdx);
 
         Dictionary<UInt32, FrameData> roomFrame;
         if (roomFrames.TryGetValue(request.RoomID, out roomFrame))

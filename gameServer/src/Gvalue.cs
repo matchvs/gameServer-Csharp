@@ -41,6 +41,11 @@ public class RoomConfig
     public string RemoteHost { get; set; }
     public uint RemotePort { get; set; }
 }
+
+public class MetricsConfig
+{
+    public bool Enable { get; set; }
+}
 /// <summary>
 /// gs配置文件
 /// </summary>
@@ -51,6 +56,7 @@ public class Gsconfig
     public uint HostPort { get; set; }
     public RegConfig RegConf { get; set; }
     public RoomConfig RoomConf { get; set; }
+    public MetricsConfig Metrics { get; set; }
 }
 
 public class FrameSyncRate
@@ -61,6 +67,7 @@ public class FrameSyncRate
     public UInt32 FrameIndex { get; set; }
     public UInt64 Timestamp { get; set; }
     public UInt32 EnableGS { get; set; }
+    public Int32 CacheFrameMS { get; set; }
 }
 
 public class FrameItem
